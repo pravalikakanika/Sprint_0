@@ -150,6 +150,18 @@ Apply changes by logging out and back in or restarting the system.
 | Mount point not found          | Check `/etc/fstab` and try remounting with `mount -a`                 |
 
 
+**Contact Information**
+
+
+| Name       | Email Address                |
+|------------|------------------------------|
+| Pravalika  | pravalikak174@gmail.com      |
+
+
+
+
+
+
 
 
 
