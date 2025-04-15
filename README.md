@@ -43,6 +43,8 @@ Run the `df` command to check available and used disk space:
 
 ```bash
 df -h
+```  
+**Expected Output:**
 
 
 
@@ -51,6 +53,8 @@ df -h
 Filesystem      ..... Size .. Used .. Avail . Use% . Mounted on
 /dev/sda1       ..... 50G  .. 20G  .. 28G   . 42%  . /
 /dev/sdb1       ..... 100G .. 70G  .. 25G   . 75%  . /mnt/data
+
+```  
 
 
 
