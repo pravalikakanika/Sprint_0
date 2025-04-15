@@ -50,9 +50,9 @@ df -h
 
 ```bash
 
-Filesystem      ..... Size .. Used .. Avail . Use% . Mounted on
-/dev/sda1       ..... 50G  .. 20G  .. 28G   . 42%  . /
-/dev/sdb1       ..... 100G .. 70G  .. 25G   . 75%  . /mnt/data
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   20G   28G  42%  /
+/dev/sdb1       100G   70G   25G  75%  /mnt/data
 
 ```  
 
@@ -69,6 +69,76 @@ Filesystem      Inodes   IUsed   IFree     IUse% Mounted on
 /dev/sda1       3276800  500000  2776800   15%   /
 
 ``` 
+
+#### C. Check detailed disk usage of directories:
+
+```bash
+du -sh /path/to/directory
+
+```
+
+### ✅ Step 2: Check Mount Points
+
+### A.View all mounted filesystems:
+
+Run the mount command to see the mounted filesystems and their mount points:
+
+```bash
+mount
+
+```
+
+### B. Check the /etc/fstab file to confirm the configuration of mount points:
+
+```bash
+cat /etc/fstab
+
+```
+
+### c. Verify the mount point:
+
+To verify if a specific mount point is active:
+
+```bash
+df -h /mnt/data
+```
+
+### ✅ Step 3: Configure ulimit Settings
+ulimit controls limits on user and process resources (file descriptors, memory, processes, etc.)
+
+### A. View the current ulimit settings for the user:
+
+```bash
+ulimit -a
+```
+
+### B. Set or modify ulimit for the current session:
+
+For example, to set the maximum number of open files to 5000:
+
+```bash
+ulimit -n 5000
+```
+
+
+### c. Make permanent changes to ulimit:
+
+-**Edit the /etc/security/limits.conf file:**
+
+```bash
+sudo nano /etc/security/limits.conf
+```
+
+-**Add the following lines to set the limits for a user or all users:**
+
+markdown
+
+*               soft    nofile          5000
+*               hard    nofile          10000
+Apply changes by logging out and back in or restarting the system.
+
+
+
 
 
 
