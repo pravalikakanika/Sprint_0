@@ -56,6 +56,22 @@ Filesystem      ..... Size .. Used .. Avail . Use% . Mounted on
 
 ```  
 
+#### B.Check inode usage (important for filesystem integrity):
+
+```bash
+df -i
+
+``` 
+**Expected Output:**
+
+```bash
+Filesystem      Inodes   IUsed   IFree     IUse% Mounted on
+/dev/sda1       3276800  500000  2776800   15%   /
+
+``` 
+
+
+
 
 
 
