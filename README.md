@@ -114,7 +114,7 @@ ulimit -a
 
 ### B. Set or modify ulimit for the current session:
 
-For example, to set the maximum number of open files to 5000:
+- **For example, to set the maximum number of open files to 5000:**
 
 ```bash
 ulimit -n 5000
@@ -123,13 +123,13 @@ ulimit -n 5000
 
 ### c. Make permanent changes to ulimit:
 
--**Edit the /etc/security/limits.conf file:**
+- **Edit the /etc/security/limits.conf file:**
 
 ```bash
 sudo nano /etc/security/limits.conf
 ```
 
--**Add the following lines to set the limits for a user or all users:**
+- **Add the following lines to set the limits for a user or all users:**
 
 markdown
 
