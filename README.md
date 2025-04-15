@@ -41,7 +41,7 @@ Before proceeding with this SOP, the following prerequisites must be met:
 
 Run the `df` command to check available and used disk space:
 
-
+```bash
 df -h
 
 
