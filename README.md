@@ -1,7 +1,7 @@
  Sprint_0
 
 
-# **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
+# 📘 **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
 
 
 ## 🗂️ Purpose
