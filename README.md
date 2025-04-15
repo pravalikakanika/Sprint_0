@@ -129,7 +129,7 @@ ulimit -n 5000
 sudo nano /etc/security/limits.conf
 ```
 
-- **Add the following lines to set the limits for a user or all users:**
+   - **Add the following lines to set the limits for a user or all users:**
 
 markdown
 
