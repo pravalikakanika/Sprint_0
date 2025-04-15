@@ -139,6 +139,10 @@ Apply changes by logging out and back in or restarting the system.
 
 
 
+
+
+
+
 **🧯 Troubleshooting**
 
 
@@ -148,6 +152,9 @@ Apply changes by logging out and back in or restarting the system.
 | Systemd service limits ignored | Set limits in unit file and reload systemd                            |
 | Disk usage high                | Use `du -sh *` to identify large directories                          |
 | Mount point not found          | Check `/etc/fstab` and try remounting with `mount -a`                 |
+
+
+
 
 
 **Contact Information**
