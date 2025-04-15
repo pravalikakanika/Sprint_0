@@ -47,6 +47,7 @@ df -h
 
 
 ```bash
+
 Filesystem      ..... Size .. Used .. Avail . Use% . Mounted on
 /dev/sda1       ..... 50G  .. 20G  .. 28G   . 42%  . /
 /dev/sdb1       ..... 100G .. 70G  .. 25G   . 75%  . /mnt/data
