@@ -143,7 +143,7 @@ Apply changes by logging out and back in or restarting the system.
 
 
 
-**🧯 Troubleshooting**
+## 🧯 Troubleshooting
 
 
 | Issue                          | Solution                                                              |
@@ -157,7 +157,7 @@ Apply changes by logging out and back in or restarting the system.
 
 
 
-**Contact Information**
+## Contact Information
 
 
 | Name       | Email Address                |
