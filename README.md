@@ -21,29 +21,6 @@
 
 
 
-## ✅  Purpose of Using Poetry
-
-The main purpose of **Poetry** is to simplify and streamline Python project management.
-
-### 🎯 Goals:
-
-- 🔄 **Replace multiple tools** (`pip`, `venv`, `setup.py`, `requirements.txt`, `twine`) with one unified tool.
-- 📦 **Manage dependencies** in a declarative and reproducible way.
-- ⚙️ **Automatically handle virtual environments** per project—no more manual `venv` setup.
-- 🚀 **Simplify publishing** your packages directly to PyPI.
-- 📁 **Use `pyproject.toml`** as a clean, standard, and centralized configuration file.
-
-
-## ✅  Prerequisites
-
-Before using Poetry, ensure your system meets the following requirements:
-
-| Category                     | Requirement / Notes                                                                 |
-|-----------------------------|--------------------------------------------------------------------------------------|
-| 🧑‍💻 **Basic System Requirements** | - Python installed (3.7+ recommended)  <br> - Check with `python --version` or `python3 --version` <br> - `pip` installed (optional, but sometimes used alongside) <br> - Internet access to install Poetry and fetch packages |
-| 💻 **Operating System Compatibility** | - Works on **Windows**, **macOS**, and **Linux**                                             |
-| 🔧 **Optional**              | - Familiarity with the **command line** <br> - **Git** (recommended for version control)         |
-
 
 
 ## What is Poetry?
@@ -130,6 +107,40 @@ With **Poetry**, virtual environments are handled automatically:
 - **Environment Isolation**: **Poetry** ensures each project has its own isolated environment, so there are no conflicts with dependencies from other projects. This is especially helpful when working on multiple projects that may require different versions of Python or libraries.
 
 - **No Need for pip or virtualenv**: **Poetry** integrates the functionality of both `pip` and `virtualenv` into a single tool. You don’t need to worry about manually managing virtual environments or updating `requirements.txt` files.
+
+
+
+
+
+## ✅  Purpose of Using Poetry
+
+The main purpose of **Poetry** is to simplify and streamline Python project management.
+
+### 🎯 Goals:
+
+- 🔄 **Replace multiple tools** (`pip`, `venv`, `setup.py`, `requirements.txt`, `twine`) with one unified tool.
+- 📦 **Manage dependencies** in a declarative and reproducible way.
+- ⚙️ **Automatically handle virtual environments** per project—no more manual `venv` setup.
+- 🚀 **Simplify publishing** your packages directly to PyPI.
+- 📁 **Use `pyproject.toml`** as a clean, standard, and centralized configuration file.
+
+
+## ✅  Prerequisites
+
+Before using Poetry, ensure your system meets the following requirements:
+
+| Category                     | Requirement / Notes                                                                 |
+|-----------------------------|--------------------------------------------------------------------------------------|
+| 🧑‍💻 **Basic System Requirements** | - Python installed (3.7+ recommended)  <br> - Check with `python --version` or `python3 --version` <br> - `pip` installed (optional, but sometimes used alongside) <br> - Internet access to install Poetry and fetch packages |
+| 💻 **Operating System Compatibility** | - Works on **Windows**, **macOS**, and **Linux**                                             |
+| 🔧 **Optional**              | - Familiarity with the **command line** <br> - **Git** (recommended for version control)         |
+
+
+
+
+
+
+
 
 
 
