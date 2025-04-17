@@ -9,7 +9,7 @@
 
 1. [What is Poetry?](#what-is-poetry)
 2. [Why Use Poetry?](#why-use-poetry)
-3. [Purpose](#purpose)
+3. [Purpose](#purpose-of-using-poetry)
 4. [Prerequisites](#prerequisites)
 5. [Key Features](#key-features)
 6. [Installation Guide](#installation-guide)
@@ -19,6 +19,7 @@
 10. [Troubleshooting](#troubleshooting)
 11. [References](#references)
 12. [Contact Information](#contact-information)
+
 
 
 
