@@ -154,7 +154,7 @@ With **Poetry**, virtual environments are handled automatically:
 
 
 
-## ✅  Purpose of Using Poetry
+##   Purpose of Using Poetry
 
 The main purpose of **Poetry** is to simplify and streamline Python project management.
 
@@ -167,7 +167,7 @@ The main purpose of **Poetry** is to simplify and streamline Python project mana
 - 📁 **Use `pyproject.toml`** as a clean, standard, and centralized configuration file.
 
 
-## ✅  Prerequisites
+##   Prerequisites
 
 Before using Poetry, ensure your system meets the following requirements:
 
