@@ -31,6 +31,7 @@
 - [✨ Key Features of Poetry](#-key-features-of-poetry)
 
 - [🛠️ Installation Guide](#️-installation-guide)
+
   - [Install via curl](#install-via-curl)
   - [Add Poetry to PATH](#add-poetry-to-path)
   - [Check Poetry Version](#check-poetry-version)
