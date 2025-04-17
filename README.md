@@ -11,7 +11,7 @@
 2. [Why Use Maven?](#why-use-maven)
 3. [🎯 Purpose of Maven](#-purpose-of-maven)
 4. [✅ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
-5. [✅ Installation Check](#-installation-check)
+5. [✅ Installation Check](#installation-check)
 6. [🌟 Key Features of Maven](#-key-features-of-maven)
 7. [🧱 A Build Lifecycle is Made Up of Phases](#a-build-lifecycle-is-made-up-of-phases)
 8. [🔌 Commonly Used Plugins](#commonly-used-plugins)
