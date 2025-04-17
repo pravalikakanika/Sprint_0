@@ -10,11 +10,11 @@
 
 - [ What is Poetry?](#what-is-poetry)
 
-- [💡 Its Role in Modern Python Project Management](#-its-role-in-modern-python-project-management)
+- [ Its Role in Modern Python Project Management](#-its-role-in-modern-python-project-management)
 
 
 
-- [🔧 Why Use Poetry?](#why-use-poetry)
+- [ Why Use Poetry?](#why-use-poetry)
   
 
 - [Purpose of Using Poetry](#purpose-of-using-poetry)
@@ -23,21 +23,21 @@
 - [Prerequisites](#prerequisites)
 
 
-- [✨ Key Features of Poetry](#-key-features-of-poetry)
+- [ Key Features of Poetry](#-key-features-of-poetry)
 
-- [🛠️ Installation Guide](#installation-guide)
+- [ Installation Guide](#installation-guide)
   
-- [📘 Basic Usage](#-basic-usage)
+- [ Basic Usage](#-basic-usage)
   
-- [🔍 Comparison: Poetry vs pip + venv](#-comparison-poetry-vs-pip--venv)
+- [ Comparison: Poetry vs pip + venv](#-comparison-poetry-vs-pip--venv)
 
-- [🧠 Best Practices](#-best-practices)
+- [ Best Practices](#-best-practices)
 
-- [🛠️ Troubleshooting](#️-troubleshooting)
+- [ Troubleshooting](#️-troubleshooting)
 
-- [📧 Contact Information](#-contact-information)
+- [ Contact Information](#-contact-information)
 
-- [📚 Reference](#-reference)
+- [ Reference](#-reference)
 
 
 
