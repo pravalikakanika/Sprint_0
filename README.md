@@ -12,7 +12,7 @@
 
 ## 🗂️ Table of Contents
 
-1. [📂 Purpose](#purpose)  
+1. [Purpose](#purpose)  
   
 2. [🔍 Scope](#-scope)  
 3. [🧑‍💻 Prerequisites](#-prerequisites)  
