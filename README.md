@@ -10,27 +10,29 @@
 | Pravalika  | 2025-04-14  | Version 1 |Pravalika | 2025-04-16     |
 
 
-# 📘 **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
+# Table of Contents
 
-- [Purpose](#purpose) 📂
-- [Scope](#scope) 🔍
-- [Prerequisites](#prerequisites) 🧑‍💻
-- [Procedure](#procedure) 📋
-  - [Step 1: Check Disk Usage](#step-1-check-disk-usage) ✅
-    - [View Disk Usage Summary](#view-disk-usage-summary)
-    - [Check inode usage](#check-inode-usage)
-    - [Check detailed disk usage of directories](#check-detailed-disk-usage-of-directories)
-  - [Step 2: Check Mount Points](#step-2-check-mount-points) ✅
-    - [View all mounted filesystems](#view-all-mounted-filesystems)
-    - [Check the /etc/fstab file](#check-the-etc-fstab-file)
-    - [Verify the mount point](#verify-the-mount-point)
-  - [Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings) ✅
-    - [View the current ulimit settings for the user](#view-the-current-ulimit-settings-for-the-user)
-    - [Set or modify ulimit for the current session](#set-or-modify-ulimit-for-the-current-session)
-    - [Make permanent changes to ulimit](#make-permanent-changes-to-ulimit)
-- [Troubleshooting](#troubleshooting) 🧯
-- [Contact Information](#contact-information) 📧
-- [Reference](#reference) 📚
+1. [Purpose](#purpose)
+2. [Scope](#scope)
+3. [Prerequisites](#prerequisites)
+4. [Procedure](#procedure)
+   - [Step 1: Check Disk Usage](#step-1-check-disk-usage)
+     - [A. View Disk Usage Summary](#a-view-disk-usage-summary)
+     - [B. Check Inode Usage](#b-check-inode-usage)
+     - [C. Check Detailed Disk Usage of Directories](#c-check-detailed-disk-usage-of-directories)
+   - [Step 2: Check Mount Points](#step-2-check-mount-points)
+     - [A. View All Mounted Filesystems](#a-view-all-mounted-filesystems)
+     - [B. Check the /etc/fstab File](#b-check-the-etc-fstab-file)
+     - [C. Verify the Mount Point](#c-verify-the-mount-point)
+   - [Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings)
+     - [A. View the Current ulimit Settings](#a-view-the-current-ulimit-settings)
+     - [B. Set or Modify ulimit for the Current Session](#b-set-or-modify-ulimit-for-the-current-session)
+     - [C. Make Permanent Changes to ulimit](#c-make-permanent-changes-to-ulimit)
+5. [Troubleshooting](#troubleshooting)
+6. [Contact Information](#contact-information)
+7. [Reference](#reference)
+
+
 
 
 
