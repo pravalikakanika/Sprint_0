@@ -7,8 +7,8 @@
 
 ## 📚 Table of Contents
 
-1. [🔷 What is Maven?](#-what-is-maven)
-2. [🔷 Why Use Maven?](#-why-use-maven)
+1. [ What is Maven?](#-what-is-maven)
+2. [ Why Use Maven?](#-why-use-maven)
 3. [🎯 Purpose of Maven](#-purpose-of-maven)
 4. [✅ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
 5. [✅ Installation Check](#-installation-check)
@@ -26,7 +26,7 @@
 
 
 
-**🔷 What is Maven?**
+## What is Maven?
 Maven is a build automation and dependency management tool used primarily for Java projects. It was developed by the Apache Software Foundation.
 
 Think of Maven as a project manager that:
@@ -40,7 +40,7 @@ Think of Maven as a project manager that:
 
 
 
-**🔷 Why Use Maven?**
+## Why Use Maven?
 
 
 Maven offers a powerful and standardized way to manage Java projects. Here's why it's widely adopted:
