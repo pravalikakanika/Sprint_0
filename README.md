@@ -1,7 +1,31 @@
- Sprint_0
+
+
+![image](https://github.com/user-attachments/assets/52505250-e374-4634-b4e1-133c9b293eb1)
+
+
+## 📂 Document Info
+
+| Author          | Created On  | Version   | Last Updated By | Last Edited On |
+|-----------------|-------------|-----------|------------------|----------------|
+| Pravalika  | 2025-04-14  | Version 1 |Pravalika | 2025-04-16     |
 
 
 # 📘 **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
+
+## Table of Contents
+
+- [Document Info](#document-info)
+- [Purpose](#purpose)
+- [Scope](#scope)
+- [Prerequisites](#prerequisites)
+- [Procedure](#procedure)
+  - [Step 1: Check Disk Usage](#step-1-check-disk-usage)
+  - [Step 2: Check Mount Points](#step-2-check-mount-points)
+  - [Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings)
+- [Troubleshooting](#troubleshooting)
+- [Contact Information](#contact-information)
+- [Reference](#reference)
+
 
 
 ## 🗂️ Purpose
@@ -162,7 +186,15 @@ Apply changes by logging out and back in or restarting the system.
 
 | Name       | Email Address                |
 |------------|------------------------------|
-| Pravalika  | pravalikak174@gmail.com      |
+| Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
+
+
+## 📚 Reference
+
+| Link                                                                 | Description                              |
+|----------------------------------------------------------------------|------------------------------------------|
+| [https://phoenixnap.com/kb/ulimit-linux-command](https://phoenixnap.com/kb/ulimit-linux-command) | Documentation followed for this link     |
+
 
 
 
