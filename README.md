@@ -7,17 +7,18 @@
 
 # Table of Contents
 
-1. [What is Poetry?](#1-what-is-poetry)
-2. [Why Use Poetry?](#2-why-use-poetry)
-3. [Purpose](#3-purpose)
-4. [Prerequisites](#4-prerequisites)
-5. [Key Features](#5-key-features)
-6. [Installation Guide](#6-installation-guide)
-7. [Basic Usage Examples](#7-basic-usage-examples)
-8. [Comparison: Poetry vs pip + venv](#8-comparison-poetry-vs-pip--venv)
-9. [Best practices](#9-best-practices)
-10. [Troubleshooting](#10-troubleshooting)
-11. [References](#11-references)
+1. [What is Poetry?](#what-is-poetry)
+2. [Why Use Poetry?](#why-use-poetry)
+3. [Purpose](#purpose)
+4. [Prerequisites](#prerequisites)
+5. [Key Features](#key-features)
+6. [Installation Guide](#installation-guide)
+7. [Basic Usage Examples](#basic-usage-examples)
+8. [Comparison: Poetry vs pip + venv](#comparison-poetry-vs-pip--venv)
+9. [Best Practices](#best-practices)
+10. [Troubleshooting](#troubleshooting)
+11. [References](#references)
+
 
 
 
