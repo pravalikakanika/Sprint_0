@@ -18,6 +18,8 @@
 9. [Best Practices](#best-practices)
 10. [Troubleshooting](#troubleshooting)
 11. [References](#references)
+12. [Contact Information](#contact-information)
+
 
 
 
