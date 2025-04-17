@@ -3,22 +3,22 @@
 
 | Author          | Created On  | Version   | Last Updated By | Last Edited On |
 |-----------------|-------------|-----------|------------------|----------------|
-| Pravalika  | 2025-04-16  | Version 1 |Pravalika | 2025-04-16     |
+| Pravalika  | 2025-04-16  | Version 1 |Pravalika | 2025-04-17     |
 
 ## 📚 Table of Contents
 
 1. [What is Maven?](#what-is-maven)
 2. [Why Use Maven?](#why-use-maven)
-3. [🎯 Purpose of Maven](#-purpose-of-maven)
-4. [✅ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
-5. [✅ Installation Check](#installation-check)
-6. [🌟 Key Features of Maven](#-key-features-of-maven)
-7. [🧱 A Build Lifecycle is Made Up of Phases](#a-build-lifecycle-is-made-up-of-phases)
-8. [🔌 Commonly Used Plugins](#commonly-used-plugins)
-9. [📦 Repositories in Maven](#-repositories-in-maven)
-10. [🛠️ Troubleshooting](#️-trobleshooting)
-11. [📧 Contact Information](#-contact-information)
-12. [📚 Reference](#-reference)
+3. [ Purpose of Maven](#-purpose-of-maven)
+4. [ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
+5. [ Installation Check](#installation-check)
+6. [ Key Features of Maven](#-key-features-of-maven)
+7. [ A Build Lifecycle is Made Up of Phases](#a-build-lifecycle-is-made-up-of-phases)
+8. [ Commonly Used Plugins](#commonly-used-plugins)
+9. [ Repositories in Maven](#-repositories-in-maven)
+10. [ Troubleshooting](#️-trobleshooting)
+11. [ Contact Information](#-contact-information)
+12. [ Reference](#-reference)
 
 
 
