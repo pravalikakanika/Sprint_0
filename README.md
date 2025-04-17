@@ -24,7 +24,7 @@
   - [Ensures Reproducible Builds with poetry.lock](#ensures-reproducible-builds-with-poetrylock)
   - [Simplifies Virtual Environment Handling](#simplifies-virtual-environment-handling)
 
-- [✅ Purpose of Using Poetry](#✅-purpose-of-using-poetry)
+- [Purpose of Using Poetry](#purpose-of-using-poetry)
 
 - [✅ Prerequisites](#prerequisites)
 
