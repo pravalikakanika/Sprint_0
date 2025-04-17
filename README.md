@@ -11,18 +11,11 @@
 - [📖 What is Poetry?](#what-is-poetry)
 
 - [💡 Its Role in Modern Python Project Management](#-its-role-in-modern-python-project-management)
-  - [Dependency Management](#dependency-management)
-  - [Virtual Environment Handling](#virtual-environment-handling)
-  - [Project Initialization](#project-initialization)
-  - [Packaging and Publishing](#packaging-and-publishing)
-  - [Versioning and Release Management](#versioning-and-release-management)
 
-- [🔁 Replaces Traditional Tools Like](#-replaces-traditional-tools-like)
+
 
 - [🔧 Why Use Poetry?](#why-use-poetry)
-  - [Avoids Manually Creating requirements.txt, setup.py, etc.](#avoids-manually-creating-requirementstxt-setuppy-etc)
-  - [Ensures Reproducible Builds with poetry.lock](#ensures-reproducible-builds-with-poetrylock)
-  - [Simplifies Virtual Environment Handling](#simplifies-virtual-environment-handling)
+  
 
 - [Purpose of Using Poetry](#purpose-of-using-poetry)
 
@@ -33,16 +26,9 @@
 - [✨ Key Features of Poetry](#-key-features-of-poetry)
 
 - [🛠️ Installation Guide](#installation-guide)
-  - [Install via curl](#install-via-curl)
-  - [Add Poetry to PATH](#add-poetry-to-path)
-  - [Check Poetry Version](#check-poetry-version)
-
+  
 - [📘 Basic Usage](#-basic-usage)
-  - [Create a New Project](#create-a-new-project)
-  - [Add, Install, and Remove Dependencies](#add-install-and-remove-dependencies)
-  - [Using the Virtual Environment](#using-the-virtual-environment)
-  - [Build the Package](#build-the-package)
-
+  
 - [🔍 Comparison: Poetry vs pip + venv](#-comparison-poetry-vs-pip--venv)
 
 - [🧠 Best Practices](#-best-practices)
