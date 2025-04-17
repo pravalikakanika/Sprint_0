@@ -7,7 +7,7 @@
 
 | Author          | Created On  | Version   | Last Updated By | Last Edited On |
 |-----------------|-------------|-----------|------------------|----------------|
-| Pravalika  | 2025-04-14  | Version 1 |Pravalika | 2025-04-16     |
+| Pravalika  | 2025-04-14  | Version 1 |Pravalika | 2025-04-17     |
 
 
 ## 🗂️ Table of Contents
@@ -30,7 +30,7 @@
 
 
 
-## 🗂️ Purpose
+##  Purpose
 
 This document outlines the procedures for:
 
