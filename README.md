@@ -7,8 +7,8 @@
 
 ## 📚 Table of Contents
 
-1. [What is Maven?](#-what-is-maven)
-2. [Why Use Maven?](#-why-use-maven)
+1. [What is Maven?](#what-is-maven)
+2. [Why Use Maven?](#why-use-maven)
 3. [🎯 Purpose of Maven](#-purpose-of-maven)
 4. [✅ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
 5. [✅ Installation Check](#-installation-check)
@@ -87,7 +87,7 @@ Before you start using Maven, ensure the following requirements are met:
 
 
 
-## ✅Installation Check
+## Installation Check
 
 To verify that Maven is correctly installed, run the following command:
 
