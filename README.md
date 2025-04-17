@@ -256,7 +256,7 @@ If you see the version number, it means Poetry is installed and ready to use!
 
 
 
-## Basic Usage
+# 📘 Basic Usage
 
 Once Poetry is installed and working, you can start using it to manage your Python projects with a clean and modern workflow.
 
