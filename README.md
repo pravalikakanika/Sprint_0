@@ -26,7 +26,9 @@
 
 - [Purpose of Using Poetry](#purpose-of-using-poetry)
 
-- [✅ Prerequisites](#prerequisites)
+
+- [Prerequisites](#prerequisites)
+
 
 - [✨ Key Features of Poetry](#-key-features-of-poetry)
 
