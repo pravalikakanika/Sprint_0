@@ -14,7 +14,7 @@
 
 ## Table of Contents
 
-- [Purpose](#purpose)
+- [Purpose](#️purpose)
 - [Scope](#scope)
 - [Prerequisites](#prerequisites)
 - [Procedure](#procedure)
@@ -24,6 +24,7 @@
 - [Troubleshooting](#troubleshooting)
 - [Contact Information](#contact-information)
 - [Reference](#reference)
+
 
 
 
