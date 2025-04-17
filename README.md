@@ -12,18 +12,19 @@
 
 # 📘 **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Purpose](#purpose)
-- [Scope](#scope)
-- [Prerequisites](#prerequisites)
-- [Procedure](#procedure)
-  - [Step-1-check-disk-usage](#step-1-check-disk-usage)
-  - [Step-2-check-mount-points](#step-2-check-mount-points)
-  - [Step-3-configure-ulimit-settings](#step-3-configure-ulimit-settings)
-- [Troubleshooting](#troubleshooting)
-- [Contact Information](#contact-information)
-- [Reference](#reference)
+- [🗂️ Purpose](#purpose)
+- [🔍 Scope](#scope)
+- [🧑‍💻 Prerequisites](#prerequisites)
+- [📋 Procedure](#procedure)
+  - [✅ Step 1: Check Disk Usage](#step-1-check-disk-usage)
+  - [✅ Step 2: Check Mount Points](#step-2-check-mount-points)
+  - [✅ Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings)
+- [🧯 Troubleshooting](#troubleshooting)
+- [📧 Contact Information](#contact-information)
+- [📚 Reference](#reference)
+
 
 
 
