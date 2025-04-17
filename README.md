@@ -8,7 +8,7 @@
 
 ## 📚 Table of Contents
 
-- [📖 What is Poetry?](#-what-is-poetry)
+- [📖 What is Poetry?](#what-is-poetry)
 
 - [💡 Its Role in Modern Python Project Management](#-its-role-in-modern-python-project-management)
   - [Dependency Management](#dependency-management)
