@@ -12,17 +12,26 @@
 
 # 📘 **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
 
-## Table of Contents
 - [Purpose](#purpose) 📂
 - [Scope](#scope) 🔍
 - [Prerequisites](#prerequisites) 🧑‍💻
 - [Procedure](#procedure) 📋
-  - [Step 1 Check Disk Usage](#step-1-check-disk-usage) ✅
-  - [Step 2 Check Mount Points](#step-2-check-mount-points) ✅
-  - [Step 3 Configure ulimit Settings](#step-3-configure-ulimit-settings) ✅
+  - [Step 1: Check Disk Usage](#step-1-check-disk-usage) ✅
+    - [View Disk Usage Summary](#view-disk-usage-summary)
+    - [Check inode usage](#check-inode-usage)
+    - [Check detailed disk usage of directories](#check-detailed-disk-usage-of-directories)
+  - [Step 2: Check Mount Points](#step-2-check-mount-points) ✅
+    - [View all mounted filesystems](#view-all-mounted-filesystems)
+    - [Check the /etc/fstab file](#check-the-etc-fstab-file)
+    - [Verify the mount point](#verify-the-mount-point)
+  - [Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings) ✅
+    - [View the current ulimit settings for the user](#view-the-current-ulimit-settings-for-the-user)
+    - [Set or modify ulimit for the current session](#set-or-modify-ulimit-for-the-current-session)
+    - [Make permanent changes to ulimit](#make-permanent-changes-to-ulimit)
 - [Troubleshooting](#troubleshooting) 🧯
 - [Contact Information](#contact-information) 📧
 - [Reference](#reference) 📚
+
 
 
 
