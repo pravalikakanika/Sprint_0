@@ -14,7 +14,6 @@
 
 ## Table of Contents
 
-- [Document Info](#document-info)
 - [Purpose](#purpose)
 - [Scope](#scope)
 - [Prerequisites](#prerequisites)
