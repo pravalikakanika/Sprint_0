@@ -5,20 +5,19 @@
 |-----------------|-------------|-----------|------------------|----------------|
 | Pravalika   | 2025-04-17  | Version 1 |Pravalika | 2025-04-17     |
 
-# Table of Contents
-
 1. [What is Poetry?](#what-is-poetry)
 2. [Why Use Poetry?](#why-use-poetry)
-3. [Purpose](#purpose-of-using-poetry)
+3. [Purpose of Using Poetry](#purpose-of-using-poetry)
 4. [Prerequisites](#prerequisites)
-5. [Key Features](#key-features)
+5. [Key Features](#key-features-of-poetry)
 6. [Installation Guide](#installation-guide)
-7. [Basic Usage Examples](#basic-usage-examples)
+7. [Basic Usage](#basic-usage)
 8. [Comparison: Poetry vs pip + venv](#comparison-poetry-vs-pip--venv)
 9. [Best Practices](#best-practices)
 10. [Troubleshooting](#troubleshooting)
-11. [References](#references)
+11. [References](#reference)
 12. [Contact Information](#contact-information)
+
 
 
 
