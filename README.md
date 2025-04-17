@@ -10,27 +10,46 @@
 | Pravalika  | 2025-04-14  | Version 1 |Pravalika | 2025-04-16     |
 
 
-# Table of Contents
+## 🗂️ Table of Contents
 
-1. [Purpose](#purpose)
-2. [Scope](#scope)
-3. [Prerequisites](#prerequisites)
-4. [Procedure](#procedure)
-   - [Step 1: Check Disk Usage](#step-1-check-disk-usage)
-     - [A. View Disk Usage Summary](#a-view-disk-usage-summary)
-     - [B. Check Inode Usage](#b-check-inode-usage)
-     - [C. Check Detailed Disk Usage of Directories](#c-check-detailed-disk-usage-of-directories)
-   - [Step 2: Check Mount Points](#step-2-check-mount-points)
-     - [A. View All Mounted Filesystems](#a-view-all-mounted-filesystems)
-     - [B. Check the /etc/fstab File](#b-check-the-etc-fstab-file)
-     - [C. Verify the Mount Point](#c-verify-the-mount-point)
-   - [Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings)
-     - [A. View the Current ulimit Settings](#a-view-the-current-ulimit-settings)
-     - [B. Set or Modify ulimit for the Current Session](#b-set-or-modify-ulimit-for-the-current-session)
-     - [C. Make Permanent Changes to ulimit](#c-make-permanent-changes-to-ulimit)
-5. [Troubleshooting](#troubleshooting)
-6. [Contact Information](#contact-information)
+1. [Purpose](#purpose)  
+   1.1 [Monitoring Disk Usage](#monitoring-disk-usage)  
+   1.2 [Verifying Mount Points](#verifying-mount-points)  
+   1.3 [Configuring ulimit Settings](#configuring-ulimit-settings)  
+
+2. [Scope](#scope)  
+
+3. [Prerequisites](#prerequisites)  
+   3.1 [Permissions](#permissions)  
+   3.2 [Backup](#backup)  
+   3.3 [Installed Tools](#installed-tools)  
+   3.4 [System Access](#system-access)  
+   3.5 [Knowledge](#knowledge)  
+
+4. [Procedure](#procedure)  
+   4.1 [Step 1: Check Disk Usage](#step-1-check-disk-usage)  
+      4.1.1 [View Disk Usage Summary](#view-disk-usage-summary)  
+      4.1.2 [Check Inode Usage](#check-inode-usage)  
+      4.1.3 [Check Detailed Disk Usage of Directories](#check-detailed-disk-usage-of-directories)  
+   4.2 [Step 2: Check Mount Points](#step-2-check-mount-points)  
+      4.2.1 [View All Mounted Filesystems](#view-all-mounted-filesystems)  
+      4.2.2 [Check the /etc/fstab File](#check-the-etc-fstab-file)  
+      4.2.3 [Verify the Mount Point](#verify-the-mount-point)  
+   4.3 [Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings)  
+      4.3.1 [View Current ulimit Settings](#view-current-ulimit-settings)  
+      4.3.2 [Set or Modify ulimit for the Current Session](#set-or-modify-ulimit-for-the-current-session)  
+      4.3.3 [Make Permanent Changes to ulimit](#make-permanent-changes-to-ulimit)  
+
+5. [Troubleshooting](#troubleshooting)  
+
+6. [Contact Information](#contact-information)  
+
 7. [Reference](#reference)
+
+
+
+
+
 
 
 
