@@ -19,7 +19,7 @@
 
 - [🔁 Replaces Traditional Tools Like](#-replaces-traditional-tools-like)
 
-- [🔧 Why Use Poetry?](#-why-use-poetry)
+- [🔧 Why Use Poetry?](#why-use-poetry)
   - [Avoids Manually Creating requirements.txt, setup.py, etc.](#avoids-manually-creating-requirementstxt-setuppy-etc)
   - [Ensures Reproducible Builds with poetry.lock](#ensures-reproducible-builds-with-poetrylock)
   - [Simplifies Virtual Environment Handling](#simplifies-virtual-environment-handling)
