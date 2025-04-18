@@ -142,6 +142,6 @@ To show current vs latest versions.
 
 | **Documentation Link**                                             | **Description**                                                                                   |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Install React.js - Fullstack Tutorials](https://github.com/fullstacktutorials/install-reactjs) | Documentation followed from this link to create a flexible React setup script. It covers React installation and management through different versions and configurations. |
+| [Install React.js - Fullstack Tutorials](https://github.com/fullstacktutorials/install-reactjs) | Documentation followed from this link |
 
 
