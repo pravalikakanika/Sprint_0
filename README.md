@@ -11,6 +11,29 @@
 # 📘 Ansible Static Inventory Documentation
 
 
+
+## 📑 Table of Contents
+
+- [📁 Where to Place Inventory Files](#where-to-place-inventory-files)
+- [📌 Overview](#overview)
+- [🛠️ Key Steps to Follow](#keysteps-to-follow)
+  - [1. Create the Inventory File](#1-create-the-inventory-file)
+  - [2. Understanding the Structure](#2-understanding-the-structure)
+    - [Groups](#groups)
+    - [Server Entries](#server-entries)
+    - [Group Variables](#group-variables)
+    - [Parent Group](#parent-group)
+  - [3. Special Settings for Ansible](#3-special-settings-for-ansible)
+    - [ansible_user](#ansible_user)
+    - [ansible_ssh_private_key_file](#ansible_ssh_private_key_file)
+    - [ansible_ssh_common_args](#ansible_ssh_common_args)
+  - [4. Run Ansible Commands](#4-run-ansible-commands)
+- [⚙️ ansible.cfg Configuration](#️-ansiblecfg-configuration)
+- [📧 Contact Information](#contact-information)
+- [📚 Documentation Reference](#documentation-reference)
+
+
+
 # 📁 Where to Place Inventory Files
 
 - **Default**: `/etc/ansible/hosts` 🗂️
@@ -123,6 +146,21 @@ inventory = ./inventory/inventory.ini
 remote_user = ubuntu
 host_key_checking = False
 ```
+
+
+# 📧 Contact Information
+
+
+| Name       | Email Address                |
+|------------|------------------------------|
+| Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
+
+## 📚 Documentation Reference
+
+| **Link** | **Description** |
+|----------|-----------------|
+| [Ansible Inventory Guide](https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html) | Official documentation followed for setting up and organizing static inventories in Ansible. |
+
 
 
 
