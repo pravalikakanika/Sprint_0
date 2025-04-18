@@ -28,9 +28,6 @@ The `react-setup.sh` script is designed to:
 
 
 
-
-
-
 ## 🧰 Prerequisite Tools
 
 Before running or setting up the project, make sure you have the following tools installed:
@@ -98,5 +95,53 @@ npx react --version 2>/dev/null || echo "Use 'npm list react' to see version"
 # Final project structure
 echo "Project '$APP_NAME' is ready with React@$REACT_VERSION."
 ```
+
+# 🛠️ How to Use
+
+## 1. Save the script as install-react.sh
+
+2. Make it executable:
+
+```bash
+chmod +x install-react.sh
+```
+
+3. Run it:
+
+ ```bash
+./install-react.sh my-react-app 17.0.2
+./install-react.sh my-latest-app latest
+ ```
+
+## 🔁 Upgrade React
+
+If the app already exists, this script will upgrade `react` and `react-dom` to the specified version using:
+
+```bash
+npm install react@18.2.0 react-dom@18.2.0
+
+```
+
+```bash
+npm outdated react react-dom
+```
+
+To show current vs latest versions.
+
+
+## 📧 Contact Information
+
+
+| Name       | Email Address                |
+|------------|------------------------------|
+| Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
+
+
+## 📚 Reference
+
+
+| **Documentation Link**                                             | **Description**                                                                                   |
+|--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [Install React.js - Fullstack Tutorials](https://github.com/fullstacktutorials/install-reactjs) | Documentation followed from this link to create a flexible React setup script. It covers React installation and management through different versions and configurations. |
 
 
