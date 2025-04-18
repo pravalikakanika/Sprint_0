@@ -1,189 +1,272 @@
 
 
-![image](https://github.com/user-attachments/assets/52505250-e374-4634-b4e1-133c9b293eb1)
+![image](https://github.com/user-attachments/assets/6f4bdb08-3e3b-4b6f-a260-756490cfa808)
 
 
 ## 📂 Document Info
 
-| Author          | Created On  | Version   | Last Updated By | Last Edited On |
-|-----------------|-------------|-----------|------------------|----------------|
-| Pravalika  | 2025-04-14  | Version 1 |Pravalika | 2025-04-17     |
+| Author   | Created on | Version  | Last Edited On | Internal-Reviewer | L0-Reviewer  | L1-Reviewer | L2-Reviewer  | 
+|----------|------------|----------|----------------|-------------------|--------------|-------------|--------------|
+| kanika  | 18-04-25   | version 2| 18-04-25       | priyanshu     | priyanka Balidkar| Rishabh sharma | Piyush upadyay |
 
 
-## 🗂️ Table of Contents
+# Table of Contents
 
-1. [Purpose](#purpose)  
-  
-2. [🔍 Scope](#-scope)  
-3. [🧑‍💻 Prerequisites](#-prerequisites)  
-4. [📋 Procedure](#-procedure)  
-   - [✅ Step 1: Check Disk Usage](#-step-1-check-disk-usage)  
-   - [✅ Step 2: Check Mount Points](#-step-2-check-mount-points)  
-   - [✅ Step 3: Configure ulimit Settings](#-step-3-configure-ulimit-settings)  
-5. [🧯 Troubleshooting](#-troubleshooting)  
-6. [📧 Contact Information](#-contact-information)  
-7. [📚 Reference](#-reference)  
-
-
-
-
-
-
-
-##  Purpose
-
-This document outlines the procedures for:
-
-- **Monitoring Disk Usage:** Ensure sufficient disk space is available to prevent system slowdowns due to excessive disk consumption.
-- **Verifying Mount Points:** Confirm that all filesystem mount points are correctly configured and accessible.
-- **Configuring ulimit Settings:** Set resource limits for users and processes to optimize system performance and avoid resource exhaustion.
-
-
-## 🔍 Scope
-
-
-This SOP applies to all system administrators responsible for maintaining disk usage, mount point configurations, and resource limits on [list of systems or servers].
-
-
-
-## 🧑‍💻 Prerequisites
-
-Before proceeding with this SOP, the following prerequisites must be met:
-
-- **Permissions:** The user must have administrative (root or sudo) access to the system.
-- **Backup:** Backup critical system files before making any changes.
-- **Installed Tools:** Ensure the system has the necessary utilities installed (`df`, `du`, `mount`, `ulimit`).
-- **System Access:** Access to the system either via SSH or directly (local terminal).
-- **Knowledge:** Basic understanding of the Linux filesystem, mount points, and resource limits.
+1. [📂 Document Info](#-document-info)
+2. [What is Ansible? 🤔](#what-is-ansible-)
+3. [Overview](#overview)
+4. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
+    1. [Tasks](#tasks)
+    2. [Handlers](#handlers)
+    3. [Variables](#variables)
+    4. [Files](#files)
+    5. [Templates](#templates)
+    6. [Defaults](#defaults)
+    7. [Meta](#meta)
+5. [Why Use Ansible Roles? 🚀](#why-use-ansible-roles-)
+    1. [Modularity 🧩](#modularity-)
+    2. [Reusability 🔄](#reusability-)
+    3. [Shareability 🌍](#shareability-)
+    4. [Maintainability 🛠️](#maintainability-)
+    5. [Consistency 🔄](#consistency-)
+6. [Purpose of Ansible Roles 🎯](#purpose-of-ansible-roles-)
+7. [Prerequisites for Using Ansible Roles ⚙️](#prerequisites-for-using-ansible-roles-)
+    1. [Basic Knowledge of Ansible 📚](#basic-knowledge-of-ansible-)
+    2. [Ansible Installed 🔧](#ansible-installed-)
+    3. [Directory Structure Knowledge 📂](#directory-structure-knowledge-)
+    4. [A Working Inventory 📜](#a-working-inventory-)
+8. [Features of Ansible Roles ⭐](#features-of-ansible-roles-)
+    1. [Encapsulation 🔒](#encapsulation-)
+    2. [Modularization 🔧](#modularization-)
+    3. [Idempotency 🔄](#idempotency-)
+    4. [Shareable 🌍](#shareable-)
+    5. [Organized Playbooks 📚](#organized-playbooks-)
+    6. [Testable 🧪](#testable-)
+9. [📧 Contact Information](#-contact-information)
+10. [📚 Reference](#-reference)
 
 
-## 📋 Procedure
 
-### ✅ Step 1: Check Disk Usage
+
+# What is Ansible? 🤔
+
+Ansible is an open-source automation platform that simplifies the management of servers, software deployment, and configuration management. It enables you to automate tasks like installing packages, configuring services, and orchestrating complex workflows, all while using simple, human-readable YAML files. 🌐🚀
+
+## Overview
+
+An **Ansible Role** is a way to structure and organize your automation tasks in a reusable and modular way. Roles break down complex configurations into smaller, manageable components, making it easier to maintain, reuse, and share across different playbooks or projects.
+
+This role contains all the necessary tasks, variables, templates, and files to automate the configuration of <specific software/service>.
+
+## Key Components of an Ansible Role
+
+### 1. **Tasks**
+Tasks are the core actions that the role will perform, such as installing software, configuring services, or applying system settings. Tasks are executed sequentially in the order they are defined.
+
+### 2. **Handlers**
+Handlers are special tasks that are triggered by notifications from other tasks. For example, you might notify a handler to restart a service if its configuration file was changed by a task.
+
+### 3. **Variables**
+Variables are used to customize the role's behavior. They can be defined within the role itself or passed from a playbook or inventory. These allow the role to be flexible and adaptable to different environments.
+
+### 4. **Files**
+The files directory contains any static files that need to be copied or deployed to the target system. These might include configuration files, scripts, or other assets required by the role.
+
+### 5. **Templates**
+Templates are Jinja2 templates used to dynamically generate configuration files or other resources based on variables. These allow you to customize the content of files before deploying them to the system.
+
+### 6. **Defaults**
+The defaults directory contains the default values for role variables. These values can be overridden by the playbook or inventory. Default values are used unless explicitly changed.
+
+### 7. **Meta**
+The meta directory contains metadata about the role. This may include information such as role dependencies, platform-specific settings, or author information. This helps in understanding the context and requirements of the role.
+
+
+
+# Why Use Ansible Roles? 🚀
+
+### 1. **Modularity** 🧩  
+**Why it matters:**
+
+ When working on large automation tasks, it can be easy to end up with a huge, monolithic playbook that is difficult to manage and understand. Roles allow you to split those large tasks into smaller, logical units, making your automation more manageable.
+
+**Example:**
+
+ You could create separate roles for tasks like `installing_nginx`, `configuring_firewall`, and `deploying_application`, which can then be plugged into any playbook without creating a tangled mess.
 
 ---
 
-#### A. View Disk Usage Summary
+### 2. **Reusability** 🔄  
+**Why it matters:** 
 
-Run the `df` command to check available and used disk space:
+Once you create a role for a specific task, you can reuse it across different projects or even in different teams. This reduces the need to duplicate work and helps ensure consistency across different environments.
+
+**Example:** 
+
+If you create a role for setting up a MySQL database, you can use it across multiple playbooks for different projects or teams, saving time and effort.
+
+---
+
+### 3. **Shareability** 🌍  
+**Why it matters:** 
+
+The Ansible community and internal teams can benefit from shared roles, making it easier to standardize practices and collaborate. Ansible Galaxy is a popular platform where you can find roles created by others, allowing you to avoid reinventing the wheel.
+
+**Example:**
+
+ If a team has created a great role for setting up monitoring tools (like Prometheus or Grafana), they can share it on Ansible Galaxy or within the organization, so others can quickly implement it without building it from scratch.
+
+---
+
+### 4. **Maintainability** 🛠️  
+
+**Why it matters:** 
+
+As your automation grows, keeping everything organized and well-structured becomes crucial. Roles force a standard structure and organization, which helps with scaling your automation efforts. When you need to update or fix something, it's easier to do so in a specific role rather than hunting through a massive playbook.
+
+**Example:** 
+
+If you need to update how a web server is configured, you can go directly to the `nginx` role and make the changes there, rather than searching through a large playbook with hundreds of tasks.
+
+---
+
+### 5. **Consistency** 🔄 
+
+ 
+**Why it matters:** 
+
+Roles provide a consistent way to organize and manage tasks. This is especially important when working in environments that require repeated setups or configurations, or when you need to maintain the same configuration across multiple environments (development, staging, production).
+
+**Example:** 
+
+By using roles, you ensure that every time a web server is configured, it's done the same way, whether you're doing it on a local dev server or a production server, ensuring consistency across environments.
+
+
+# Purpose of Ansible Roles 🎯
+
+The main purpose of Ansible Roles is to organize your automation tasks into self-contained units that are easy to manage, reuse, and share. They provide a clean way to package logic related to a specific task, such as setting up a web server, installing software, or configuring a firewall.
+
+
+# Prerequisites for Using Ansible Roles ⚙️
+
+Before creating or using Ansible Roles, ensure you have the following prerequisites:
+
+### 1. **Basic Knowledge of Ansible** 📚
+**What it is:** You should be familiar with the basics of Ansible playbooks and tasks. This includes knowing how to define hosts, create tasks, and understand how Ansible's YAML syntax works.
+
+**Why it matters:** Understanding the basic structure of Ansible playbooks is crucial because roles are built on top of this foundation, and they depend on your ability to write tasks and organize them effectively.
+
+---
+
+### 2. **Ansible Installed** 🔧
+**What it is:** Ensure Ansible is installed on your machine. You can install it using a package manager like `apt`, `yum`, `brew`, or via `pip` for Python.
+
+**Why it matters:** Ansible needs to be available for running your playbooks and roles. You can verify Ansible installation by running:
 
 ```bash
-df -h
-```  
-**Expected Output:**
+ansible --version
+```
 
+### 3. **Directory Structure Knowledge** 📂  
+**What it is:** Roles have a specific directory structure that needs to be followed to function properly. This includes directories for tasks, variables, templates, files, handlers, and more.
 
+**Why it matters:** Understanding the structure of a role helps you organize your tasks and files correctly, ensuring that Ansible can locate and apply them in the right order.
 
-```bash
+**Example Role Directory Structure:**
 
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        50G   20G   28G  42%  /
-/dev/sdb1       100G   70G   25G  75%  /mnt/data
-
-```  
-
-#### B.Check inode usage (important for filesystem integrity):
-
-```bash
-df -i
-
-``` 
-**Expected Output:**
-
-```bash
-Filesystem      Inodes   IUsed   IFree     IUse% Mounted on
-/dev/sda1       3276800  500000  2776800   15%   /
-
-``` 
-
-#### C. Check detailed disk usage of directories:
-
-```bash
-du -sh /path/to/directory
+```plaintext
+my_role/
+├── defaults/
+│   └── main.yml      # Default variables for the role
+├── files/
+│   └── my_config.conf # Files to be copied to the target system
+├── handlers/
+│   └── main.yml      # Handlers for the role (e.g., service restart)
+├── meta/
+│   └── main.yml      # Role dependencies and metadata
+├── tasks/
+│   └── main.yml      # Main tasks of the role
+├── templates/
+│   └── config.j2     # Jinja2 templates
+├── vars/
+│   └── main.yml      # Role-specific variables
 
 ```
 
-### ✅ Step 2: Check Mount Points
+### 4. **A Working Inventory** 📜  
+**What it is:** You must have an inventory of hosts that your playbooks will target. This can be a simple file listing IP addresses or hostnames of the machines you want to configure.
 
-### A.View all mounted filesystems:
+**Why it matters:** The inventory defines the group of machines that will be configured by the playbooks and roles. Without a valid inventory, Ansible won’t know where to apply the automation.
 
-Run the mount command to see the mounted filesystems and their mount points:
+**Example Inventory File (inventory.ini):**
 
-```bash
-mount
+```ini
+[web_servers]
+web1.example.com
+web2.example.com
+
+[db_servers]
+db1.example.com
+db2.example.com
 
 ```
 
-### B. Check the /etc/fstab file to confirm the configuration of mount points:
+# Features of Ansible Roles ⭐
 
-```bash
-cat /etc/fstab
+Ansible Roles come with several powerful features that enhance your automation workflows. Here's an overview of the key features of Ansible Roles:
 
-```
+### 1. **Encapsulation** 🔒  
+**What it is:** Roles encapsulate automation logic into a reusable, isolated unit. This means that the logic within a role is self-contained and doesn't interfere with other tasks or playbooks.
 
-### c. Verify the mount point:
+**Why it matters:** Encapsulation allows you to manage complex automation tasks in a modular and structured way, making it easier to develop, update, and debug automation code.
 
-To verify if a specific mount point is active:
+---
 
-```bash
-df -h /mnt/data
-```
+### 2. **Modularization** 🔧  
+**What it is:** Roles group related tasks, files, templates, and handlers logically, keeping everything organized within a dedicated role structure.
 
-### ✅ Step 3: Configure ulimit Settings
-ulimit controls limits on user and process resources (file descriptors, memory, processes, etc.)
+**Why it matters:** By modularizing your automation, you can keep your playbooks neat and easy to navigate. It also promotes the reusability of common tasks, reducing redundancy and simplifying maintenance.
 
-### A. View the current ulimit settings for the user:
+**Example:** A `web_server` role could contain all tasks, templates, and files necessary to configure a web server, such as installing packages, setting up configuration files, and starting services.
 
-```bash
-ulimit -a
-```
+---
 
-### B. Set or modify ulimit for the current session:
+### 3. **Idempotency** 🔄  
+**What it is:** Ansible tasks within roles are idempotent, meaning they can be safely run multiple times without causing unintended side effects or errors.
 
-- **For example, to set the maximum number of open files to 5000:**
+**Why it matters:** Idempotency is crucial for ensuring that automation tasks can be executed repeatedly, such as in CI/CD pipelines or during system configuration, without breaking the system or changing the state unexpectedly.
 
-```bash
-ulimit -n 5000
-```
+**Example:** Running a role to install a package multiple times won't reinstall the package if it’s already present and at the correct version.
 
+---
 
-### c. Make permanent changes to ulimit:
+### 4. **Shareable** 🌍  
+**What it is:** Roles can be shared with others on platforms like Ansible Galaxy, allowing them to reuse your role in their own automation workflows.
 
-- **Edit the /etc/security/limits.conf file:**
+**Why it matters:** Sharing roles promotes collaboration and standardization, helping teams or the community avoid reinventing the wheel.
 
-```bash
-sudo nano /etc/security/limits.conf
-```
+**Example:** You can upload your roles to Ansible Galaxy, where others can download and integrate them into their own projects.
 
-   - **Add the following lines to set the limits for a user or all users:**
+---
 
-markdown
+### 5. **Organized Playbooks** 📚  
+**What it is:** Roles help structure and organize playbooks, keeping them clean, readable, and understandable.
 
-*               soft    nofile          5000
-*               hard    nofile          10000
-Apply changes by logging out and back in or restarting the system.
+**Why it matters:** As playbooks grow in complexity, roles help maintain clarity and focus. Each role focuses on a specific task or set of related tasks, which improves playbook readability and ease of use.
 
+**Example:** Instead of writing a long, monolithic playbook with hundreds of lines, you can split the tasks into multiple roles (e.g., `web_server`, `database`, `firewall`), making the playbook much easier to manage.
 
+---
 
+### 6. **Testable** 🧪  
+**What it is:** You can include tests within roles to ensure that they work as expected. Testing can be done using frameworks like Testinfra or Molecule.
 
+**Why it matters:** Testing roles ensures that your automation is reliable and works consistently across different environments. This is particularly useful in large-scale or production environments, where you want to ensure your roles are always performing as expected.
 
-
-
-## 🧯 Troubleshooting
+**Example:** You could write tests that verify a service is running, a package is installed, or a file has the correct contents, ensuring that your role works as intended after each change.
 
 
-| Issue                          | Solution                                                              |
-|-------------------------------|-----------------------------------------------------------------------|
-| Changes to ulimit not applying | Ensure PAM limits are enabled and shell is restarted                  |
-| Systemd service limits ignored | Set limits in unit file and reload systemd                            |
-| Disk usage high                | Use `du -sh *` to identify large directories                          |
-| Mount point not found          | Check `/etc/fstab` and try remounting with `mount -a`                 |
-
-
-
-
-
-## 📧 Contact Information
+# 📧 Contact Information
 
 
 | Name       | Email Address                |
@@ -191,41 +274,12 @@ Apply changes by logging out and back in or restarting the system.
 | Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
 
 
+
 ## 📚 Reference
 
-| Link                                                                 | Description                              |
-|----------------------------------------------------------------------|------------------------------------------|
-| [https://phoenixnap.com/kb/ulimit-linux-command](https://phoenixnap.com/kb/ulimit-linux-command) | Documentation followed for this link     |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| **Link**                                                                 | **Description**                                      |
+|--------------------------------------------------------------------------|------------------------------------------------------|
+| [What is an Ansible Role? - Red Hat](https://www.redhat.com/en/topics/automation/what-is-an-ansible-role) | Documentation followed for this link  |
 
 
 
