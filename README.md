@@ -1,237 +1,128 @@
-
-
-![image](https://github.com/user-attachments/assets/52505250-e374-4634-b4e1-133c9b293eb1)
+![image](https://github.com/user-attachments/assets/7d932f7f-d698-4e6d-81eb-8a1bed572d92)
 
 
 ## 📂 Document Info
 
-| Author          | Created On  | Version   | Last Updated By | Last Edited On |
-|-----------------|-------------|-----------|------------------|----------------|
-| Pravalika  | 2025-04-14  | Version 1 |Pravalika | 2025-04-17     |
+| Author   | Created on | Version  | Last Edited On | Internal-Reviewer | L0-Reviewer  | L1-Reviewer | L2-Reviewer  |
+|----------|------------|----------|----------------|-------------------|--------------|-------------|--------------|
+| kanika  | 18-04-25   | version 2| 19-04-25       | priyanshu     | priyanka Balidkar| Rishabh sharma | Piyush upadyay |
 
 
-## 🗂️ Table of Contents
-
-1. [Purpose](#purpose)  
-  
-2. [🔍 Scope](#-scope)  
-3. [🧑‍💻 Prerequisites](#-prerequisites)  
-4. [📋 Procedure](#-procedure)  
-   - [✅ Step 1: Check Disk Usage](#-step-1-check-disk-usage)  
-   - [✅ Step 2: Check Mount Points](#-step-2-check-mount-points)  
-   - [✅ Step 3: Configure ulimit Settings](#-step-3-configure-ulimit-settings)  
-5. [🧯 Troubleshooting](#-troubleshooting)  
-6. [📧 Contact Information](#-contact-information)  
-7. [📚 Reference](#-reference)  
+# 📘 Ansible Static Inventory Documentation
 
 
+# 📁 Where to Place Inventory Files
+
+- **Default**: `/etc/ansible/hosts` 🗂️
+
+- **Custom Path**: You can specify a custom path using the `-i` option with Ansible commands:
+  ```bash
+  ansible -i <path> <command> ⚙️
+   ```
+
+# 📌 Overview
+
+An Ansible Inventory is a file that defines the list of hosts (servers or devices) that Ansible can manage. In a static inventory, the list is manually defined and does not change unless edited by a user. It contrasts with dynamic inventories that pull host data from external sources like cloud providers 🌐.
+
+# keysteps to follow
+
+## 1. Create the Inventory File
+Ansible uses an inventory file to define the servers you want to manage. This file can be in INI format, YAML, or JSON. For simplicity, we'll use INI format in this example.
 
 
+```ini
+## Static inventory example
 
+# Grouping servers
+[web_servers]
+web1.example.com ansible_user=ubuntu
+web2.example.com ansible_user=ubuntu
 
+[db_servers]
+db1.example.com ansible_user=centos
+db2.example.com ansible_user=centos
 
-##  Purpose
+# Defining a group with IP addresses
+[api_servers]
+10.0.0.1 ansible_user=admin
+10.0.0.2 ansible_user=admin
 
-This document outlines the procedures for:
+# If needed, group all servers under a default group
+[all_servers:children]
+web_servers
+db_servers
+api_servers
 
-- **Monitoring Disk Usage:** Ensure sufficient disk space is available to prevent system slowdowns due to excessive disk consumption.
-- **Verifying Mount Points:** Confirm that all filesystem mount points are correctly configured and accessible.
-- **Configuring ulimit Settings:** Set resource limits for users and processes to optimize system performance and avoid resource exhaustion.
+# Variables specific to a group
+[web_servers:vars]
+http_port=80
+max_clients=200
 
+[db_servers:vars]
+db_port=3306
+db_user=admin
 
-## 🔍 Scope
-
-
-This SOP applies to all system administrators responsible for maintaining disk usage, mount point configurations, and resource limits on [list of systems or servers].
-
-
-
-## 🧑‍💻 Prerequisites
-
-Before proceeding with this SOP, the following prerequisites must be met:
-
-- **Permissions:** The user must have administrative (root or sudo) access to the system.
-- **Backup:** Backup critical system files before making any changes.
-- **Installed Tools:** Ensure the system has the necessary utilities installed (`df`, `du`, `mount`, `ulimit`).
-- **System Access:** Access to the system either via SSH or directly (local terminal).
-- **Knowledge:** Basic understanding of the Linux filesystem, mount points, and resource limits.
-
-
-## 📋 Procedure
-
-### ✅ Step 1: Check Disk Usage
-
----
-
-#### A. View Disk Usage Summary
-
-Run the `df` command to check available and used disk space:
-
-```bash
-df -h
-```  
-**Expected Output:**
-
-
-
-```bash
-
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        50G   20G   28G  42%  /
-/dev/sdb1       100G   70G   25G  75%  /mnt/data
-
-```  
-
-#### B.Check inode usage (important for filesystem integrity):
-
-```bash
-df -i
-
-``` 
-**Expected Output:**
-
-```bash
-Filesystem      Inodes   IUsed   IFree     IUse% Mounted on
-/dev/sda1       3276800  500000  2776800   15%   /
-
-``` 
-
-#### C. Check detailed disk usage of directories:
-
-```bash
-du -sh /path/to/directory
-
+[api_servers:vars]
+api_port=8080
 ```
 
-### ✅ Step 2: Check Mount Points
+## 2. Understanding the Structure
 
-### A.View all mounted filesystems:
+### Groups
+- The `[web_servers]`, `[db_servers]`, and `[api_servers]` sections are groups. Servers are grouped for better organization, making it easier to manage tasks and configurations specific to each role.
 
-Run the mount command to see the mounted filesystems and their mount points:
+### Server Entries
+- Each server is listed by its hostname (e.g., `web1.example.com`) or IP address (e.g., `10.0.0.1`), followed by any group-specific variables. For example, `ansible_user` defines the SSH username used to connect to the server.
 
-```bash
-mount
+### Group Variables
+- Group-specific variables are defined under each group. These variables can configure settings particular to each server group, such as `http_port` for web servers or `db_port` for database servers.
 
-```
+### Parent Group
+- The `[all_servers:children]` group combines other groups (e.g., `web_servers`, `db_servers`, `api_servers`) under one umbrella. This is useful for applying global commands or tasks across all servers in the inventory.
 
-### B. Check the /etc/fstab file to confirm the configuration of mount points:
+## 3. Special Settings for Ansible
 
-```bash
-cat /etc/fstab
+To ensure your Ansible commands work correctly, you may need to include additional parameters like:
 
-```
+### ansible_user
+- Specifies the SSH user to log in with. This is necessary for Ansible to connect to the servers with the correct user account.
 
-### c. Verify the mount point:
+### ansible_ssh_private_key_file
+- *(Optional)* If you are using SSH keys for authentication, specify the path to the private key file to use for SSH connections.
 
-To verify if a specific mount point is active:
+### ansible_ssh_common_args
+- *(Optional)* If you need to set specific SSH options (such as disabling strict host checking), you can define them using this parameter.
 
-```bash
-df -h /mnt/data
-```
 
-### ✅ Step 3: Configure ulimit Settings
-ulimit controls limits on user and process resources (file descriptors, memory, processes, etc.)
+## 4. Run Ansible Commands
 
-### A. View the current ulimit settings for the user:
+Once your static inventory is set up, you can run Ansible commands targeting the groups you’ve defined.
 
-```bash
-ulimit -a
-```
+For example:
 
-### B. Set or modify ulimit for the current session:
-
-- **For example, to set the maximum number of open files to 5000:**
+### Running a playbook targeting web servers
 
 ```bash
-ulimit -n 5000
+# Running a playbook targeting web servers
+ansible-playbook -i inventory.ini site.yml -l web_servers
+
+# Running an ad-hoc command to check connectivity to all servers
+ansible all -i inventory.ini -m ping
+
+# Running an ad-hoc command to check connectivity to db servers
+ansible db_servers -i inventory.ini -m ping
 ```
 
+# ⚙️ ansible.cfg Configuration
 
-### c. Make permanent changes to ulimit:
+If you want Ansible to use a specific inventory file by default, configure `ansible.cfg`:
 
-- **Edit the /etc/security/limits.conf file:**
-
-```bash
-sudo nano /etc/security/limits.conf
+```ini
+[defaults]
+inventory = ./inventory/inventory.ini
+remote_user = ubuntu
+host_key_checking = False
 ```
-
-   - **Add the following lines to set the limits for a user or all users:**
-
-markdown
-
-*               soft    nofile          5000
-*               hard    nofile          10000
-Apply changes by logging out and back in or restarting the system.
-
-
-
-
-
-
-
-## 🧯 Troubleshooting
-
-
-| Issue                          | Solution                                                              |
-|-------------------------------|-----------------------------------------------------------------------|
-| Changes to ulimit not applying | Ensure PAM limits are enabled and shell is restarted                  |
-| Systemd service limits ignored | Set limits in unit file and reload systemd                            |
-| Disk usage high                | Use `du -sh *` to identify large directories                          |
-| Mount point not found          | Check `/etc/fstab` and try remounting with `mount -a`                 |
-
-
-
-
-
-## 📧 Contact Information
-
-
-| Name       | Email Address                |
-|------------|------------------------------|
-| Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
-
-
-## 📚 Reference
-
-| Link                                                                 | Description                              |
-|----------------------------------------------------------------------|------------------------------------------|
-| [https://phoenixnap.com/kb/ulimit-linux-command](https://phoenixnap.com/kb/ulimit-linux-command) | Documentation followed for this link     |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
