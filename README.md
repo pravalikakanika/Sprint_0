@@ -11,7 +11,7 @@
 
 ## 📚 Table of Contents
 
-1. [What is Maven?](#what-is-maven)
+1. [Introduction](#Introduction)
 2. [Why Use Maven?](#why-use-maven)
 3. [ Purpose of Maven](#-purpose-of-maven)
 4. [ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
