@@ -6,7 +6,6 @@
 |**April 18** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
 |**April 19** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
 
-
 ## 📚 Table of Contents
 
 - [ Introduction](#Introduction)
