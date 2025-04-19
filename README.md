@@ -14,8 +14,8 @@
 
 ## 📑 Table of Contents
 
-- [📁 Where to Place Inventory Files](#where-to-place-inventory-files)
-- [📌 Overview](#overview)
+- [Where to Place Inventory Files](#where-to-place-inventory-files)
+- [Overview](#overview)
 - [🛠️ Key Steps to Follow](#keysteps-to-follow)
   - [1. Create the Inventory File](#1-create-the-inventory-file)
   - [2. Understanding the Structure](#2-understanding-the-structure)
@@ -29,9 +29,8 @@
     - [ansible_ssh_common_args](#ansible_ssh_common_args)
   - [4. Run Ansible Commands](#4-run-ansible-commands)
 - [⚙️ ansible.cfg Configuration](#️-ansiblecfg-configuration)
-- [📧 Contact Information](#contact-information)
-- [📚 Documentation Reference](#documentation-reference)
-
+- [Contact Information](#contact-information)
+- [Documentation Reference](#documentation-reference)
 
 
 # 📁 Where to Place Inventory Files
