@@ -1,19 +1,17 @@
 ![image](https://github.com/user-attachments/assets/7d932f7f-d698-4e6d-81eb-8a1bed572d92)
 
 
-## 📂 Document Info
-
-| Author   | Created on | Version  | Last Edited On | Internal-Reviewer | L0-Reviewer  | L1-Reviewer | L2-Reviewer  |
-|----------|------------|----------|----------------|-------------------|--------------|-------------|--------------|
-| kanika  | 18-04-25   | version 2| 19-04-25       | priyanshu     | priyanka Balidkar| Rishabh sharma | Piyush upadyay |
-
+|**Date**| **Version**| **Description**| **Changed By** |
+|----------|---------|---------------|-----------------|
+|April 18 | v.1.0 | Initial Draft | Pravalika kanikarapu |
+|April 19 | v.1.1 | Updated static.md | Pravalika kanikarapu|
 
 # 📘 Ansible Static Inventory Documentation
 
 
 
 ## 📑 Table of Contents
-
+- [Introduction](#Introduction)
 - [Where to Place Inventory Files](#where-to-place-inventory-files)
 - [Overview](#overview)
 - [🛠️ Key Steps to Follow](#keysteps-to-follow)
@@ -32,10 +30,16 @@
 - [Contact Information](#contact-information)
 - [Documentation Reference](#documentation-reference)
 
+# Introduction
+
+In Ansible, an inventory is a file that lists the hosts and groups of hosts that you want to manage. It tells Ansible where to run the automation tasks. There are two main types of inventories: static and dynamic.
+
+A static inventory is the simplest and most commonly used type, especially for small or stable environments. It is a manually maintained file — usually in INI or YAML format — where you define the hostnames or IP addresses of your servers, group them logically (e.g., web_servers, db_servers), and optionally set connection variables.
+
 
 #  Where to Place Inventory Files
 
-- **Default**: `/etc/ansible/hosts` 🗂️
+- **Default**: `/etc/ansible/hosts` 🗂
 
 - **Custom Path**: You can specify a custom path using the `-i` option with Ansible commands:
   ```bash
@@ -159,7 +163,5 @@ host_key_checking = False
 | **Link** | **Description** |
 |----------|-----------------|
 | [Ansible Inventory Guide](https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html) | Official documentation followed for setting up and organizing static inventories in Ansible. |
-
-
 
 
