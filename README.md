@@ -9,7 +9,7 @@
 
 ## 📚 Table of Contents
 
-- [ What is Poetry?](#what-is-poetry)
+- [ Introduction](#Introduction)
 
 - [ Its Role in Modern Python Project Management](#-its-role-in-modern-python-project-management)
 
@@ -50,7 +50,7 @@
 
 
 
-## What is Poetry?
+# Introduction?
 
 ### 📖 Definition
 
