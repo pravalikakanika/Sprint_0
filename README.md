@@ -41,7 +41,7 @@
     4. [Shareable](#shareable-)
     5. [Organized Playbooks](#organized-playbooks-)
     6. [Testable](#testable-)
-8. [conclusion[(#conclusion)
+8. [conclusion](#conclusion)
 9. [Contact Information](#-contact-information)
 10. [Reference](#-reference)
 
