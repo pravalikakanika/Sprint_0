@@ -173,7 +173,7 @@ The `pom.xml` file is the cornerstone of Maven’s configuration and project str
 
 Maven simplifies dependency management by automating the downloading, versioning, and resolution of third-party libraries. Dependencies are specified in the pom.xml file.
 
-** - How Dependency Management Works:**
+## - How Dependency Management Works:
 
     - Dependencies are listed under the <dependencies> section in the pom.xml file.
 
