@@ -1,9 +1,13 @@
-
 ![image](https://github.com/user-attachments/assets/caaa1b47-4765-4040-89d5-e799dfe86bed)
 
-| Author          | Created On  | Version   | Last Updated By | Last Edited On |
-|-----------------|-------------|-----------|------------------|----------------|
-| Pravalika  | 2025-04-16  | Version 1 |Pravalika | 2025-04-17     |
+
+|**Date**| **Version**| **Description**| **Changed By** |
+|----------|---------|---------------|-----------------|
+|**April 17** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
+|**April 19** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
+
+
+
 
 ## 📚 Table of Contents
 
@@ -26,7 +30,8 @@
 
 
 
-## What is Maven?
+# Introduction
+
 Maven is a build automation and dependency management tool used primarily for Java projects. It was developed by the Apache Software Foundation.
 
 Think of Maven as a project manager that:
@@ -40,7 +45,9 @@ Think of Maven as a project manager that:
 
 
 
-## Why Use Maven?
+
+
+# Why Use Maven?
 
 
 Maven offers a powerful and standardized way to manage Java projects. Here's why it's widely adopted:
@@ -60,32 +67,34 @@ Maven offers a powerful and standardized way to manage Java projects. Here's why
 
 
 
-## 🎯 Purpose of Maven
+# 🎯 Purpose of Maven
 
 Maven was designed to streamline and standardize the Java project lifecycle. Here's what it brings to the table:
 
 | Purpose                         | Description                                                                 |
 |---------------------------------|-----------------------------------------------------------------------------|
-| 📦 **Simplify Build Process**    | Automates tasks like compiling code, running tests, and packaging into JAR/WAR files. |
-| 🔄 **Standardize Project Structure** | Enforces a consistent directory layout and lifecycle for all projects.         |
-| 🔗 **Handle Dependencies Automatically** | Downloads and manages required libraries from central repositories.          |
-| 🛠 **Enhance Team Collaboration** | Ensures consistent builds and environments across different machines.        |
-| 📊 **Generate Reports**          | Supports generation of test reports, project documentation, and more.        |
-| ⚙️ **Extend with Plugins**        | Add functionality like code quality checks, Docker builds, or custom deployments. |
+|  **Simplify Build Process**    | Automates tasks like compiling code, running tests, and packaging into JAR/WAR files. |
+|  **Standardize Project Structure** | Enforces a consistent directory layout and lifecycle for all projects.         |
+|  **Handle Dependencies Automatically** | Downloads and manages required libraries from central repositories.          |
+|  **Enhance Team Collaboration** | Ensures consistent builds and environments across different machines.        |
+|  **Generate Reports**          | Supports generation of test reports, project documentation, and more.        |
+| ⚙ **Extend with Plugins**        | Add functionality like code quality checks, Docker builds, or custom deployments. |
 
-## ✅ Prerequisites for Using Maven
+# ✅ Prerequisites for Using Maven
 
 Before you start using Maven, ensure the following requirements are met:
 
 | Requirement              | Description                                                                 |
 |--------------------------|-----------------------------------------------------------------------------|
-| ☕ **Java (JDK)**          | Java 8 or higher is required. Make sure to set the `JAVA_HOME` environment variable. |
-| 💻 **Maven Installed**     | Download and install Maven from the [Apache Maven website](https://maven.apache.org/download.cgi). |
-| 🛠 **System Environment Setup** | Add `MAVEN_HOME` and update your system `PATH` to include Maven's `bin` directory. |
-| 🧠 **Basic Java Knowledge** | Familiarity with Java concepts, packages, and standard file structures is helpful. |
-| 🧭 **Internet Access**     | Needed to download project dependencies from remote repositories. |
+|  **Java (JDK)**          | Java 8 or higher is required. Make sure to set the `JAVA_HOME` environment variable. |
+|  **Maven Installed**     | Download and install Maven from the [Apache Maven website](https://maven.apache.org/download.cgi). |
+|  **System Environment Setup** | Add `MAVEN_HOME` and update your system `PATH` to include Maven's `bin` directory. |
+|  **Basic Java Knowledge** | Familiarity with Java concepts, packages, and standard file structures is helpful. |
+|  **Internet Access**     | Needed to download project dependencies from remote repositories. |
 
 
+
+# ✅Installation Check
 
 ## Installation Check
 
@@ -103,7 +112,7 @@ Java version: 11.x.x, vendor: Oracle Corporation, runtime: /path/to/java
  ```
  If you see version info for both Maven and Java, the installation is successful.
 
-## 🌟 Key Features of Maven 
+# 🌟 Key Features of Maven
 
 
 
@@ -127,7 +136,7 @@ The `pom.xml` file is the cornerstone of Maven’s configuration and project str
        - **`version`**: The version of the project.
 
        - **`packaging`**: Defines the artifact type (e.g., `jar`, `war`).
- 
+
        - **`dependencies`**: List of all external libraries your project depends on.
 
        - **`build`**: Defines build configurations such as plugins, resources, and directories.
@@ -159,15 +168,13 @@ The `pom.xml` file is the cornerstone of Maven’s configuration and project str
 </project>
  ```
 
-- Documentation:
-
-   - **POM Reference:** Detailed specification of the pom.xml file structure and its elements.
 
 ## **2. Dependency Management**
 
 Maven simplifies dependency management by automating the downloading, versioning, and resolution of third-party libraries. Dependencies are specified in the pom.xml file.
 
-**- How Dependency Management Works:**
+** - How Dependency Management Works:**
+
     - Dependencies are listed under the <dependencies> section in the pom.xml file.
 
     - Maven retrieves these dependencies from remote repositories like Maven Central or custom repositories you define.
@@ -193,13 +200,10 @@ Maven simplifies dependency management by automating the downloading, versioning
     <version>[3.0, 3.1]</version> <!-- Will match any version between 3.0 and 3.1 -->
 </dependency>
 ```
-- **Documentation:**
-    - **Maven Dependency Management:** Overview of how Maven handles dependencies.
-
 
 ## **3.Introduction to the Build Lifecycle**
 
-  ## Build Lifecycle Basics
+## Build Lifecycle Basics
 
 Maven is based around the central concept of a build lifecycle. What this means is that the process for building and distributing a particular artifact (project) is clearly defined.
 
@@ -212,7 +216,7 @@ There are three built-in build lifecycles: default, clean and site. The default 
 ![image](https://github.com/user-attachments/assets/49591568-c9cf-411a-8eed-fcbd178c209e)
 
 
-                  
+
 
 
 
@@ -396,11 +400,11 @@ Deploys the package to a specified environment, typically using the content-pack
 
 
 
-## **5. Plugin Support**
+# **5. Plugin Support**
 
 Maven supports plugins to extend its functionality, such as compiling source code, packaging artifacts, and running tests. Plugins can be configured in the `pom.xml` file to perform specific tasks during the build process.
 
-## Commonly Used Plugins
+# Commonly Used Plugins
 
 - **Maven Compiler Plugin**: Compiles your source code.
 - **Maven Surefire Plugin**: Runs unit tests.
@@ -436,15 +440,12 @@ Maven supports plugins to extend its functionality, such as compiling source cod
 </build>
 ```
 
-- **Documentation:**
 
-   - **Maven Plugins:** A list of Maven plugins with detailed usage instructions.
-
-## 🔷 Repositories in Maven
+# 🔷 Repositories in Maven
 
 Repositories are locations where Maven stores and retrieves project dependencies.
 
-**🔹 Types of Maven Repositories**
+# **🔹 Types of Maven Repositories**
 
   - Local Repository
 
@@ -492,12 +493,12 @@ A local repository is a cache of downloaded dependencies stored on your machine.
 The central repository (also known as Maven Central) is the default remote repository that Maven uses to retrieve dependencies and plugins. It is hosted by the Apache Maven community and contains millions of widely-used Java libraries and frameworks.
 
 - **URL of Maven Central Repository:**
-```bash 
+```bash
 https://repo.maven.apache.org/maven2
 ```
 
 - **Why is it Important?**
- 
+
 Maven Central is the default source for resolving dependencies, and it contains most of the popular open-source libraries in Java. You don’t need to configure it explicitly in your pom.xml because Maven automatically tries to download dependencies from it if they are not available in the local repository.
 
 - **Example of a Dependency Using Maven Central:**
@@ -525,9 +526,11 @@ A remote repository is any repository that is not on your local machine but can 
 
 **How to Use Remote Repositories:**
 
-- **Default Behavior:** By default, Maven checks the remote repositories in the order they are defined in the repositories section of your pom.xml file or settings.xml.
+- **Default Behavior:**
+ By default, Maven checks the remote repositories in the order they are defined in the repositories section of your pom.xml file or settings.xml.
 
-- **Multiple Remote Repositories:** You can configure multiple remote repositories in your pom.xml file. Maven will look for dependencies in the order they are listed in the repositories section.
+- **Multiple Remote Repositories:**
+ You can configure multiple remote repositories in your pom.xml file. Maven will look for dependencies in the order they are listed in the repositories section.
 
 **Example with multiple repositories**:
 ```xml
@@ -543,7 +546,7 @@ A remote repository is any repository that is not on your local machine but can 
 </repositories>
 ```
 
-## 🔷 How Maven Works (Behind the Scenes)
+# 🔷 How Maven Works (Behind the Scenes)
 
 You run a command: mvn clean install
 
@@ -557,19 +560,22 @@ It compiles, tests, packages, and installs the artifact
 
 It outputs the final result (e.g., .jar or .war) into the target/ directory
 
-## 🛠️ Trobleshooting
 
 
-| **Problem**                        | **Cause**                                    | **Solution**                                                                                                  |
-|-------------------------------------|----------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| `mvn: command not found`            | Maven is not installed or PATH is not set.   | 1. Install Maven from [here](https://maven.apache.org/).<br>2. Set `MAVEN_HOME` and add Maven's `bin/` to the PATH variable.<br>3. Restart terminal/IDE. |
-| `JAVA_HOME is not set`              | Java is not installed or `JAVA_HOME` is missing. | 1. Set `JAVA_HOME` to point to your JDK installation directory.<br>2. Add `JAVA_HOME/bin` to the PATH variable. |
+
+## 🛠️ Troubleshooting
+
+| **Problem**                        | **Cause**                                    | **Solution**                                                                                                                                               |
+|-------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `mvn: command not found`            | Maven is not installed or PATH is not set.   | 1. Install Maven from [here](https://maven.apache.org/).<br>2. Set `MAVEN_HOME` and add Maven's `bin/` to the PATH variable.<br>3. Restart terminal/IDE.   |
+| `JAVA_HOME is not set`              | Java is not installed or `JAVA_HOME` is missing. | 1. Set `JAVA_HOME` to point to your JDK installation directory.<br>2. Add `JAVA_HOME/bin` to the PATH variable.                                           |
 | `Dependency Not Found (404)`        | Incorrect dependency details or missing artifact. | 1. Check `pom.xml` for typos in `groupId`, `artifactId`, `version`.<br>2. Run `mvn clean install` to try downloading dependencies again.<br>3. Use `mvn clean install -U` to force update. |
 | `Build Fails with Permission Denied` | Insufficient file system permissions.       | 1. Check and fix file permissions (`chmod` on Linux/macOS, or right-click → Properties → Security on Windows).<br>2. Use `sudo` (Linux/macOS) or run as Admin (Windows). |
 | `Plugin Not Executing Properly`     | Plugin misconfiguration or missing version. | 1. Ensure plugin version is correctly defined in `pom.xml`.<br>2. Check that goals are correctly configured.<br>3. Run the plugin goal directly: `mvn clean compile`. |
 | `Tests Not Running`                 | Test files not in correct directory or naming issue. | 1. Ensure tests are in `src/test/java`.<br>2. Ensure test classes follow naming convention (`*Test.java` or `*Tests.java`).<br>3. Add JUnit dependency in `pom.xml`. |
-| `Outdated Dependencies (Snapshot Version)` | Snapshot dependencies not updated.          | 1. Run `mvn clean install -U` to force updates.<br>2. Ensure repository is set up for snapshot versions. |
-| `Build Stuck / Timeout Errors`      | Network issues, repository access problems. | 1. Check your internet connection.<br>2. Configure a proxy if you're behind a firewall (update `settings.xml`).<br>3. Check for repository availability. |
+| `Outdated Dependencies (Snapshot Version)` | Snapshot dependencies not updated.          | 1. Run `mvn clean install -U` to force updates.<br>2. Ensure repository is set up for snapshot versions.                                                 |
+| `Build Stuck / Timeout Errors`      | Network issues, repository access problems. | 1. Check your internet connection.<br>2. Configure a proxy if you're behind a firewall (update `settings.xml`).<br>3. Check for repository availability.   |
+
 
 ## 📧 Contact Information
 
@@ -583,13 +589,3 @@ It outputs the final result (e.g., .jar or .war) into the target/ directory
 | **Link**                                                                 | **Description**                              |
 |--------------------------------------------------------------------------|----------------------------------------------|
 | [https://maven.apache.org/install.html](https://maven.apache.org/install.html) | Documentation followed for Maven installation |
-
-
-
-
-
-
-
-
-
-
