@@ -330,55 +330,7 @@ Deploys the package to a specified environment, typically using the content-pack
     </executions>
 </plugin>
 ```
-## Complete Example Maven pom.xml Structure
-```xml
 
-<project>
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example.aem</groupId>
-    <artifactId>aem-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>content-package</packaging>
-
-    <build>
-        <plugins>
-            <!-- Compiler Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
-                <configuration>
-                    <source>11</source>
-                    <target>11</target>
-                </configuration>
-            </plugin>
-
-            <!-- Surefire Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version>
-            </plugin>
-
-            <!-- Content Package Maven Plugin -->
-            <plugin>
-                <groupId>com.day.jcr.vault</groupId>
-                <artifactId>content-package-maven-plugin</artifactId>
-                <version>1.0.2</version>
-                <executions>
-                    <execution>
-                        <id>deploy</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>install</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-</project>
-```
 ## **4. Standard Directory Structure**
 
 
