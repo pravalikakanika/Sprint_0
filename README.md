@@ -1,9 +1,10 @@
 ![image](https://github.com/user-attachments/assets/6c813200-6ff4-4ad3-a193-7b2d8cde7718)
 
 
-| Author          | Created On  | Version   | Last Updated By | Last Edited On |
-|-----------------|-------------|-----------|------------------|----------------|
-| Pravalika   | 2025-04-17  | Version 1 |Pravalika | 2025-04-17     |
+|**Date**| **Version**| **Description**| **Changed By** |
+|----------|---------|---------------|-----------------|
+|**April '18'** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
+|**April '19'** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
 
 
 ## 📚 Table of Contents
@@ -103,7 +104,7 @@ In modern Python development, managing environments, dependencies, and packaging
 
 ## Why Use Poetry?
 
-### 🔧 Avoids Manually Creating `requirements.txt`, `setup.py`, etc.
+###  Avoids Manually Creating `requirements.txt`, `setup.py`, etc.
 
 In traditional Python project setups, you’d often need to manually create and maintain several files to manage dependencies and project metadata. With **Poetry**, this process is streamlined:
 
@@ -115,7 +116,7 @@ In traditional Python project setups, you’d often need to manually create and 
 
 - **`setup.py`**: Traditionally, packaging a Python project requires a `setup.py` file, which contains metadata about your project (name, version, author, etc.). **Poetry** eliminates the need for this by including all this information in `pyproject.toml`, simplifying the setup for your package and reducing boilerplate code.
 
-## 🔄 Ensures Reproducible Builds with `poetry.lock`
+##  Ensures Reproducible Builds with `poetry.lock`
 
 One of the key challenges in Python dependency management is ensuring that your project behaves consistently across different environments and machines. Dependencies often have complex version requirements, and even a minor version change can cause unexpected behavior.
 
@@ -124,7 +125,7 @@ One of the key challenges in Python dependency management is ensuring that your 
 - When another developer installs your project, **Poetry** will use the `poetry.lock` file to install the exact same versions of dependencies that you used.
 - Even if the upstream libraries release new versions or patches, the lock file ensures the project stays stable with the exact versions you specified.
 
-## 🧰 Simplifies Virtual Environment Handling
+##  Simplifies Virtual Environment Handling
 
 Managing virtual environments is a common pain point for Python developers. Before **Poetry**, you might have had to manually create a virtual environment using `python -m venv`, activate it, and then install dependencies using `pip`.
 
@@ -146,11 +147,11 @@ The main purpose of **Poetry** is to simplify and streamline Python project mana
 
 ### 🎯 Goals:
 
-- 🔄 **Replace multiple tools** (`pip`, `venv`, `setup.py`, `requirements.txt`, `twine`) with one unified tool.
-- 📦 **Manage dependencies** in a declarative and reproducible way.
-- ⚙️ **Automatically handle virtual environments** per project—no more manual `venv` setup.
-- 🚀 **Simplify publishing** your packages directly to PyPI.
-- 📁 **Use `pyproject.toml`** as a clean, standard, and centralized configuration file.
+-  **Replace multiple tools** (`pip`, `venv`, `setup.py`, `requirements.txt`, `twine`) with one unified tool.
+-  **Manage dependencies** in a declarative and reproducible way.
+-  **Automatically handle virtual environments** per project—no more manual `venv` setup.
+-  **Simplify publishing** your packages directly to PyPI.
+-  **Use `pyproject.toml`** as a clean, standard, and centralized configuration file.
 
 
 ##   Prerequisites
@@ -159,9 +160,9 @@ Before using Poetry, ensure your system meets the following requirements:
 
 | Category                     | Requirement / Notes                                                                 |
 |-----------------------------|--------------------------------------------------------------------------------------|
-| 🧑‍💻 **Basic System Requirements** | - Python installed (3.7+ recommended)  <br> - Check with `python --version` or `python3 --version` <br> - `pip` installed (optional, but sometimes used alongside) <br> - Internet access to install Poetry and fetch packages |
-| 💻 **Operating System Compatibility** | - Works on **Windows**, **macOS**, and **Linux**                                             |
-| 🔧 **Optional**              | - Familiarity with the **command line** <br> - **Git** (recommended for version control)         |
+|  **Basic System Requirements** | - Python installed (3.7+ recommended)  <br> - Check with `python --version` or `python3 --version` <br> - `pip` installed (optional, but sometimes used alongside) <br> - Internet access to install Poetry and fetch packages |
+|  **Operating System Compatibility** | - Works on **Windows**, **macOS**, and **Linux**                                             |
+|  **Optional**              | - Familiarity with the **command line** <br> - **Git** (recommended for version control)         |
 
 
 
@@ -453,6 +454,5 @@ dist/
 | Link | Description |
 |------|-------------|
 | [https://python-poetry.org/docs/](https://python-poetry.org/docs/) | Documentation followed for this link |
-
 
 
