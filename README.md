@@ -18,7 +18,7 @@ The `react-setup.sh` script is designed to:
 | ✅ **Automate React Setup**       | Quickly set up a new or existing React project using a single Bash script.                         |
 | 🔁 **Support Multiple Versions**  | Easily install or upgrade to any version of React (e.g. 17.0.2, 18.2.0, latest).                   |
 | 🛠️ **Install Node.js (if missing)** | Checks if Node.js is installed and optionally installs it (on Linux/macOS).                         |
-| 🧱 **Initialize Project**         | Automatically creates a React project using `create-react-app` if `package.json` doesn't exist.    |
+| 🧱 **Initialize Project**         | Automatically creates a React project using `create-react-app` if "package.json" doesn't exist.     |
 | 🧪 **Use npm or yarn**            | Lets you choose your preferred package manager (`npm` or `yarn`).                                  |
 | ♻️ **Re-run for Upgrades**        | Can be reused any time to upgrade React versions in an existing project.                           |
 | 💻 **Cross-platform**             | Works on Linux, macOS, and Windows (via Git Bash or WSL).                                          |
