@@ -289,7 +289,7 @@ If you see the version number, it means Poetry is installed and ready to use!
 
 Once Poetry is installed and working, you can start using it to manage your Python projects with a clean and modern workflow.
 
-**🆕 1. Create a New Project**
+**1. Create a New Project**
 
 To start a brand-new Python project with Poetry:
 
@@ -315,11 +315,11 @@ project_name/
 
 - pyproject.toml: Configuration file for dependencies, metadata, etc.
 
-**➕ 2. Add, Install, and Remove Dependencies**
+**2. Add, Install, and Remove Dependencies**
 
 Poetry simplifies dependency management with just a few commands.
 
-**✅ Add a dependency:**
+**Add a dependency:**
 
 ```bash
 poetry add requests
@@ -335,7 +335,7 @@ To install a dev-only dependency (e.g., pytest for testing):
 poetry add --dev pytest
 ```
 
-**📦 Install dependencies:**
+**Install dependencies:**
 
 ```bash
 poetry install
@@ -345,7 +345,7 @@ poetry install
 
 - Also sets up the virtual environment automatically.
 
-**❌ Remove a dependency:**
+**Remove a dependency:**
 
 ```bash
 poetry remove requests
@@ -353,11 +353,11 @@ poetry remove requests
 
 - Removes it from pyproject.toml and uninstalls it from the virtual environment.
 
-**🧪 3. Using the Virtual Environment**
+**3. Using the Virtual Environment**
 
 Poetry creates and manages its own virtual environment behind the scenes, but you can interact with it easily.
 
-**🚀 Activate the virtual environment:**
+**Activate the virtual environment:**
 
 ```bash
 poetry shell
@@ -375,7 +375,7 @@ exit
 
 ```
 
-**⚙️ Run a command inside the environment (without activating it):**
+**Run a command inside the environment (without activating it):**
 
 ```bash
 poetry run python script.py
@@ -385,7 +385,7 @@ poetry run python script.py
 - Runs script.py using the project's virtual environment.
 
 
-**📦 4. Build the Package**
+**4. Build the Package**
 
 When you're ready to package your project:
 
@@ -424,10 +424,10 @@ dist/
 
 ## 🧠 Best Practices
 
-- ✅ **Use Poetry for new projects** to benefit from its streamlined workflow.
-- 📄 **Use `pyproject.toml` as the single source of truth** for dependencies, metadata, and configuration.
-- 🔒 **Rely on `poetry.lock`** to ensure consistent and reproducible environments across your team.
-- 🚫 **Avoid mixing `pip` and `poetry`** in the same project to prevent conflicts and environment issues.
+-  **Use Poetry for new projects** to benefit from its streamlined workflow.
+-  **Use `pyproject.toml` as the single source of truth** for dependencies, metadata, and configuration.
+-  **Rely on `poetry.lock`** to ensure consistent and reproducible environments across your team.
+-  **Avoid mixing `pip` and `poetry`** in the same project to prevent conflicts and environment issues.
 
 
 ## 🛠️ Troubleshooting
