@@ -12,6 +12,7 @@
 
 # Table of Contents
 
+   [Introduction](#Introduction)
 1. [What is Ansible?](#what-is-ansible-)
 2. [Overview](#overview)
 3. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
@@ -47,6 +48,9 @@
 
 
 
+# Introduction
+
+Ansible Roles are a powerful feature that helps you organize your automation code in a clean, structured, and reusable way. Instead of writing long, messy playbooks, roles let you break down tasks into smaller components like tasks, variables, files, templates, and handlers. Roles promote modularity, reusability, maintainability, and consistency
 
 # What is Ansible? 
 
