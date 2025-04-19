@@ -33,7 +33,7 @@
 - [Documentation Reference](#documentation-reference)
 
 
-# 📁 Where to Place Inventory Files
+#  Where to Place Inventory Files
 
 - **Default**: `/etc/ansible/hosts` 🗂️
 
@@ -42,7 +42,7 @@
   ansible -i <path> <command> ⚙️
    ```
 
-# 📌 Overview
+#  Overview
 
 An Ansible Inventory is a file that defines the list of hosts (servers or devices) that Ansible can manage. In a static inventory, the list is manually defined and does not change unless edited by a user. It contrasts with dynamic inventories that pull host data from external sources like cloud providers 🌐.
 
@@ -147,14 +147,14 @@ host_key_checking = False
 ```
 
 
-# 📧 Contact Information
+#  Contact Information
 
 
 | Name       | Email Address                |
 |------------|------------------------------|
 | Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
 
-## 📚 Documentation Reference
+##  Documentation Reference
 
 | **Link** | **Description** |
 |----------|-----------------|
