@@ -96,6 +96,7 @@ npx react --version 2>/dev/null || echo "Use 'npm list react' to see version"
 echo "Project '$APP_NAME' is ready with React@$REACT_VERSION."
 ```
 
+
 # 🛠️ How to Use
 
 ## 1. Save the script as install-react.sh
