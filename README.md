@@ -32,8 +32,6 @@
   
 - [ Comparison: Poetry vs pip + venv](#-comparison-poetry-vs-pip--venv)
 
-- [ Best Practices](#-best-practices)
-
 - [ Troubleshooting](#️-troubleshooting)
 
 - [ Contact Information](#-contact-information)
@@ -163,19 +161,6 @@ Before using Poetry, ensure your system meets the following requirements:
 |  **Basic System Requirements** | - Python installed (3.7+ recommended)  <br> - Check with `python --version` or `python3 --version` <br> - `pip` installed (optional, but sometimes used alongside) <br> - Internet access to install Poetry and fetch packages |
 |  **Operating System Compatibility** | - Works on **Windows**, **macOS**, and **Linux**                                             |
 |  **Optional**              | - Familiarity with the **command line** <br> - **Git** (recommended for version control)         |
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -422,12 +407,6 @@ dist/
 
 
 
-## 🧠 Best Practices
-
--  **Use Poetry for new projects** to benefit from its streamlined workflow.
--  **Use `pyproject.toml` as the single source of truth** for dependencies, metadata, and configuration.
--  **Rely on `poetry.lock`** to ensure consistent and reproducible environments across your team.
--  **Avoid mixing `pip` and `poetry`** in the same project to prevent conflicts and environment issues.
 
 
 ## 🛠️ Troubleshooting
