@@ -30,9 +30,9 @@
   
 - [ Comparison: Poetry vs pip + venv](#comparison-poetry-vs-pip--venv)
 
-- [ Troubleshooting](#️-troubleshooting)
+- [Troubleshooting](#troubleshooting)
 
-- [Conclusion](#-Conclusion).
+- [Conclusion](#Conclusion).
 
 - [ Contact Information](#contact-information)
 
