@@ -10,7 +10,7 @@
 
 
 
-## 📚 Table of Contents 
+# Table of Contents 
 
 1. [Introduction](#Introduction)
 2. [What is Maven?](#what-is-maven)
@@ -75,7 +75,7 @@ Maven offers a powerful and standardized way to manage Java projects. Here's why
 
 
 
-# 🎯 Purpose of Maven
+#  Purpose of Maven
 
 Maven was designed to streamline and standardize the Java project lifecycle. Here's what it brings to the table:
 
@@ -88,7 +88,7 @@ Maven was designed to streamline and standardize the Java project lifecycle. Her
 |  **Generate Reports**          | Supports generation of test reports, project documentation, and more.        |
 | ⚙ **Extend with Plugins**        | Add functionality like code quality checks, Docker builds, or custom deployments. |
 
-# ✅ Prerequisites for Using Maven
+#  Prerequisites for Using Maven
 
 Before you start using Maven, ensure the following requirements are met:
 
@@ -102,7 +102,7 @@ Before you start using Maven, ensure the following requirements are met:
 
 
 
-# ✅Installation Check
+# Installation Check
 
 ## Installation Check
 
@@ -120,7 +120,7 @@ Java version: 11.x.x, vendor: Oracle Corporation, runtime: /path/to/java
  ```
  If you see version info for both Maven and Java, the installation is successful.
 
-# 🌟 Key Features of Maven
+#  Key Features of Maven
 
 
 
@@ -415,7 +415,7 @@ Repositories are locations where Maven stores and retrieves project dependencies
 
 
 
-## 🏠 Local Repository
+##  Local Repository
 
 ### What is it?
 
@@ -446,7 +446,7 @@ A local repository is a cache of downloaded dependencies stored on your machine.
 </settings>
 ```
 
-## 🌐 Central Repository
+##  Central Repository
 
 **What is the Central Repository?**
 
@@ -478,7 +478,7 @@ If the dependency is not found locally, Maven checks Maven Central.
 If it is not available in Maven Central, Maven looks for it in other remote repositories you may have configured.
 
 
-## 🌍 Remote (Custom) Repositories
+##  Remote (Custom) Repositories
 
 **What is a Remote Repository?**
 
@@ -506,7 +506,7 @@ A remote repository is any repository that is not on your local machine but can 
 </repositories>
 ```
 
-# 🔷 How Maven Works 
+#  How Maven Works 
 
 You run a command: mvn clean install
 
@@ -523,7 +523,7 @@ It outputs the final result (e.g., .jar or .war) into the target/ directory
 
 
 
-# 🛠️ Troubleshooting
+#  Troubleshooting
 
 | **Problem**                        | **Cause**                                    | **Solution**                                                                                                                                               |
 |-------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -540,14 +540,14 @@ It outputs the final result (e.g., .jar or .war) into the target/ directory
 Maven is not just a build tool — it’s a project management framework that empowers developers to streamline their workflows, reduce manual tasks, and produce consistent, high-quality builds. This guide equips readers with the knowledge and practical insights needed to use Maven effectively in day-to-day development tasks.By automating tasks such as compiling code, managing dependencies, running tests, and packaging artifacts, Maven streamlines the development process and ensures consistent builds across different environments.
 
 
-# 📧 Contact Information
+#  Contact Information
 
 
 | Name       | Email Address                |
 |------------|------------------------------|
 | Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
 
-# 📚 Reference
+#  Reference
 
 | **Link**                                                                 | **Description**                              |
 |--------------------------------------------------------------------------|----------------------------------------------|
