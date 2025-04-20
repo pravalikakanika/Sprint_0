@@ -5,13 +5,16 @@
 |----------|---------|---------------|-----------------|
 |April 18 | v.1.0 | Initial Draft | Pravalika kanikarapu |
 |April 19 | v.1.1 | Updated static.md | Pravalika kanikarapu|
+|April 20 | v.1.2 | Updated static.md | Pravalika kanikarapu|
 
-# 📘 Ansible Static Inventory Documentation
+#  Ansible Static Inventory Documentation
 
 
 
-## 📑 Table of Contents
+##  Table of Contents
 - [Introduction](#Introduction)
+- [What is static Inventory](#what-is-static-inventory)
+- [Why static Inventory](#why-static-inventory)
 - [Where to Place Inventory Files](#where-to-place-inventory-files)
 - [Overview](#overview)
 - [🛠️ Key Steps to Follow](#keysteps-to-follow)
@@ -26,16 +29,27 @@
     - [ansible_ssh_private_key_file](#ansible_ssh_private_key_file)
     - [ansible_ssh_common_args](#ansible_ssh_common_args)
   - [4. Run Ansible Commands](#4-run-ansible-commands)
-- [⚙️ ansible.cfg Configuration](#️-ansiblecfg-configuration)
+- [ ansible.cfg Configuration](#️-ansiblecfg-configuration)
 - [conclusion](#conclusion)
 - [Contact Information](#contact-information)
 - [Documentation Reference](#documentation-reference)
 
 # Introduction
 
-In Ansible, an inventory is a file that lists the hosts and groups of hosts that you want to manage. It tells Ansible where to run the automation tasks. There are two main types of inventories: static and dynamic.
+This document outlines that The static inventory should list all servers with correct names or IPs, organize them into groups if needed, include any required settings, and work properly when running Ansible commands.
+
+# What is static Inventory
 
 A static inventory is the simplest and most commonly used type, especially for small or stable environments. It is a manually maintained file — usually in INI or YAML format — where you define the hostnames or IP addresses of your servers, group them logically (e.g., web_servers, db_servers), and optionally set connection variables.
+
+# Why static Inventory
+
+ - Simplicity and Quick Setup
+ - Small or Fixed Environments
+ - Easy to Track
+ - Familiar Format
+ - No Dependencies
+
 
 
 #  Where to Place Inventory Files
@@ -140,7 +154,7 @@ ansible all -i inventory.ini -m ping
 ansible db_servers -i inventory.ini -m ping
 ```
 
-# ⚙️ ansible.cfg Configuration
+#  ansible.cfg Configuration
 
 If you want Ansible to use a specific inventory file by default, configure `ansible.cfg`:
 
