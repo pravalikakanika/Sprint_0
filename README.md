@@ -17,7 +17,7 @@
 2. [What is Ansible?](#-what-is-ansible-)
 3. [What are Ansible Roles?](#what-are-ansible-roles)
 4. [Why ansible?](#-why-ansible)
-5. [Why use Ansible Roles?](#why-use-ansible-roles)
+5. [Why Use Ansible Roles?](#why-use-ansible-roles)
 6. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
     1. [Tasks](#-tasks)
     2. [Handlers](#-handlers)
