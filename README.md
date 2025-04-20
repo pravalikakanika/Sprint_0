@@ -5,12 +5,13 @@
 |----------|---------|---------------|-----------------|
 |**April 16** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
 |**April 19** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
+|**April 20** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
 
-## 📚 Table of Contents
+##  Table of Contents
 
 - [ Introduction](#Introduction)
 
-- [ Its Role in Modern Python Project Management](#-its-role-in-modern-python-project-management)
+- [ Its Role in Modern Python Project Management](#its-role-in-modern-python-project-management)
 
 
 
@@ -23,15 +24,15 @@
 - [Prerequisites](#prerequisites)
 
 
-- [ Key Features of Poetry](#-key-features-of-poetry)
+- [ Key Features of Poetry](#key-features-of-poetry)
 
 - [ Installation Guide](#installation-guide)
   
-- [ Basic Usage](#-basic-usage)
+- [ Basic Usage](#basic-usage)
   
-- [ Comparison: Poetry vs pip + venv](#-comparison-poetry-vs-pip--venv)
+- [ Comparison: Poetry vs pip + venv](#comparison-poetry-vs-pip--venv)
 
-- [ Troubleshooting](#️-troubleshooting)
+- [ Troubleshooting](#️troubleshooting)
 
 - [Conclusion](#-Conclusion).
 
@@ -53,7 +54,7 @@
 
 # Introduction
 
-### 📖 Definition
+###  Definition
 
 **Poetry** is a Python dependency management and packaging tool that simplifies the way developers build, manage, and distribute Python projects. It provides a standardized and streamlined workflow for everything from dependency installation to package publishing.
 
@@ -62,7 +63,7 @@ In simpler terms, **Poetry** is like a project manager for Python—handling you
 It centers its configuration in a single file: **`pyproject.toml`**, which becomes the source of truth for your project’s metadata, dependencies, scripts, and more.
 
 
-## 💡 Its Role in Modern Python Project Management
+##  Its Role in Modern Python Project Management
 
 In modern Python development, managing environments, dependencies, and packaging can get messy fast—especially in larger projects or teams. This is where **Poetry** shines:
 
@@ -90,7 +91,7 @@ In modern Python development, managing environments, dependencies, and packaging
 ### 5. **Versioning and Release Management**
 - **Poetry** supports **semantic versioning** and allows for automatic version bumps, changelogs, and more. It's great for projects following a **release cadence**.
 
-## 🔁 Replaces Traditional Tools Like:
+## Replaces Traditional Tools Like:
 
 | Traditional Tool     | Poetry Replacement / Feature                                           |
 |----------------------|------------------------------------------------------------------------|
@@ -101,7 +102,7 @@ In modern Python development, managing environments, dependencies, and packaging
 | **twine**            | Replaced with `poetry publish` for publishing packages                 |
 
 
-## Why Use Poetry?
+# Why Use Poetry?
 
 ###  Avoids Manually Creating `requirements.txt`, `setup.py`, etc.
 
@@ -140,11 +141,11 @@ With **Poetry**, virtual environments are handled automatically:
 
 
 
-##   Purpose of Using Poetry
+#   Purpose of Using Poetry
 
 The main purpose of **Poetry** is to simplify and streamline Python project management.
 
-### 🎯 Goals:
+###  Goals:
 
 -  **Replace multiple tools** (`pip`, `venv`, `setup.py`, `requirements.txt`, `twine`) with one unified tool.
 -  **Manage dependencies** in a declarative and reproducible way.
@@ -153,7 +154,7 @@ The main purpose of **Poetry** is to simplify and streamline Python project mana
 -  **Use `pyproject.toml`** as a clean, standard, and centralized configuration file.
 
 
-##   Prerequisites
+#   Prerequisites
 
 Before using Poetry, ensure your system meets the following requirements:
 
@@ -167,24 +168,24 @@ Before using Poetry, ensure your system meets the following requirements:
 
 
 
-## ✨ Key Features of Poetry
+# Key Features of Poetry
 
 Poetry is a powerful and modern tool for Python dependency management and packaging. Below are some of its standout features:
 
 | Feature                         | Description                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------|
-| ✅ **Unified Tooling**            | Handles dependency management, packaging, versioning, and publishing.        |
-| ✅ **pyproject.toml Support**     | Uses the modern Python standard for project metadata.                        |
-| ✅ **Dependency Resolution**      | Solves and locks dependencies using `poetry.lock`.                          |
-| ✅ **Virtual Environment Management** | Automatically creates and manages virtual environments per project. |
-| ✅ **Version Management**         | Supports semantic versioning and constraints like `^`, `~`, etc.            |
-| ✅ **Easy Publishing**            | Built-in support for publishing packages directly to PyPI.                  |
-| ✅ **Intuitive CLI**              | Clean, user-friendly command-line interface for common tasks.               |
+|  **Unified Tooling**            | Handles dependency management, packaging, versioning, and publishing.        |
+|  **pyproject.toml Support**     | Uses the modern Python standard for project metadata.                        |
+|  **Dependency Resolution**      | Solves and locks dependencies using `poetry.lock`.                          |
+|  **Virtual Environment Management** | Automatically creates and manages virtual environments per project. |
+|  **Version Management**         | Supports semantic versioning and constraints like `^`, `~`, etc.            |
+|  **Easy Publishing**            | Built-in support for publishing packages directly to PyPI.                  |
+|  **Intuitive CLI**              | Clean, user-friendly command-line interface for common tasks.               |
 
 
 
 
-## Installation Guide
+# Installation Guide
 
 ### 1. Install Poetry via curl
 
@@ -271,7 +272,7 @@ If you see the version number, it means Poetry is installed and ready to use!
 
 
 
-# 📘 Basic Usage
+# Basic Usage
 
 Once Poetry is installed and working, you can start using it to manage your Python projects with a clean and modern workflow.
 
@@ -393,7 +394,7 @@ dist/
 
 
 
-# 🔍 Comparison: Poetry vs pip + venv
+# Comparison: Poetry vs pip + venv
 
 | Feature                         | pip + venv                                   | Poetry                                  |
 |----------------------------------|-----------------------------------------------|------------------------------------------|
@@ -410,7 +411,7 @@ dist/
 
 
 
-# 🛠️ Troubleshooting
+# Troubleshooting
 
 | Issue / Error                                 | Possible Cause                                             | Solution                                                                 |
 |-----------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -423,11 +424,11 @@ dist/
 
 
 
-# ✅ Conclusion 
+# Conclusion 
 
 Poetry represents a significant step forward in simplifying and standardizing Python project management.With its use of the pyproject.toml file as a single source of truth, automatic virtual environment creation, reliable dependency resolution through poetry.lock, and built-in tools for publishing to PyPI, Poetry empowers developers to focus more on building and less on configuration.
 
-# 📧 Contact Information
+# Contact Information
 
 
 | Name       | Email Address                |
@@ -435,7 +436,7 @@ Poetry represents a significant step forward in simplifying and standardizing Py
 | Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
 
 
-# 📚 Reference
+# Reference
 
 | Link | Description |
 |------|-------------|
