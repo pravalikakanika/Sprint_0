@@ -19,7 +19,7 @@
 4. [Why use Ansible?](#why-use-ansible)
 5. [Why Use Ansible Roles?](#why-use-ansible-roles)
 6. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
-    1. [Tasks](#tasks)
+    1. [Tasks](#-tasks)
     2. [Handlers](#handlers)
     3. [Variables](#variables)
     4. [Files](#files)
