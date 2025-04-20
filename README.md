@@ -7,35 +7,47 @@
 |----------|---------|---------------|-----------------|
 |**April 15** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
 |**April 19** | v.1.1 | sop_disk_ulimit.md | Pravalika Kanikarapu |
-
-# 📘 **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
-
+|**April 20** | v.1.2 | sop_disk_ulimit.md | Pravalika Kanikarapu |
 
 
+#  **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
 
 
-## 🗂️ Table of Contents
+
+
+
+#  Table of Contents
 
 1. [Introduction](#Introduction)
-2. [Purpose](#purpose)   
-3. [ Scope](#-scope)  
-4. [ Prerequisites](#-prerequisites)  
-5. [ Procedure](#-procedure)  
+2. [What is SOP](#what-is-sop)
+3. [Why SOP](#why-sop)
+4. [Purpose](#purpose)   
+5. [ Scope](#-scope)  
+6. [ Prerequisites](#-prerequisites)  
+7. [ Procedure](#-procedure)  
    - [ Step 1: Check Disk Usage](#-step-1-check-disk-usage)  
    - [ Step 2: Check Mount Points](#-step-2-check-mount-points)  
    - [ Step 3: Configure ulimit Settings](#-step-3-configure-ulimit-settings)  
-6. [ Troubleshooting](#-troubleshooting)  
-7. [ Contact Information](#-contact-information)  
-8. [ Reference](#-reference)  
-
+8. [ Troubleshooting](#-troubleshooting)  
+9. [ Contact Information](#-contact-information)  
+10. [ Reference](#-reference)  
 
 
 
 # Introduction
 
+The SOP should provide steps to check disk usage, mount points, and configure ulimit settings for users and processes
+
+
+# What is SOP
+
 A Standard Operating Procedure (SOP) is a set of written instructions that describe how to perform a specific task or process consistently and efficiently. SOPs are used across various industries to ensure that operations are carried out in a standardized manner, reducing errors and ensuring quality control. 
 
+# Why SOP
 
+- Ensures Consistency Across Systems
+- Helps in Automation and Scripting
+- Speeds Up Setup and Troubleshooting
 
 #  Purpose
 
@@ -46,14 +58,14 @@ This document outlines the procedures for:
 - **Configuring ulimit Settings:** Set resource limits for users and processes to optimize system performance and avoid resource exhaustion.
 
 
-# 🔍 Scope
+# Scope
 
 
 This SOP applies to all system administrators responsible for maintaining disk usage, mount point configurations, and resource limits.
 
 
 
-# 🧑‍💻 Prerequisites
+# Prerequisites
 
 Before proceeding with this SOP, the following prerequisites must be met:
 
@@ -64,9 +76,9 @@ Before proceeding with this SOP, the following prerequisites must be met:
 - **Knowledge:** Basic understanding of the Linux filesystem, mount points, and resource limits.
 
 
-# 📋 Procedure
+# Procedure
 
-### ✅ Step 1: Check Disk Usage
+### Step 1: Check Disk Usage
 
 ---
 
@@ -110,7 +122,7 @@ du -sh /path/to/directory
 
 ```
 
-### ✅ Step 2: Check Mount Points
+### Step 2: Check Mount Points
 
 ### A.View all mounted filesystems:
 
@@ -136,7 +148,7 @@ To verify if a specific mount point is active:
 df -h /mnt/data
 ```
 
-### ✅ Step 3: Configure ulimit Settings
+### Step 3: Configure ulimit Settings
 ulimit controls limits on user and process resources (file descriptors, memory, processes, etc.)
 
 ### A. View the current ulimit settings for the user:
@@ -176,7 +188,7 @@ Apply changes by logging out and back in or restarting the system.
 
 
 
-## 🧯 Troubleshooting
+## Troubleshooting
 
 
 | Issue                          | Solution                                                              |
@@ -190,7 +202,7 @@ Apply changes by logging out and back in or restarting the system.
 
 
 
-## 📧 Contact Information
+# Contact Information
 
 
 | Name       | Email Address                |
@@ -198,7 +210,7 @@ Apply changes by logging out and back in or restarting the system.
 | Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
 
 
-## 📚 Reference
+# Reference
 
 | Link                                                                 | Description                              |
 |----------------------------------------------------------------------|------------------------------------------|
