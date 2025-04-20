@@ -11,18 +11,16 @@
 
 - [ Introduction](#Introduction)
 
+- [ What is poetry?](#what-is-poetry)
+
+- [ Why Use Poetry?](#why-use-poetry)
+
 - [ Its Role in Modern Python Project Management](#its-role-in-modern-python-project-management)
 
 
-
-- [ Why Use Poetry?](#why-use-poetry)
-  
-
 - [Purpose of Using Poetry](#purpose-of-using-poetry)
 
-
 - [Prerequisites](#prerequisites)
-
 
 - [ Key Features of Poetry](#key-features-of-poetry)
 
@@ -32,7 +30,7 @@
   
 - [ Comparison: Poetry vs pip + venv](#comparison-poetry-vs-pip--venv)
 
-- [ Troubleshooting](#️troubleshooting)
+- [ Troubleshooting](#️-troubleshooting)
 
 - [Conclusion](#-Conclusion).
 
@@ -52,7 +50,7 @@
 
 
 
-# Introduction
+# What is poetry?
 
 ###  Definition
 
