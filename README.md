@@ -17,7 +17,7 @@
 - [Why static Inventory](#why-static-inventory)
 - [Where to Place Inventory Files](#where-to-place-inventory-files)
 - [Overview](#overview)
-- [🛠️ Key Steps to Follow](#keysteps-to-follow)
+- [ Key Steps to Follow](#keysteps-to-follow)
   - [1. Create the Inventory File](#1-create-the-inventory-file)
   - [2. Understanding the Structure](#2-understanding-the-structure)
     - [Groups](#groups)
@@ -54,11 +54,11 @@ A static inventory is the simplest and most commonly used type, especially for s
 
 #  Where to Place Inventory Files
 
-- **Default**: `/etc/ansible/hosts` 🗂
+- **Default**: `/etc/ansible/hosts` 
 
 - **Custom Path**: You can specify a custom path using the `-i` option with Ansible commands:
   ```bash
-  ansible -i <path> <command> ⚙️
+  ansible -i <path> <command> 
    ```
 
 #  Overview
