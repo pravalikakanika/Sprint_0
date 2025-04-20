@@ -154,7 +154,7 @@ ansible all -i inventory.ini -m ping
 ansible db_servers -i inventory.ini -m ping
 ```
 
-#  ansible.cfg Configuration
+# ansible.cfg Configuration
 
 If you want Ansible to use a specific inventory file by default, configure `ansible.cfg`:
 
