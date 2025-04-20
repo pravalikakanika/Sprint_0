@@ -29,7 +29,7 @@
     - [ansible_ssh_private_key_file](#ansible_ssh_private_key_file)
     - [ansible_ssh_common_args](#ansible_ssh_common_args)
   - [4. Run Ansible Commands](#4-run-ansible-commands)
-- [ansible.cfg Configuration](#ansible-.-cfg-configuration)
+- [ansible Configuration](#ansible-configuration)
 - [conclusion](#conclusion)
 - [Contact Information](#contact-information)
 - [Documentation Reference](#documentation-reference)
@@ -154,7 +154,7 @@ ansible all -i inventory.ini -m ping
 ansible db_servers -i inventory.ini -m ping
 ```
 
-# ansible.cfg Configuration
+# ansible Configuration
 
 If you want Ansible to use a specific inventory file by default, configure `ansible.cfg`:
 
