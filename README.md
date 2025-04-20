@@ -5,6 +5,7 @@
 |----------|---------|---------------|-----------------|
 |**April 17** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
 |**April 19** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
+|**April 20** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
 
 
 
@@ -12,18 +13,19 @@
 ## 📚 Table of Contents 
 
 1. [Introduction](#Introduction)
-2. [Why Use Maven?](#why-use-maven)
-3. [ Purpose of Maven](#-purpose-of-maven)
-4. [ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
-5. [ Installation Check](#installation-check)
-6. [ Key Features of Maven](#-key-features-of-maven)
-7. [ A Build Lifecycle is Made Up of Phases](#a-build-lifecycle-is-made-up-of-phases)
-8. [ Commonly Used Plugins](#commonly-used-plugins)
-9. [ Repositories in Maven](#-repositories-in-maven)
-10. [ Troubleshooting](#️-trobleshooting)
-11. [Conclusion](#Conclusion)
-12. [ Contact Information](#-contact-information)
-13. [ Reference](#-reference)
+2. [What is Maven?](#what-is-maven)
+3. [Why Use Maven?](#why-use-maven)
+4. [ Purpose of Maven](#-purpose-of-maven)
+5. [ Prerequisites for Using Maven](#-prerequisites-for-using-maven)
+6. [ Installation Check](#installation-check)
+7. [ Key Features of Maven](#-key-features-of-maven)
+8. [ A Build Lifecycle is Made Up of Phases](#a-build-lifecycle-is-made-up-of-phases)
+9. [ Commonly Used Plugins](#commonly-used-plugins)
+10. [ Repositories in Maven](#-repositories-in-maven)
+11. [ Troubleshooting](#️-trobleshooting)
+12. [Conclusion](#Conclusion)
+13. [ Contact Information](#-contact-information)
+14. [ Reference](#-reference)
 
 
 
@@ -32,6 +34,10 @@
 
 
 # Introduction
+
+
+
+# What is Maven 
 
 Maven is a build automation and dependency management tool used primarily for Java projects. It was developed by the Apache Software Foundation.
 
@@ -42,9 +48,6 @@ Think of Maven as a project manager that:
 - Handles dependencies (like libraries) automatically.
 
 - Ensures consistency across builds.
-
-
-
 
 
 
