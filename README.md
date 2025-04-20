@@ -29,7 +29,7 @@
     - [ansible_ssh_private_key_file](#ansible_ssh_private_key_file)
     - [ansible_ssh_common_args](#ansible_ssh_common_args)
   - [4. Run Ansible Commands](#4-run-ansible-commands)
-- [ansible.cfg Configuration](#ansible.cfg-configuration)
+- [ansible.cfg Configuration](#ansible-.-cfg-configuration)
 - [conclusion](#conclusion)
 - [Contact Information](#contact-information)
 - [Documentation Reference](#documentation-reference)
