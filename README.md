@@ -7,7 +7,7 @@
 |**April 19** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
 |**April 20** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
 
-##  Table of Contents
+#  Table of Contents
 
 - [ Introduction](#Introduction)
 
