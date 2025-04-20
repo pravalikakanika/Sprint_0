@@ -7,6 +7,7 @@
 |----------|---------|---------------|-----------------|
 |**April 18** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
 |**April 19** | v.1.1 | Updated intro.md | Pravalika Kanikarapu |
+|**April 20** | v.1.2 | Updated intro.md | Pravalika Kanikarapu |
 
 
 
@@ -14,8 +15,11 @@
 
 1.  [Introduction](#Introduction)
 2. [What is Ansible?](#what-is-ansible-)
-3. [Overview](#overview)
-4. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
+3. [What are Ansible Roles?](#what-are-ansible-roles)
+4. [Why ansible?](#why-ansible)
+5. [Why use Ansible Roles?](#why-use-ansible-roles)
+6. [Overview](#overview)
+7. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
     1. [Tasks](#tasks)
     2. [Handlers](#handlers)
     3. [Variables](#variables)
@@ -23,71 +27,65 @@
     5. [Templates](#templates)
     6. [Defaults](#defaults)
     7. [Meta](#meta)
-5. [Why Use Ansible Roles?](#why-use-ansible-roles-)
+8. [Why Use Ansible Roles?](#why-use-ansible-roles-)
     1. [Modularity](#modularity-)
     2. [Reusability](#reusability-)
     3. [Shareability](#shareability-)
     4. [Maintainability](#maintainability-)
     5. [Consistency](#consistency-)
-6. [Purpose of Ansible Roles](#purpose-of-ansible-roles-)
-7. [Prerequisites for Using Ansible Roles](#prerequisites-for-using-ansible-roles-)
+9. [Purpose of Ansible Roles](#purpose-of-ansible-roles-)
+10. [Prerequisites for Using Ansible Roles](#prerequisites-for-using-ansible-roles-)
     1. [Basic Knowledge of Ansible](#basic-knowledge-of-ansible-)
     2. [Ansible Installed](#ansible-installed-)
     3. [Directory Structure Knowledge](#directory-structure-knowledge-)
     4. [A Working Inventory](#a-working-inventory-)
-8. [Features of Ansible Roles](#features-of-ansible-roles-)
+11. [Features of Ansible Roles](#features-of-ansible-roles-)
     1. [Encapsulation](#encapsulation-)
     2. [Modularization](#modularization-)
     3. [Idempotency](#idempotency-)
     4. [Shareable](#shareable-)
     5. [Organized Playbooks](#organized-playbooks-)
     6. [Testable](#testable-)
-9. [conclusion](#conclusion)
-10. [Contact Information](#-contact-information)
-11. [Reference](#-reference)
+12. [conclusion](#conclusion)
+13. [Contact Information](#-contact-information)
+14. [Reference](#-reference)
 
 
 
 # Introduction
+This document is covering the features of the ansible role
 
-Ansible Roles are a powerful feature that helps you organize your automation code in a clean, structured, and reusable way. Instead of writing long, messy playbooks, roles let you break down tasks into smaller components like tasks, variables, files, templates, and handlers. Roles promote modularity, reusability, maintainability, and consistency
+
 
 # What is Ansible? 
 
-Ansible is an open-source automation platform that simplifies the management of servers, software deployment, and configuration management. It enables you to automate tasks like installing packages, configuring services, and orchestrating complex workflows, all while using simple, human-readable YAML files. 🌐🚀
+Ansible is an open-source automation platform that simplifies the management of servers, software deployment, and configuration management. It enables you to automate tasks like installing packages, configuring services, and orchestrating complex workflows, all while using simple, human-readable YAML files. 
 
-## Overview
+# What are Ansible Roles?
 
-An **Ansible Role** is a way to structure and organize your automation tasks in a reusable and modular way. Roles break down complex configurations into smaller, manageable components, making it easier to maintain, reuse, and share across different playbooks or projects.
+Ansible Roles are a powerful feature that helps you organize your automation code in a clean, structured, and reusable way. Instead of writing long, messy playbooks, roles let you break down tasks into smaller components like tasks, variables, files, templates, and handlers. Roles promote modularity, reusability, maintainability, and consistency
 
-This role contains all the necessary tasks, variables, templates, and files to automate the configuration of <specific software/service>.
-
-## Key Components of an Ansible Role
-
-### 1. **Tasks**
-Tasks are the core actions that the role will perform, such as installing software, configuring services, or applying system settings. Tasks are executed sequentially in the order they are defined.
-
-### 2. **Handlers**
-Handlers are special tasks that are triggered by notifications from other tasks. For example, you might notify a handler to restart a service if its configuration file was changed by a task.
-
-### 3. **Variables**
-Variables are used to customize the role's behavior. They can be defined within the role itself or passed from a playbook or inventory. These allow the role to be flexible and adaptable to different environments.
-
-### 4. **Files**
-The files directory contains any static files that need to be copied or deployed to the target system. These might include configuration files, scripts, or other assets required by the role.
-
-### 5. **Templates**
-Templates are Jinja2 templates used to dynamically generate configuration files or other resources based on variables. These allow you to customize the content of files before deploying them to the system.
-
-### 6. **Defaults**
-The defaults directory contains the default values for role variables. These values can be overridden by the playbook or inventory. Default values are used unless explicitly changed.
-
-### 7. **Meta**
-The meta directory contains metadata about the role. This may include information such as role dependencies, platform-specific settings, or author information. This helps in understanding the context and requirements of the role.
+# Why use Ansible?
 
 
+## 1. Simplifies Automation
+Ansible automates repetitive tasks like software installation, configuration management, and updates across multiple servers. This helps save time, reduces human error, and ensures consistency in your environment.
 
-# Why Use Ansible Roles? 🚀
+## 2. Agentless
+Ansible does not require any agents or special software to be installed on the managed systems. It communicates over **SSH** (for Linux) or **WinRM** (for Windows), which simplifies setup and reduces overhead.
+
+## 3. Idempotent
+Ansible ensures that running the same task multiple times will not cause unintended side effects. It checks whether the desired state is already achieved and only makes changes when necessary, which helps reduce the risk of configuration drift.
+
+## 4. Ease of Use
+Ansible uses **YAML** for its playbooks, making it simple to read and write. You don’t need deep programming knowledge to get started, which makes it accessible to both system administrators and engineers.
+
+## 5. Scalability
+Ansible can scale from a small number of systems to managing thousands of nodes. It is capable of handling complex environments with ease, without requiring complex configurations.
+
+---
+
+# Why Use Ansible Roles? 
 
 ### 1. **Modularity** 
   
@@ -125,7 +123,7 @@ The Ansible community and internal teams can benefit from shared roles, making i
 
 ---
 
-### 4. **Maintainability** 🛠  
+### 4. **Maintainability**   
 
 **Why it matters:** 
 
@@ -149,12 +147,41 @@ Roles provide a consistent way to organize and manage tasks. This is especially 
 By using roles, you ensure that every time a web server is configured, it's done the same way, whether you're doing it on a local dev server or a production server, ensuring consistency across environments.
 
 
-# Purpose of Ansible Roles 🎯
+
+## Key Components of an Ansible Role
+
+### 1. **Tasks**
+Tasks are the core actions that the role will perform, such as installing software, configuring services, or applying system settings. Tasks are executed sequentially in the order they are defined.
+
+### 2. **Handlers**
+Handlers are special tasks that are triggered by notifications from other tasks. For example, you might notify a handler to restart a service if its configuration file was changed by a task.
+
+### 3. **Variables**
+Variables are used to customize the role's behavior. They can be defined within the role itself or passed from a playbook or inventory. These allow the role to be flexible and adaptable to different environments.
+
+### 4. **Files**
+The files directory contains any static files that need to be copied or deployed to the target system. These might include configuration files, scripts, or other assets required by the role.
+
+### 5. **Templates**
+Templates are Jinja2 templates used to dynamically generate configuration files or other resources based on variables. These allow you to customize the content of files before deploying them to the system.
+
+### 6. **Defaults**
+The defaults directory contains the default values for role variables. These values can be overridden by the playbook or inventory. Default values are used unless explicitly changed.
+
+### 7. **Meta**
+The meta directory contains metadata about the role. This may include information such as role dependencies, platform-specific settings, or author information. This helps in understanding the context and requirements of the role.
+
+
+
+
+
+
+# Purpose of Ansible Roles 
 
 The main purpose of Ansible Roles is to organize your automation tasks into self-contained units that are easy to manage, reuse, and share. They provide a clean way to package logic related to a specific task, such as setting up a web server, installing software, or configuring a firewall.
 
 
-# Prerequisites for Using Ansible Roles ⚙️
+# Prerequisites for Using Ansible Roles 
 
 Before creating or using Ansible Roles, ensure you have the following prerequisites:
 
@@ -222,7 +249,7 @@ db2.example.com
 
 ```
 
-# Features of Ansible Roles ⭐
+# Features of Ansible Roles 
 
 Ansible Roles come with several powerful features that enhance your automation workflows. Here's an overview of the key features of Ansible Roles:
 
@@ -289,7 +316,7 @@ Ansible Roles provide a powerful, modular, and organized approach to automation,
 
 
 
-# 📧 Contact Information
+#  Contact Information
 
 
 | Name       | Email Address                |
@@ -298,7 +325,7 @@ Ansible Roles provide a powerful, modular, and organized approach to automation,
 
 
 
-## 📚 Reference
+##  Reference
 
 | **Link**                                                                 | **Description**                                      |
 |--------------------------------------------------------------------------|------------------------------------------------------|
