@@ -396,17 +396,17 @@ dist/
 
 # Comparison: Poetry vs pip + venv
 
-| Feature                         | pip + venv                                   | Poetry                                  |
-|----------------------------------|-----------------------------------------------|------------------------------------------|
-| **Dependency Installation**       | ✅ Yes                                       | ✅ Yes                                    |
-| **Virtual Environment Creation** | ✅ Yes (`python -m venv`)                    | ✅ Yes (automatic)                        |
-| **Lock File Generation**         | ❌ No (`requirements.txt` is static)         | ✅ Yes (`poetry.lock`)                    |
-| **Dependency Resolution**        | ❌ Manual or via `pip-tools`                 | ✅ Automatic                              |
-| **Project Metadata**             | `setup.py`, `requirements.txt`, `MANIFEST.in` | ✅ All in `pyproject.toml`              |
-| **Dev vs Main Dependencies**     | ❌ No distinction                             | ✅ Clear separation                       |
-| **Versioning & Publishing**      | Requires `setuptools`, `twine`, etc.         | ✅ Built-in                               |
-| **Simplicity**                   | ❌ More moving parts                          | ✅ All-in-one tool                        |
-
+| Feature / Tool              | pip (Package Installer)                                                                 | venv (Virtual Environment)                                                              | Poetry (All-in-One Tool)                                                                 |
+|----------------------------|------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **Purpose**                | Installs Python packages from PyPI or other indexes.                                     | Creates isolated environments to prevent dependency conflicts across projects.          | Manages dependencies, environments, versioning, and publishing in one tool.              |
+| **Package Management**     | Yes – installs packages using `pip install package_name`.                                | No – does not manage or install packages.                                                | Yes – uses `poetry add` to install and track dependencies.                               |
+| **Environment Isolation**  | No – uses the global Python environment unless inside a venv.                            | Yes – creates a clean, isolated environment per project.                                | Yes – automatically creates and uses per-project virtual environments.                   |
+| **Lock File**              | No – uses `requirements.txt` which may not pin all transitive dependencies.              | No – does not handle dependency files.                                                   | Yes – uses `poetry.lock` to ensure consistent builds and versions across machines.       |
+| **Handles Dev Dependencies** | No – all packages must be manually tracked.                                             | No – does not handle packages.                                                           | Yes – allows separation of dev and runtime dependencies using `--dev` flag.              |
+| **Project Metadata**       | Requires multiple files like `setup.py`, `MANIFEST.in`, and `requirements.txt`.          | No – not related to project metadata.                                                    | Yes – all metadata is declared in `pyproject.toml`.                                      |
+| **Build & Publish Package**| Requires `setuptools`, `wheel`, and `twine` for packaging and publishing to PyPI.        | No – not used for packaging.                                                             | Yes – supports `poetry build` and `poetry publish` directly from the CLI.                |
+| **Ease of Use**            | Medium – needs manual setup of virtual environments and multiple tools.                  | Medium – handles only one part of the workflow; must be combined with pip.               | Easy – unified CLI handles setup, dependencies, environments, and publishing.            |
+| **Common Usage**           | Used to install packages into a virtual environment manually created with `venv`.        | Used to isolate environments and then combined with pip for package installs.            | Used for full-cycle project management, from project creation to publishing.             |
 
 
 
