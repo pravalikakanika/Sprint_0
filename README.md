@@ -14,41 +14,41 @@
 # Table of Contents
 
 1.  [Introduction](#Introduction)
-2. [What is Ansible?](#what-is-ansible-)
+2. [What is Ansible?](#-what-is-ansible-)
 3. [What are Ansible Roles?](#what-are-ansible-roles)
-4. [Why ansible?](#why-ansible)
+4. [Why ansible?](#-why-ansible)
 5. [Why use Ansible Roles?](#why-use-ansible-roles)
 6. [Overview](#overview)
 7. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
-    1. [Tasks](#tasks)
-    2. [Handlers](#handlers)
-    3. [Variables](#variables)
-    4. [Files](#files)
-    5. [Templates](#templates)
-    6. [Defaults](#defaults)
+    1. [Tasks](#-tasks)
+    2. [Handlers](#-handlers)
+    3. [Variables](#-variables)
+    4. [Files](#-files)
+    5. [Templates](#-templates)
+    6. [Defaults](#-defaults)
     7. [Meta](#meta)
 8. [Why Use Ansible Roles?](#why-use-ansible-roles-)
-    1. [Modularity](#modularity-)
-    2. [Reusability](#reusability-)
-    3. [Shareability](#shareability-)
-    4. [Maintainability](#maintainability-)
-    5. [Consistency](#consistency-)
+    1. [Modularity](#-modularity-)
+    2. [Reusability](#-reusability-)
+    3. [Shareability](#-shareability-)
+    4. [Maintainability](#-maintainability-)
+    5. [Consistency](#-consistency-)
 9. [Purpose of Ansible Roles](#purpose-of-ansible-roles-)
 10. [Prerequisites for Using Ansible Roles](#prerequisites-for-using-ansible-roles-)
-    1. [Basic Knowledge of Ansible](#basic-knowledge-of-ansible-)
-    2. [Ansible Installed](#ansible-installed-)
-    3. [Directory Structure Knowledge](#directory-structure-knowledge-)
-    4. [A Working Inventory](#a-working-inventory-)
+    1. [Basic Knowledge of Ansible](#-basic-knowledge-of-ansible-)
+    2. [Ansible Installed](#-ansible-installed-)
+    3. [Directory Structure Knowledge](#-directory-structure-knowledge-)
+    4. [A Working Inventory](#-a-working-inventory-)
 11. [Features of Ansible Roles](#features-of-ansible-roles-)
-    1. [Encapsulation](#encapsulation-)
-    2. [Modularization](#modularization-)
-    3. [Idempotency](#idempotency-)
-    4. [Shareable](#shareable-)
-    5. [Organized Playbooks](#organized-playbooks-)
-    6. [Testable](#testable-)
-12. [conclusion](#conclusion)
-13. [Contact Information](#-contact-information)
-14. [Reference](#-reference)
+    1. [Encapsulation](#-encapsulation-)
+    2. [Modularization](#-modularization-)
+    3. [Idempotency](#-idempotency-)
+    4. [Shareable](#-shareable-)
+    5. [Organized Playbooks](#-organized-playbooks-)
+    6. [Testable](#-testable-)
+12. [conclusion](#-conclusion)
+13. [Contact Information](#contact-information)
+14. [Reference](#reference)
 
 
 
@@ -148,7 +148,7 @@ By using roles, you ensure that every time a web server is configured, it's done
 
 
 
-## Key Components of an Ansible Role
+# Key Components of an Ansible Role
 
 ### 1. **Tasks**
 Tasks are the core actions that the role will perform, such as installing software, configuring services, or applying system settings. Tasks are executed sequentially in the order they are defined.
