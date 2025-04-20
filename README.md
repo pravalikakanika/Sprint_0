@@ -86,7 +86,7 @@ Ansible can scale from a small number of systems to managing thousands of nodes.
 
 # Why Use Ansible Roles? 
 
-### 1. **Modularity** 
+### 1.**Modularity** 
   
 **Why it matters:**
 
@@ -98,7 +98,7 @@ Ansible can scale from a small number of systems to managing thousands of nodes.
 
 ---
 
-### 2. **Reusability** 
+### 2.**Reusability** 
   
 **Why it matters:** 
 
@@ -110,7 +110,7 @@ If you create a role for setting up a MySQL database, you can use it across mult
 
 ---
 
-### 3. **Shareability** 
+### 3.**Shareability** 
   
 **Why it matters:** 
 
@@ -122,7 +122,7 @@ The Ansible community and internal teams can benefit from shared roles, making i
 
 ---
 
-### 4. **Maintainability**   
+### 4.**Maintainability**   
 
 **Why it matters:** 
 
@@ -134,7 +134,7 @@ If you need to update how a web server is configured, you can go directly to the
 
 ---
 
-### 5. **Consistency**  
+### 5.**Consistency**  
 
  
 **Why it matters:** 
@@ -149,25 +149,25 @@ By using roles, you ensure that every time a web server is configured, it's done
 
 # Key Components of an Ansible Role
 
-### 1. **Tasks**
+### 1.**Tasks**
 Tasks are the core actions that the role will perform, such as installing software, configuring services, or applying system settings. Tasks are executed sequentially in the order they are defined.
 
-### 2. **Handlers**
+### 2.**Handlers**
 Handlers are special tasks that are triggered by notifications from other tasks. For example, you might notify a handler to restart a service if its configuration file was changed by a task.
 
-### 3. **Variables**
+### 3.**Variables**
 Variables are used to customize the role's behavior. They can be defined within the role itself or passed from a playbook or inventory. These allow the role to be flexible and adaptable to different environments.
 
-### 4. **Files**
+### 4.**Files**
 The files directory contains any static files that need to be copied or deployed to the target system. These might include configuration files, scripts, or other assets required by the role.
 
-### 5. **Templates**
+### 5.**Templates**
 Templates are Jinja2 templates used to dynamically generate configuration files or other resources based on variables. These allow you to customize the content of files before deploying them to the system.
 
-### 6. **Defaults**
+### 6.**Defaults**
 The defaults directory contains the default values for role variables. These values can be overridden by the playbook or inventory. Default values are used unless explicitly changed.
 
-### 7. **Meta**
+### 7.**Meta**
 The meta directory contains metadata about the role. This may include information such as role dependencies, platform-specific settings, or author information. This helps in understanding the context and requirements of the role.
 
 
@@ -184,7 +184,7 @@ The main purpose of Ansible Roles is to organize your automation tasks into self
 
 Before creating or using Ansible Roles, ensure you have the following prerequisites:
 
-### 1. **Basic Knowledge of Ansible** 
+### 1.**Basic Knowledge of Ansible** 
 
 **What it is:** You should be familiar with the basics of Ansible playbooks and tasks. This includes knowing how to define hosts, create tasks, and understand how Ansible's YAML syntax works.
 
@@ -192,7 +192,7 @@ Before creating or using Ansible Roles, ensure you have the following prerequisi
 
 ---
 
-### 2. **Ansible Installed** 
+### 2.**Ansible Installed** 
 
 **What it is:** Ensure Ansible is installed on your machine. You can install it using a package manager like `apt`, `yum`, `brew`, or via `pip` for Python.
 
@@ -202,7 +202,7 @@ Before creating or using Ansible Roles, ensure you have the following prerequisi
 ansible --version
 ```
 
-### 3. **Directory Structure Knowledge** 
+### 3.**Directory Structure Knowledge** 
   
 **What it is:** Roles have a specific directory structure that needs to be followed to function properly. This includes directories for tasks, variables, templates, files, handlers, and more.
 
@@ -229,7 +229,7 @@ my_role/
 
 ```
 
-### 4. **A Working Inventory** 
+### 4.**A Working Inventory** 
   
 **What it is:** You must have an inventory of hosts that your playbooks will target. This can be a simple file listing IP addresses or hostnames of the machines you want to configure.
 
@@ -252,7 +252,7 @@ db2.example.com
 
 Ansible Roles come with several powerful features that enhance your automation workflows. Here's an overview of the key features of Ansible Roles:
 
-### 1. **Encapsulation** 
+### 1.**Encapsulation** 
   
 **What it is:** Roles encapsulate automation logic into a reusable, isolated unit. This means that the logic within a role is self-contained and doesn't interfere with other tasks or playbooks.
 
@@ -260,7 +260,7 @@ Ansible Roles come with several powerful features that enhance your automation w
 
 ---
 
-### 2. **Modularization** 
+### 2.**Modularization** 
  
 **What it is:** Roles group related tasks, files, templates, and handlers logically, keeping everything organized within a dedicated role structure.
 
@@ -270,7 +270,7 @@ Ansible Roles come with several powerful features that enhance your automation w
 
 ---
 
-### 3. **Idempotency** 
+### 3.**Idempotency** 
   
 **What it is:** Ansible tasks within roles are idempotent, meaning they can be safely run multiple times without causing unintended side effects or errors.
 
@@ -280,7 +280,7 @@ Ansible Roles come with several powerful features that enhance your automation w
 
 ---
 
-### 4. **Shareable** 
+### 4.**Shareable** 
   
 **What it is:** Roles can be shared with others on platforms like Ansible Galaxy, allowing them to reuse your role in their own automation workflows.
 
@@ -290,7 +290,7 @@ Ansible Roles come with several powerful features that enhance your automation w
 
 ---
 
-### 5. **Organized Playbooks** 
+### 5.**Organized Playbooks** 
   
 **What it is:** Roles help structure and organize playbooks, keeping them clean, readable, and understandable.
 
@@ -300,7 +300,7 @@ Ansible Roles come with several powerful features that enhance your automation w
 
 ---
 
-### 6. **Testable** 
+### 6.**Testable** 
   
 **What it is:** You can include tests within roles to ensure that they work as expected. Testing can be done using frameworks like Testinfra or Molecule.
 
