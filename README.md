@@ -35,6 +35,10 @@
 
 # Introduction
 
+- This document provides a detailed guide to Apache Maven, a build automation and dependency management tool for Java projects. It explains Maven's purpose in automating tasks like compilation, testing, 
+   packaging, and deployment, while managing project dependencies.
+-  Key features include the use of a centralized pom.xml file for configuration, automatic dependency management, a defined build lifecycle with phases, and plugin support for extending functionality. 
+- The document describes three types of repositories: Local Repository (on your machine), Central Repository (the default online repository), and Remote (Custom) Repositories, where Maven fetches project dependencies.
 
 
 # What is Maven 
