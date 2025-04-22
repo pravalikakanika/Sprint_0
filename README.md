@@ -30,8 +30,6 @@
   
 - [ Comparison: Poetry vs pip + venv](#comparison-poetry-vs-pip--venv)
 
-- [Troubleshooting](#troubleshooting)
-
 - [Conclusion](#Conclusion).
 
 - [ Contact Information](#contact-information)
@@ -409,18 +407,6 @@ dist/
 | **Common Usage**           | Used to install packages into a virtual environment manually created with `venv`.        | Used to isolate environments and then combined with pip for package installs.            | Used for full-cycle project management, from project creation to publishing.             |
 
 
-
-
-# Troubleshooting
-
-| Issue / Error                                 | Possible Cause                                             | Solution                                                                 |
-|-----------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------|
-| `poetry: command not found`                   | Poetry is not in your system's `PATH`                      | Add Poetry’s bin directory to your `PATH` manually (see steps above)     |
-| `Permission denied` during install            | Insufficient permissions                                   | Try running the install command with elevated privileges (`sudo`)       |
-| Wrong Python version detected                 | Poetry uses system's default Python version                | Use `poetry env use python3.x` to set the correct version                |
-| Dependencies not installing                   | Network issues or outdated lock file                       | Run `poetry lock --no-update` or check your internet connection          |
-| Virtual environment not being created         | venv module might be missing or disabled                   | Ensure Python's `venv` module is installed and accessible                |
-| Poetry installed but still not recognized     | Terminal session not refreshed                             | Restart terminal or run `source ~/.bashrc` / `source ~/.zshrc` etc.      |
 
 
 
