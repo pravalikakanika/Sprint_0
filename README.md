@@ -3,11 +3,14 @@
 ![image](https://github.com/user-attachments/assets/52505250-e374-4634-b4e1-133c9b293eb1)
 
 
-|**Date**| **Version**| **Description**| **Changed By** |
-|----------|---------|---------------|-----------------|
-|**April 15** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
-|**April 19** | v.1.1 | sop_disk_ulimit.md | Pravalika Kanikarapu |
-|**April 20** | v.1.2 | sop_disk_ulimit.md | Pravalika Kanikarapu |
+
+
+| Date       | Version | Description           | Changed By             | L0     | L1       | L2     |
+|------------|---------|-----------------------|-------------------------|--------|----------|--------|
+| April 15   | v1.0    | Initial Draft         | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
+| April 19   | v1.1    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
+| April 20   | v1.2    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
+| April 24   | v1.3    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
 
 
 #  **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
@@ -19,19 +22,17 @@
 #  Table of Contents
 
 1. [Introduction](#Introduction)
-2. [What is SOP](#what-is-sop)
-3. [Why SOP](#why-sop)
-4. [Purpose](#purpose)   
-5. [ Scope](#scope)  
-6. [ Prerequisites](#prerequisites)  
-7. [ Procedure](#procedure)  
+2. [Purpose](#purpose)   
+3. [ Scope](#scope)  
+4. [ Prerequisites](#prerequisites)  
+5. [ Procedure](#procedure)  
    - [ Step 1: Check Disk Usage](#step-1-check-disk-usage)  
    - [ Step 2: Check Mount Points](#step-2-check-mount-points)  
    - [ Step 3: Configure ulimit Settings](#step-3-configure-ulimit-settings)  
-8. [ Troubleshooting](#troubleshooting)  
-9. [Conclusion](#conclusion)
-10. [ Contact Information](#contact-information)  
-11. [ Reference](#reference)  
+6. [ Troubleshooting](#troubleshooting)  
+7. [Conclusion](#conclusion)
+8. [ Contact Information](#contact-information)  
+9. [ Reference](#reference)  
 
 
 
@@ -40,15 +41,6 @@
 The SOP should provide steps to check disk usage, mount points, and configure ulimit settings for users and processes
 
 
-# What is SOP
-
-A Standard Operating Procedure (SOP) is a set of written instructions that describe how to perform a specific task or process consistently and efficiently. SOPs are used across various industries to ensure that operations are carried out in a standardized manner, reducing errors and ensuring quality control. 
-
-# Why SOP
-
-- Ensures Consistency Across Systems
-- Helps in Automation and Scripting
-- Speeds Up Setup and Troubleshooting
 
 #  Purpose
 
@@ -81,7 +73,6 @@ Before proceeding with this SOP, the following prerequisites must be met:
 
 ### Step 1: Check Disk Usage
 
----
 
 #### A. View Disk Usage Summary
 
@@ -177,7 +168,7 @@ sudo nano /etc/security/limits.conf
 
    - **Add the following lines to set the limits for a user or all users:**
 
-markdown
+
 
 *               soft    nofile          5000
 *               hard    nofile          10000
@@ -202,7 +193,7 @@ Apply changes by logging out and back in or restarting the system.
 
 
 # Conclusion 
-This SOP provides a structured and reliable approach for system administrators to monitor disk usage, verify mount point configurations, and manage system resource limits using ulimit on Ubuntu systems. By following these standardized steps, teams can ensure consistent system performance, prevent resource-related failures, and maintain overall system stability. 
+This SOP provides a structured and reliable approach for system administrators to monitor disk usage, verify mount point configurations, and manage system resource limits using ulimit on Ubuntu systems. 
 
 # Contact Information
 
