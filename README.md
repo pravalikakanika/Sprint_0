@@ -1,11 +1,12 @@
 ![image](https://github.com/user-attachments/assets/caaa1b47-4765-4040-89d5-e799dfe86bed)
 
 
-|**Date**| **Version**| **Description**| **Changed By** |
-|----------|---------|---------------|-----------------|
-|**April 17** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
-|**April 19** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
-|**April 20** | v.1.1 | Updated documentation.md | Pravalika Kanikarapu |
+| Date       | Version | Description           | Changed By             | L0     | L1       | L2     |
+|------------|---------|-----------------------|-------------------------|--------|----------|--------|
+| April 17   | v1.0    | Initial Draft         | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay |
+| April 19   | v1.1    | Updated sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay|
+| April 20   | v1.2    | Updated sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay|
+| April 24   | v1.3    | Updated sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma| Piyush Upadhyay|
 
 
 
@@ -16,21 +17,12 @@
 2. [What is Maven?](#what-is-maven)
 3. [Why Use Maven?](#why-use-maven)
 4. [ Purpose of Maven](#purpose-of-maven)
-5. [ Prerequisites for Using Maven](#prerequisites-for-using-maven)
-6. [ Installation Check](#installation-check)
-7. [ Key Features of Maven](#key-features-of-maven)
-8. [ A Build Lifecycle is Made Up of Phases](#a-build-lifecycle-is-made-up-of-phases)
-9. [ Commonly Used Plugins](#commonly-used-plugins)
-10. [ Repositories in Maven](#repositories-in-maven)
-11. [ Troubleshooting](#️trobleshooting)
-12. [Conclusion](#Conclusion)
-13. [ Contact Information](#contact-information)
-14. [ Reference](#reference)
-
-
-
-
-
+5. [ Key Features of Maven](#key-features-of-maven)
+6. [ Commonly Used Plugins](#commonly-used-plugins)
+7. [ Repositories in Maven](#repositories-in-maven)
+8. [Conclusion](#Conclusion)
+9. [ Contact Information](#contact-information)
+10. [ Reference](#reference)
 
 
 # Introduction
@@ -86,39 +78,10 @@ Maven was designed to streamline and standardize the Java project lifecycle. Her
 |  **Handle Dependencies Automatically** | Downloads and manages required libraries from central repositories.          |
 |  **Enhance Team Collaboration** | Ensures consistent builds and environments across different machines.        |
 |  **Generate Reports**          | Supports generation of test reports, project documentation, and more.        |
-| ⚙ **Extend with Plugins**        | Add functionality like code quality checks, Docker builds, or custom deployments. |
-
-#  Prerequisites for Using Maven
-
-Before you start using Maven, ensure the following requirements are met:
-
-| Requirement              | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-|  **Java (JDK)**          | Java 8 or higher is required. Make sure to set the `JAVA_HOME` environment variable. |
-|  **Maven Installed**     | Download and install Maven from the [Apache Maven website](https://maven.apache.org/download.cgi). |
-|  **System Environment Setup** | Add `MAVEN_HOME` and update your system `PATH` to include Maven's `bin` directory. |
-|  **Basic Java Knowledge** | Familiarity with Java concepts, packages, and standard file structures is helpful. |
-|  **Internet Access**     | Needed to download project dependencies from remote repositories. |
+|  **Extend with Plugins**        | Add functionality like code quality checks, Docker builds, or custom deployments. |
 
 
 
-# Installation Check
-
-## Installation Check
-
-To verify that Maven is correctly installed, run the following command:
-
-```bash
-mvn -v
-```
-
-This should display version information for both Maven and Java. If Maven is correctly installed, you should see output similar to this:
-```bash
-Apache Maven 3.x.x (some details here)
-Maven home: /path/to/maven
-Java version: 11.x.x, vendor: Oracle Corporation, runtime: /path/to/java
- ```
- If you see version info for both Maven and Java, the installation is successful.
 
 #  Key Features of Maven
 
@@ -523,21 +486,8 @@ It outputs the final result (e.g., .jar or .war) into the target/ directory
 
 
 
-#  Troubleshooting
-
-| **Problem**                        | **Cause**                                    | **Solution**                                                                                                                                               |
-|-------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mvn: command not found`            | Maven is not installed or PATH is not set.   | 1. Install Maven from [here](https://maven.apache.org/).<br>2. Set `MAVEN_HOME` and add Maven's `bin/` to the PATH variable.<br>3. Restart terminal/IDE.   |
-| `JAVA_HOME is not set`              | Java is not installed or `JAVA_HOME` is missing. | 1. Set `JAVA_HOME` to point to your JDK installation directory.<br>2. Add `JAVA_HOME/bin` to the PATH variable.                                           |
-| `Dependency Not Found (404)`        | Incorrect dependency details or missing artifact. | 1. Check `pom.xml` for typos in `groupId`, `artifactId`, `version`.<br>2. Run `mvn clean install` to try downloading dependencies again.<br>3. Use `mvn clean install -U` to force update. |
-| `Build Fails with Permission Denied` | Insufficient file system permissions.       | 1. Check and fix file permissions (`chmod` on Linux/macOS, or right-click → Properties → Security on Windows).<br>2. Use `sudo` (Linux/macOS) or run as Admin (Windows). |
-| `Plugin Not Executing Properly`     | Plugin misconfiguration or missing version. | 1. Ensure plugin version is correctly defined in `pom.xml`.<br>2. Check that goals are correctly configured.<br>3. Run the plugin goal directly: `mvn clean compile`. |
-| `Tests Not Running`                 | Test files not in correct directory or naming issue. | 1. Ensure tests are in `src/test/java`.<br>2. Ensure test classes follow naming convention (`*Test.java` or `*Tests.java`).<br>3. Add JUnit dependency in `pom.xml`. |
-| `Outdated Dependencies (Snapshot Version)` | Snapshot dependencies not updated.          | 1. Run `mvn clean install -U` to force updates.<br>2. Ensure repository is set up for snapshot versions.                                                 |
-| `Build Stuck / Timeout Errors`      | Network issues, repository access problems. | 1. Check your internet connection.<br>2. Configure a proxy if you're behind a firewall (update `settings.xml`).<br>3. Check for repository availability.   |
-
 # Conclusion
-Maven is not just a build tool — it’s a project management framework that empowers developers to streamline their workflows, reduce manual tasks, and produce consistent, high-quality builds. This guide equips readers with the knowledge and practical insights needed to use Maven effectively in day-to-day development tasks.By automating tasks such as compiling code, managing dependencies, running tests, and packaging artifacts, Maven streamlines the development process and ensures consistent builds across different environments.
+Maven is not just a build tool — it’s a project management framework that empowers developers to streamline their workflows, reduce manual tasks, and produce consistent, high-quality builds. By automating tasks such as compiling code, managing dependencies, running tests, and packaging artifacts, Maven streamlines the development process and ensures consistent builds across different environments.
 
 
 #  Contact Information
