@@ -19,18 +19,7 @@
 - [Why static Inventory](#why-static-inventory)
 - [Where to Place Inventory Files](#where-to-place-inventory-files)
 - [Overview](#overview)
-- [ Key Steps to Follow](#keysteps-to-follow)
-  - [1. Create the Inventory File](#1-create-the-inventory-file)
-  - [2. Understanding the Structure](#2-understanding-the-structure)
-    - [Groups](#groups)
-    - [Server Entries](#server-entries)
-    - [Group Variables](#group-variables)
-    - [Parent Group](#parent-group)
-  - [3. Special Settings for Ansible](#3-special-settings-for-ansible)
-    - [ansible_user](#ansible_user)
-    - [ansible_ssh_private_key_file](#ansible_ssh_private_key_file)
-    - [ansible_ssh_common_args](#ansible_ssh_common_args)
-  - [4. Run Ansible Commands](#4-run-ansible-commands)
+- [ Key Steps to Follow](#key-steps-to-follow)
 - [Ansible Configuration](#ansible-configuration)
 - [Conclusion](#conclusion)
 - [Contact Information](#contact-information)
@@ -70,6 +59,7 @@ A static inventory is the simplest and most commonly used type, especially for s
 
 
 # Key Steps to Follow
+
 | Step | Title                          | Description |
 |------|--------------------------------|-------------|
 | 1    | **Create the Inventory File**  | Ansible uses an inventory file to define the servers you want to manage. This file can be in INI, YAML, or JSON format. Example shown below uses INI format. |
