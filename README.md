@@ -180,7 +180,7 @@ Apply changes by logging out and back in or restarting the system.
 
 
 
-## Troubleshooting
+# Troubleshooting
 
 
 | Issue                          | Solution                                                              |
