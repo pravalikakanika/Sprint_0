@@ -84,9 +84,9 @@ A static inventory is the simplest and most commonly used type, especially for s
 |      | ansible_ssh_private_key_file  | *(Optional)* Path to SSH private key for authentication. |
 |      | ansible_ssh_common_args       | *(Optional)* SSH arguments like disabling strict host checking. |
 | 4    | **Run Ansible Commands**       | Once inventory is ready, you can target groups to run playbooks or ad-hoc commands. |
-|      | Run playbook for web_servers   | ```bash<br>ansible-playbook -i inventory.ini site.yml -l web_servers``` |
-|      | Ping all servers               | ```bash<br>ansible all -i inventory.ini -m ping``` |
-|      | Ping db_servers only           | ```bash<br>ansible db_servers -i inventory.ini -m ping``` |
+|      | Run playbook for web_servers   | ```ansible-playbook -i inventory.ini site.yml -l web_servers``` |
+|      | Ping all servers               | ```ansible all -i inventory.ini -m ping``` |
+|      | Ping db_servers only           | ```ansible db_servers -i inventory.ini -m ping``` |
 
 
 
