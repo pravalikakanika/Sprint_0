@@ -44,7 +44,7 @@ Ansible Roles are a powerful feature that helps you organize your automation cod
 
 # Why Use Ansible?
 
-| #   | Feature        | Description |
+|    | Feature        | Description |
 |-----|----------------|-------------|
 | 1   | **Simplifies Automation** | Automates repetitive tasks like software installation, configuration, and updates across multiple servers. Saves time, reduces errors, and ensures consistency. |
 | 2   | **Agentless** | Requires no agent or special software on managed nodes. Communicates over **SSH** (Linux) or **WinRM** (Windows), simplifying setup. |
@@ -56,7 +56,7 @@ Ansible Roles are a powerful feature that helps you organize your automation cod
 
 # Why Use Ansible Roles?
 
-| #   | Benefit        | Why It Matters | Example |
+|    | Benefit        | Why It Matters | Example |
 |-----|----------------|----------------|---------|
 | 1   | **Modularity** | Helps avoid large, hard-to-maintain playbooks by breaking automation into logical, manageable units. | Create separate roles like `installing_nginx`, `configuring_firewall`, and `deploying_application` for cleaner playbooks. |
 | 2   | **Reusability** | Roles can be reused across different projects or teams, reducing duplicate effort. | A `mysql_setup` role can be reused in multiple environments, saving time and ensuring consistency. |
@@ -169,7 +169,7 @@ db2.example.com
 
 # Features of Ansible Roles
 
-| #   | Feature         | What It Is | Why It Matters | Example |
+|    | Feature         | What It Is | Why It Matters | Example |
 |-----|------------------|-------------|----------------|---------|
 | 1   | **Encapsulation** | Roles encapsulate automation logic into a reusable, isolated unit. | Keeps logic self-contained, making updates, debugging, and maintenance easier. | Separate logic for tasks like `nginx_setup`, `db_config` into isolated roles. |
 | 2   | **Modularization** | Groups related tasks, templates, files, and handlers in one role. | Organizes automation cleanly and reduces redundancy. | A `web_server` role manages packages, configs, and services in one module. |
