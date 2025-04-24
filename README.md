@@ -73,20 +73,21 @@ A static inventory is the simplest and most commonly used type, especially for s
 | Step | Title                          | Description |
 |------|--------------------------------|-------------|
 | 1    | **Create the Inventory File**  | Ansible uses an inventory file to define the servers you want to manage. This file can be in INI, YAML, or JSON format. Example shown below uses INI format. |
-|      | **Static Inventory Example**   | ```ini<br>[web_servers]<br>web1.example.com ansible_user=ubuntu<br>web2.example.com ansible_user=ubuntu<br><br>[db_servers]<br>db1.example.com ansible_user=centos<br>db2.example.com ansible_user=centos<br><br>[api_servers]<br>10.0.0.1 ansible_user=admin<br>10.0.0.2 ansible_user=admin<br><br>[all_servers:children]<br>web_servers<br>db_servers<br>api_servers<br><br>[web_servers:vars]<br>http_port=80<br>max_clients=200<br><br>[db_servers:vars]<br>db_port=3306<br>db_user=admin<br><br>[api_servers:vars]<br>api_port=8080``` |
-| 2    | **Understanding the Structure**| |
+|      | **Static Inventory Example**   | `[web_servers]`<br>web1.example.com ansible_user=ubuntu<br>web2.example.com ansible_user=ubuntu<br><br>`[db_servers]`<br>db1.example.com ansible_user=centos<br>db2.example.com ansible_user=centos<br><br>`[api_servers]`<br>10.0.0.1 ansible_user=admin<br>10.0.0.2 ansible_user=admin<br><br>`[all_servers:children]`<br>web_servers<br>db_servers<br>api_servers<br><br>`[web_servers:vars]`<br>http_port=80<br>max_clients=200<br><br>`[db_servers:vars]`<br>db_port=3306<br>db_user=admin<br><br>`[api_servers:vars]`<br>api_port=8080 |
+| 2    | **Understanding the Structure**| Overview of how the inventory file is organized. |
 |      | Groups                         | Sections like `[web_servers]`, `[db_servers]`, and `[api_servers]` group servers for easier management. |
-|      | Server Entries                 | Each entry is a hostname or IP address, optionally followed by connection variables (e.g., `ansible_user`). |
+|      | Server Entries                 | Each entry is a hostname or IP address, optionally followed by connection variables like `ansible_user`. |
 |      | Group Variables                | Group-specific settings like `http_port`, `db_port`, or `api_port` are defined for each group. |
 |      | Parent Group                   | `[all_servers:children]` aggregates all groups for applying tasks across all servers. |
-| 3    | **Special Settings for Ansible** | |
-|      | ansible_user                   | SSH username for Ansible to connect to the target servers. |
-|      | ansible_ssh_private_key_file  | *(Optional)* Path to SSH private key for authentication. |
-|      | ansible_ssh_common_args       | *(Optional)* SSH arguments like disabling strict host checking. |
-| 4    | **Run Ansible Commands**       | Once inventory is ready, you can target groups to run playbooks or ad-hoc commands. |
-|      | Run playbook for web_servers   | ```ansible-playbook -i inventory.ini site.yml -l web_servers``` |
-|      | Ping all servers               | ```ansible all -i inventory.ini -m ping``` |
-|      | Ping db_servers only           | ```ansible db_servers -i inventory.ini -m ping``` |
+| 3    | **Special Settings for Ansible** | Optional and recommended settings for smoother Ansible usage. |
+|      | ansible_user                   | SSH username Ansible should use to connect to the servers. |
+|      | ansible_ssh_private_key_file  | *(Optional)* Path to your SSH private key for authentication. |
+|      | ansible_ssh_common_args       | *(Optional)* Custom SSH arguments like disabling strict host key checking. |
+| 4    | **Run Ansible Commands**       | Use your inventory file to execute playbooks or ad-hoc commands. |
+|      | Run playbook for web_servers   | `ansible-playbook -i inventory.ini site.yml -l web_servers` |
+|      | Ping all servers               | `ansible all -i inventory.ini -m ping` |
+|      | Ping db_servers only           | `ansible db_servers -i inventory.ini -m ping` |
+
 
 
 
