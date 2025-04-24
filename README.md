@@ -368,7 +368,7 @@ Maven supports plugins to extend its functionality, such as compiling source cod
 
 Repositories are locations where Maven stores and retrieves project dependencies.
 
-# **Types of Maven Repositories**
+## **Types of Maven Repositories**
 
   - Local Repository
 
