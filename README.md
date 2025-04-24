@@ -31,7 +31,7 @@
     - [ansible_ssh_private_key_file](#ansible_ssh_private_key_file)
     - [ansible_ssh_common_args](#ansible_ssh_common_args)
   - [4. Run Ansible Commands](#4-run-ansible-commands)
-- [ansible Configuration](#ansible-configuration)
+- [Ansible Configuration](#ansible-configuration)
 - [Conclusion](#conclusion)
 - [Contact Information](#contact-information)
 - [Documentation Reference](#documentation-reference)
@@ -92,7 +92,7 @@ A static inventory is the simplest and most commonly used type, especially for s
 
 
 
-# ansible Configuration
+# Ansible Configuration
 
 If you want Ansible to use a specific inventory file by default, configure `ansible.cfg`:
 
