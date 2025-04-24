@@ -60,13 +60,14 @@ This SOP applies to all system administrators responsible for maintaining disk u
 
 # Prerequisites
 
-Before proceeding with this SOP, the following prerequisites must be met:
+| Requirement     | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **Permissions** | User must have administrative (root or sudo) access to the system.         |
+| **Backup**      | Backup critical system files before making any changes.                    |
+| **Installed Tools** | Ensure utilities like `df`, `du`, `mount`, and `ulimit` are available. |
+| **System Access** | Access via SSH or direct local terminal is required.                     |
+| **Knowledge**    | Basic understanding of Linux filesystem, mount points, and resource limits.|
 
-- **Permissions:** The user must have administrative (root or sudo) access to the system.
-- **Backup:** Backup critical system files before making any changes.
-- **Installed Tools:** Ensure the system has the necessary utilities installed (`df`, `du`, `mount`, `ulimit`).
-- **System Access:** Access to the system either via SSH or directly (local terminal).
-- **Knowledge:** Basic understanding of the Linux filesystem, mount points, and resource limits.
 
 
 # Procedure
