@@ -15,10 +15,10 @@
 
 ##  Table of Contents
 - [Introduction](#Introduction)
+- [Overview](#overview)
 - [What is static Inventory](#what-is-static-inventory)
 - [Why static Inventory](#why-static-inventory)
 - [Where to Place Inventory Files](#where-to-place-inventory-files)
-- [Overview](#overview)
 - [ Key Steps to Follow](#key-steps-to-follow)
 - [Ansible Configuration](#ansible-configuration)
 - [Conclusion](#conclusion)
