@@ -73,7 +73,8 @@ A static inventory is the simplest and most commonly used type, especially for s
 | Step | Title                      | Details |
 |------|----------------------------|---------|
 | 1    | **Create the Inventory File** | Ansible uses an inventory file to define the servers you want to manage. This file can be in INI, YAML, or JSON format. For simplicity, we use INI format below. |
-|      | **Static Inventory Example** | ```ini
+|      | **Static Inventory Example** |
+```ini
 # Grouping servers
 [web_servers]
 web1.example.com ansible_user=ubuntu
@@ -105,7 +106,7 @@ db_user=admin
 
 [api_servers:vars]
 api_port=8080
-``` |
+```
 
 | 2    | **Understanding the Structure**| |
 |      | Groups                         | Sections like `[web_servers]`, `[db_servers]`, and `[api_servers]` group servers for easier management. |
