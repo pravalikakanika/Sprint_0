@@ -1,12 +1,12 @@
 ![image](https://github.com/user-attachments/assets/caaa1b47-4765-4040-89d5-e799dfe86bed)
 
 
-| Date       | Version | Description           | Changed By             | L0     | L1       | L2     |
-|------------|---------|-----------------------|-------------------------|--------|----------|--------|
-| April 17   | v1.0    | Initial Draft         | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay |
-| April 19   | v1.1    | Updated documentation.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay|
-| April 20   | v1.2    | Updated documentation.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay|
-| April 24   | v1.3    | Updated documentation.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma| Piyush Upadhyay|
+| Date       | Version | Description              | Changed By             | Pre-Reviewer        | L0               | L1              | L2               |
+|------------|---------|--------------------------|-------------------------|---------------------|------------------|------------------|------------------|
+| April 17   | v1.0    | Initial Draft            | Pravalika Kanikarapu   | Priyanshu                   | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
+| April 19   | v1.1    | Updated documentation.md | Pravalika Kanikarapu   | Priyanshu                 | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
+| April 20   | v1.2    | Updated documentation.md | Pravalika Kanikarapu   | Priyanshu                   | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
+| April 24   | v1.3    | Updated documentation.md | Pravalika Kanikarapu   | Priyanshu                   | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
 
 
 
