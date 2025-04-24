@@ -172,7 +172,7 @@ Maven simplifies dependency management by automating the downloading, versioning
 </dependency>
 ```
 
-# **3.Introduction to the Build Lifecycle**
+## **3.Introduction to the Build Lifecycle**
 
 ## Build Lifecycle Basics
 
@@ -323,7 +323,7 @@ Deploys the package to a specified environment, typically using the content-pack
 
 
 
-# **5. Plugin Support**
+## **5. Plugin Support**
 
 Maven supports plugins to extend its functionality, such as compiling source code, packaging artifacts, and running tests. Plugins can be configured in the `pom.xml` file to perform specific tasks during the build process.
 
