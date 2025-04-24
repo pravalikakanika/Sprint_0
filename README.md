@@ -136,17 +136,16 @@ With **Poetry**, virtual environments are handled automatically:
 
 
 
-#   Purpose of Using Poetry
+# Purpose of Using Poetry
 
-The main purpose of **Poetry** is to simplify and streamline Python project management.
+| Goal # | Description |
+|--------|-------------|
+| 1      | **Replaces multiple tools** like `pip`, `venv`, `setup.py`, `requirements.txt`, and `twine` with one unified interface. |
+| 2      | **Manages dependencies** declaratively and reproducibly using `pyproject.toml`, making it easier to maintain consistent environments. |
+| 3      | **Automatically handles virtual environments** for each project, eliminating the need for manual `venv` creation and activation. |
+| 4      | **Simplifies publishing** Python packages by enabling direct uploads to PyPI with minimal configuration. |
+| 5      | **Uses `pyproject.toml`** as a centralized configuration file that follows modern Python packaging standards. |
 
-###  Goals:
-
--  **Replace multiple tools** (`pip`, `venv`, `setup.py`, `requirements.txt`, `twine`) with one unified tool.
--  **Manage dependencies** in a declarative and reproducible way.
--  **Automatically handle virtual environments** per project—no more manual `venv` setup.
--  **Simplify publishing** your packages directly to PyPI.
--  **Use `pyproject.toml`** as a clean, standard, and centralized configuration file.
 
 
 
