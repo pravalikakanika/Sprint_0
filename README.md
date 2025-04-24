@@ -138,7 +138,7 @@ With **Poetry**, virtual environments are handled automatically:
 
 # Purpose of Using Poetry
 
-| Goal # | Description |
+| Goal  | Description |
 |--------|-------------|
 | 1      | **Replaces multiple tools** like `pip`, `venv`, `setup.py`, `requirements.txt`, and `twine` with one unified interface. |
 | 2      | **Manages dependencies** declaratively and reproducibly using `pyproject.toml`, making it easier to maintain consistent environments. |
