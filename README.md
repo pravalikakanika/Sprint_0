@@ -7,10 +7,10 @@
 
 | Date       | Version | Description           | Changed By             | L0     | L1       | L2     |
 |------------|---------|-----------------------|-------------------------|--------|----------|--------|
-| April 15   | v1.0    | Initial Draft         | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
-| April 19   | v1.1    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
-| April 20   | v1.2    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
-| April 24   | v1.3    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi | Rishabh  | Piyush |
+| April 15   | v1.0    | Initial Draft         | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay |
+| April 19   | v1.1    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay|
+| April 20   | v1.2    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma | Piyush Upadhyay|
+| April 24   | v1.3    | sop_disk_ulimit.md    | Pravalika Kanikarapu   | Khushi Malhothra| Rishabh Sharma| Piyush Upadhyay|
 
 
 #  **Standard Operating Procedure (SOP) for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
