@@ -1,13 +1,14 @@
 
 
-![image](https://github.com/user-attachments/assets/6f4bdb08-3e3b-4b6f-a260-756490cfa808)
+![image](https://github.com/user-attachments/assets/1b48b799-943f-44f8-946b-6700a85fda97)
 
 
-|**Date**| **Version**| **Description**| **Changed By** |
-|----------|---------|---------------|-----------------|
-|**April 18** | v.1.0 | Initial Draft | Pravalika Kanikarapu |
-|**April 19** | v.1.1 | Updated intro.md | Pravalika Kanikarapu |
-|**April 20** | v.1.2 | Updated intro.md | Pravalika Kanikarapu |
+| Date       | Version | Description              | Changed By             | Pre-Reviewer        | L0               | L1              | L2               |
+|------------|---------|--------------------------|-------------------------|---------------------|------------------|------------------|------------------|
+| April 18   | v1.0    | Initial Draft            | Pravalika Kanikarapu   | Priyanshu                   | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
+| April 19   | v1.1    | Updated documentation.md | Pravalika Kanikarapu   | Priyanshu                 | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
+| April 20   | v1.2    | Updated documentation.md | Pravalika Kanikarapu   | Priyanshu                   | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
+| April 24   | v1.3    | Updated documentation.md | Pravalika Kanikarapu   | Priyanshu                   | Khushi Malhothra | Rishabh Sharma   | Piyush Upadhyay  |
 
 
 
@@ -59,7 +60,6 @@ Ansible uses **YAML** for its playbooks, making it simple to read and write. You
 ## 5. Scalability
 Ansible can scale from a small number of systems to managing thousands of nodes. It is capable of handling complex environments with ease, without requiring complex configurations.
 
----
 
 # Why Use Ansible Roles? 
 
@@ -167,7 +167,6 @@ Before creating or using Ansible Roles, ensure you have the following prerequisi
 
 **Why it matters:** Understanding the basic structure of Ansible playbooks is crucial because roles are built on top of this foundation, and they depend on your ability to write tasks and organize them effectively.
 
----
 
 ### 2.**Ansible Installed** 
 
@@ -288,8 +287,7 @@ Ansible Roles come with several powerful features that enhance your automation w
 
 # conclusion
 
-Ansible Roles provide a powerful, modular, and organized approach to automation, making it easier to manage complex configurations across multiple systems. By encapsulating tasks, variables, templates, and other components into reusable units, roles enhance maintainability, scalability, and consistency in infrastructure automation. They encourage best practices by promoting reusability, shareability, and structure, allowing teams to collaborate more effectively and streamline deployment workflows. Whether you're automating a single service or orchestrating a large-scale infrastructure, Ansible Roles help ensure your playbooks remain clean, efficient, and reliable.
-
+Ansible Roles provide a powerful, modular, and organized approach to automation, making it easier to manage complex configurations across multiple systems. By encapsulating tasks, variables, templates, and other components into reusable units, roles enhance maintainability, scalability, and consistency in infrastructure automation. They encourage best practices by promoting reusability, shareability, and structure, allowing teams to collaborate more effectively and streamline deployment workflows.
 
 
 #  Contact Information
