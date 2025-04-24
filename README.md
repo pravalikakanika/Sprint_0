@@ -167,68 +167,20 @@ db2.example.com
 
 ```
 
-# Features of Ansible Roles 
+# Features of Ansible Roles
 
-Ansible Roles come with several powerful features that enhance your automation workflows. Here's an overview of the key features of Ansible Roles:
-
-### 1.**Encapsulation** 
-  
-**What it is:** Roles encapsulate automation logic into a reusable, isolated unit. This means that the logic within a role is self-contained and doesn't interfere with other tasks or playbooks.
-
-**Why it matters:** Encapsulation allows you to manage complex automation tasks in a modular and structured way, making it easier to develop, update, and debug automation code.
-
----
-
-### 2.**Modularization** 
- 
-**What it is:** Roles group related tasks, files, templates, and handlers logically, keeping everything organized within a dedicated role structure.
-
-**Why it matters:** By modularizing your automation, you can keep your playbooks neat and easy to navigate. It also promotes the reusability of common tasks, reducing redundancy and simplifying maintenance.
-
-**Example:** A `web_server` role could contain all tasks, templates, and files necessary to configure a web server, such as installing packages, setting up configuration files, and starting services.
-
----
-
-### 3.**Idempotency** 
-  
-**What it is:** Ansible tasks within roles are idempotent, meaning they can be safely run multiple times without causing unintended side effects or errors.
-
-**Why it matters:** Idempotency is crucial for ensuring that automation tasks can be executed repeatedly, such as in CI/CD pipelines or during system configuration, without breaking the system or changing the state unexpectedly.
-
-**Example:** Running a role to install a package multiple times won't reinstall the package if it’s already present and at the correct version.
-
----
-
-### 4.**Shareable** 
-  
-**What it is:** Roles can be shared with others on platforms like Ansible Galaxy, allowing them to reuse your role in their own automation workflows.
-
-**Why it matters:** Sharing roles promotes collaboration and standardization, helping teams or the community avoid reinventing the wheel.
-
-**Example:** You can upload your roles to Ansible Galaxy, where others can download and integrate them into their own projects.
-
----
-
-### 5.**Organized Playbooks** 
-  
-**What it is:** Roles help structure and organize playbooks, keeping them clean, readable, and understandable.
-
-**Why it matters:** As playbooks grow in complexity, roles help maintain clarity and focus. Each role focuses on a specific task or set of related tasks, which improves playbook readability and ease of use.
-
-**Example:** Instead of writing a long, monolithic playbook with hundreds of lines, you can split the tasks into multiple roles (e.g., `web_server`, `database`, `firewall`), making the playbook much easier to manage.
-
----
-
-### 6.**Testable** 
-  
-**What it is:** You can include tests within roles to ensure that they work as expected. Testing can be done using frameworks like Testinfra or Molecule.
-
-**Why it matters:** Testing roles ensures that your automation is reliable and works consistently across different environments. This is particularly useful in large-scale or production environments, where you want to ensure your roles are always performing as expected.
-
-**Example:** You could write tests that verify a service is running, a package is installed, or a file has the correct contents, ensuring that your role works as intended after each change.
+| #   | Feature         | What It Is | Why It Matters | Example |
+|-----|------------------|-------------|----------------|---------|
+| 1   | **Encapsulation** | Roles encapsulate automation logic into a reusable, isolated unit. | Keeps logic self-contained, making updates, debugging, and maintenance easier. | Separate logic for tasks like `nginx_setup`, `db_config` into isolated roles. |
+| 2   | **Modularization** | Groups related tasks, templates, files, and handlers in one role. | Organizes automation cleanly and reduces redundancy. | A `web_server` role manages packages, configs, and services in one module. |
+| 3   | **Idempotency** | Tasks can be run multiple times without side effects. | Ensures consistent, repeatable behavior—key in CI/CD and system management. | Installing a package with a role won’t reinstall it if it’s already present. |
+| 4   | **Shareable** | Roles can be distributed via Ansible Galaxy or within teams. | Promotes reuse and collaboration, saving time across teams and projects. | Upload a `grafana_setup` role to Galaxy; others can reuse it instantly. |
+| 5   | **Organized Playbooks** | Roles structure playbooks by functionality. | Makes complex playbooks readable, maintainable, and easier to debug. | Instead of one long playbook, use roles like `web_server`, `database`, `firewall`. |
+| 6   | **Testable** | Roles can be tested with frameworks like Molecule or Testinfra. | Ensures roles work reliably across environments, catching errors early. | Write tests to verify service status, file content, or installed packages. |
 
 
-# conclusion
+
+# Conclusion
 
 Ansible Roles provide a powerful, modular, and organized approach to automation, making it easier to manage complex configurations across multiple systems. By encapsulating tasks, variables, templates, and other components into reusable units, roles enhance maintainability, scalability, and consistency in infrastructure automation. They encourage best practices by promoting reusability, shareability, and structure, allowing teams to collaborate more effectively and streamline deployment workflows.
 
