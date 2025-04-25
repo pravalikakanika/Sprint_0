@@ -21,8 +21,8 @@
 3. [What are Ansible Roles?](#what-are-ansible-roles)
 4. [Why use Ansible?](#why-use-ansible)
 5. [Why Use Ansible Roles?](#why-use-ansible-roles)
-6. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
-7. [Purpose of Ansible Roles](#purpose-of-ansible-roles)
+6. [Purpose of Ansible Roles](#purpose-of-ansible-roles)
+7. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
 8. [Prerequisites for Using Ansible Roles](#prerequisites-for-using-ansible-roles)
 9. [Features of Ansible Roles](#features-of-ansible-roles)
 10. [Conclusion](#conclusion)
@@ -35,24 +35,9 @@
 This document is covering the features of the ansible role
 
 
-
-# What is Ansible? 
-
-Ansible is an open-source automation platform that simplifies the management of servers, software deployment, and configuration management. It enables you to automate tasks like installing packages, configuring services, and orchestrating complex workflows, all while using simple, human-readable YAML files. 
-
 # What are Ansible Roles?
 
 Ansible Roles are a powerful feature that helps you organize your automation code in a clean, structured, and reusable way. Instead of writing long, messy playbooks, roles let you break down tasks into smaller components like tasks, variables, files, templates, and handlers. Roles promote modularity, reusability, maintainability, and consistency
-
-# Why Use Ansible?
-
-|    | Feature        | Description |
-|-----|----------------|-------------|
-| 1   | **Simplifies Automation** | Automates repetitive tasks like software installation, configuration, and updates across multiple servers. Saves time, reduces errors, and ensures consistency. |
-| 2   | **Agentless** | Requires no agent or special software on managed nodes. Communicates over **SSH** (Linux) or **WinRM** (Windows), simplifying setup. |
-| 3   | **Idempotent** | Tasks can be safely re-run. Ansible checks for the desired state and only makes changes if necessary—avoiding config drift and unintended side effects. |
-| 4   | **Ease of Use** | Uses human-readable **YAML** for playbooks. Easy to write and understand, even for those with limited programming experience. |
-| 5   | **Scalability** | Can manage environments from a few servers to thousands. Handles complex infrastructure without complex configurations. |
 
 
 
