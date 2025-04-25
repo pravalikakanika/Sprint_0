@@ -38,7 +38,7 @@
 
 # Introduction
 
-The SOP should provide steps to check disk usage, mount points, and configure ulimit settings for users and processes
+The SOP is provides steps to check disk usage, mount points, and configure ulimit settings for users and processes
 
 
 
@@ -51,10 +51,6 @@ This document outlines the procedures for:
 - **Configuring ulimit Settings:** Set resource limits for users and processes to optimize system performance and avoid resource exhaustion.
 
 
-# Scope
-
-
-This SOP applies to all system administrators responsible for maintaining disk usage, mount point configurations, and resource limits.
 
 
 
@@ -63,9 +59,7 @@ This SOP applies to all system administrators responsible for maintaining disk u
 | Requirement     | Description                                                                 |
 |----------------|-----------------------------------------------------------------------------|
 | **Permissions** | User must have administrative (root or sudo) access to the system.         |
-| **Backup**      | Backup critical system files before making any changes.                    |
-| **Installed Tools** | Ensure utilities like `df`, `du`, `mount`, and `ulimit` are available. |
-| **System Access** | Access via SSH or direct local terminal is required.                     |
+| **Installed Tools** | Ensure utilities like `df`, `du`, `mount`, and `ulimit` are available. |                    |
 | **Knowledge**    | Basic understanding of Linux filesystem, mount points, and resource limits.|
 
 
