@@ -17,29 +17,29 @@
 
 ##  Table of Contents
 - [Introduction](#Introduction)
-- [Overview](#overview)
-- [What is static Inventory](#what-is-static-inventory)
-- [Why static Inventory](#why-static-inventory)
+- [Ansible Static Inventory Overview](#ansible-static-inventory-overview)
+- [What is Static Inventory](#what-is-static-inventory)
+- [Why Static Inventory](#why-static-inventory)
 - [Where to Place Inventory Files](#where-to-place-inventory-files)
-- [ Key Steps to Follow](#key-steps-to-follow)
+- [ Key Steps To Follow](#key-steps-to-follow)
 - [Ansible Configuration](#ansible-configuration)
 - [Conclusion](#conclusion)
 - [Contact Information](#contact-information)
-- [Documentation Reference](#documentation-reference)
+- [ Reference](#reference)
 
 # Introduction
 
 This document outlines that The static inventory should list all servers with correct names or IPs, organize them into groups if needed, include any required settings, and work properly when running Ansible commands.
 
-#  Overview
+#  Ansible Static Inventory Overview
 
 An Ansible Inventory is a file that defines the list of hosts (servers or devices) that Ansible can manage. In a static inventory, the list is manually defined and does not change unless edited by a user. It contrasts with dynamic inventories that pull host data from external sources like cloud providers 
 
-# What is static Inventory
+# What is Static Inventory
 
 A static inventory is the simplest and most commonly used type, especially for small or stable environments. It is a manually maintained file — usually in INI or YAML format — where you define the hostnames or IP addresses of your servers, group them logically (e.g., web_servers, db_servers), and optionally set connection variables.
 
-# Why static Inventory
+# Why Static Inventory
 
  - Simplicity and Quick Setup
  - Small or Fixed Environments
@@ -60,7 +60,7 @@ A static inventory is the simplest and most commonly used type, especially for s
 
 
 
-# Key Steps to Follow
+# Key Steps To Follow
 
 | Step | Title                          | Description |
 |------|--------------------------------|-------------|
@@ -105,7 +105,7 @@ In conclusion, Ansible Static Inventory is an essential tool for defining and or
 |------------|------------------------------|
 | Pravalika  | kanikarapu.pravalika.snaatak@mygurukulam.co|
 
-##  Documentation Reference
+#  Reference
 
 | **Link** | **Description** |
 |----------|-----------------|
