@@ -163,13 +163,13 @@ ulimit -n 5000
 
 ### c. Make permanent changes to ulimit:
 
-- **Edit the /etc/security/limits.conf file:**
+1.  **Edit the /etc/security/limits.conf file:**
 
 ```bash
 sudo nano /etc/security/limits.conf
 ```
 
-   - **Add the following lines to set the limits for a user or all users:**
+   2. **Add the following lines to set the limits for a user or all users:**
 
 
 
