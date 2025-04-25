@@ -14,7 +14,7 @@
 
 
 
-#  **SOP for Checking Disk Usage, Mount Points, and Configuring Ulimit Settings**
+#  **SOP For Checking Disk Usage,Mount Points,and Configuring Ulimit**
 
 
 
