@@ -55,38 +55,6 @@ This document serves as a comprehensive guide to understanding, installing, and 
 
 **Poetry** is a Python dependency management and packaging tool that simplifies the way developers build, manage, and distribute Python projects. It provides a standardized and streamlined workflow for everything from dependency installation to package publishing.
 
-In simpler terms, **Poetry** is like a project manager for Python—handling your project's environment, dependencies, versioning, and publishing in a single unified tool.
-
-It centers its configuration in a single file: **`pyproject.toml`**, which becomes the source of truth for your project’s metadata, dependencies, scripts, and more.
-
-
-##  Its Role in Modern Python Project Management
-
-In modern Python development, managing environments, dependencies, and packaging can get messy fast—especially in larger projects or teams. This is where **Poetry** shines:
-
-### 1. **Dependency Management**
-- **Poetry** allows you to declare the packages your project needs in a clean and easy-to-read format. It resolves and installs dependencies reproducibly, ensuring your project works the same way across different machines and environments.
-- Instead of `requirements.txt`, you use `pyproject.toml` and `poetry.lock`.
-- It **separates** development and runtime dependencies.
-- Automatically handles **dependency conflicts** with smart resolution.
-
-### 2. **Virtual Environment Handling**
-- **Poetry** automatically creates and manages virtual environments for each project. No need to manually use `python -m venv` or activate environments—it just works.
-- Keeps your global Python environment **clean**.
-- Ensures **isolated** and **reproducible builds**.
-
-### 3. **Project Initialization**
-- Starting a new project? `poetry new` or `poetry init` sets up a fully-structured Python project with best practices baked in—ideal for open-source packages or enterprise codebases.
-- Creates standard folders like `tests/`, `src/`, and initial config files.
-- Encourages good **project structure** from the beginning.
-
-### 4. **Packaging and Publishing**
-- **Poetry** makes it simple to build and publish Python packages to PyPI or a private repository.
-- Use `poetry build` to package.
-- Use `poetry publish` to upload to PyPI (with authentication).
-
-### 5. **Versioning and Release Management**
-- **Poetry** supports **semantic versioning** and allows for automatic version bumps, changelogs, and more. It's great for projects following a **release cadence**.
 
 ## Replaces Traditional Tools Like:
 
@@ -151,9 +119,6 @@ With **Poetry**, virtual environments are handled automatically:
 
 
 
-
-
-
 # Key Features of Poetry
 
 Poetry is a powerful and modern tool for Python dependency management and packaging. Below are some of its standout features:
@@ -169,11 +134,11 @@ Poetry is a powerful and modern tool for Python dependency management and packag
 |  **Intuitive CLI**              | Clean, user-friendly command-line interface for common tasks.               |
 
 
-## For installation of the poetry follow this link
+## For Installation Of The oetry follow this link
 
 https://github.com/Cloud-NInja-snaatak/Documentation/blob/rajeev_scrum18/commonstack/applications/python/poetry/sop.md
 
-# Comparison: Poetry vs pip + venv
+# Comparison: Poetry vs pip & venv
 
 | Feature / Tool              | pip (Package Installer)                                                                 | venv (Virtual Environment)                                                              | Poetry (All-in-One Tool)                                                                 |
 |----------------------------|------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
