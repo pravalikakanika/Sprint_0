@@ -91,14 +91,14 @@ The main purpose of Ansible Roles is to organize your automation tasks into self
 
 Before creating or using Ansible Roles, ensure you have the following prerequisites:
 
-### 1 .**Basic Knowledge of Ansible** 
+### 1 . **Basic Knowledge of Ansible** 
 
 **What it is:** You should be familiar with the basics of Ansible playbooks and tasks. This includes knowing how to define hosts, create tasks, and understand how Ansible's YAML syntax works.
 
 **Why it matters:** Understanding the basic structure of Ansible playbooks is crucial because roles are built on top of this foundation, and they depend on your ability to write tasks and organize them effectively.
 
 
-### 2 .**Ansible Installed** 
+### 2 . **Ansible Installed** 
 
 **What it is:** Ensure Ansible is installed on your machine. You can install it using a package manager like `apt`, `yum`, `brew`, or via `pip` for Python.
 
@@ -108,7 +108,7 @@ Before creating or using Ansible Roles, ensure you have the following prerequisi
 ansible --version
 ```
 
-### 3 .**Directory Structure Knowledge** 
+### 3 . **Directory Structure Knowledge** 
   
 **What it is:** Roles have a specific directory structure that needs to be followed to function properly. This includes directories for tasks, variables, templates, files, handlers, and more.
 
@@ -135,7 +135,7 @@ my_role/
 
 ```
 
-### 4 .**A Working Inventory** 
+### 4 . **A Working Inventory** 
   
 **What it is:** You must have an inventory of hosts that your playbooks will target. This can be a simple file listing IP addresses or hostnames of the machines you want to configure.
 
