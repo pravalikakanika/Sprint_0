@@ -38,7 +38,7 @@
 
 # Introduction
 
-The SOP is provides steps to check disk usage, mount points, and configure ulimit settings for users and processes
+The SOP provides steps to check disk usage, mount points, and configure ulimit settings for users and processes
 
 
 
@@ -109,6 +109,13 @@ du -sh /path/to/directory
 
 ```
 
+**Expected Output:**
+```bash
+1.5G    /path/to/directory
+```
+
+
+
 ### Step 2: Check Mount Points
 
 ### A.View all mounted filesystems:
@@ -126,6 +133,7 @@ mount
 cat /etc/fstab
 
 ```
+
 
 ### c. Verify the mount point:
 
