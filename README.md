@@ -173,8 +173,10 @@ sudo nano /etc/security/limits.conf
 
 
 
- *               soft    nofile          5000
- *               hard    nofile          10000
+ ```bash               soft    nofile          5000 ```
+
+ ```bash               hard    nofile          10000 ```
+
 Apply changes by logging out and back in or restarting the system.
 
 
