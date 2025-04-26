@@ -22,8 +22,8 @@
 4. [Why use Ansible?](#why-use-ansible)
 5. [Why Use Ansible Roles?](#why-use-ansible-roles)
 6. [Purpose of Ansible Roles](#purpose-of-ansible-roles)
-7. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
-8. [Prerequisites for Using Ansible Roles](#prerequisites-for-using-ansible-roles)
+7. [Directory Structure](#directory-structure)
+8. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
 9. [Features of Ansible Roles](#features-of-ansible-roles)
 10. [Conclusion](#conclusion)
 11. [Contact Information](#contact-information)
@@ -87,72 +87,11 @@ The meta directory contains metadata about the role. This may include informatio
 The main purpose of Ansible Roles is to organize your automation tasks into self-contained units that are easy to manage, reuse, and share. They provide a clean way to package logic related to a specific task, such as setting up a web server, installing software, or configuring a firewall.
 
 
-# Prerequisites for Using Ansible Roles 
+# Directory Structure 
 
-Before creating or using Ansible Roles, ensure you have the following prerequisites:
-
-### 1 . **Basic Knowledge of Ansible** 
-
-**What it is:** You should be familiar with the basics of Ansible playbooks and tasks. This includes knowing how to define hosts, create tasks, and understand how Ansible's YAML syntax works.
-
-**Why it matters:** Understanding the basic structure of Ansible playbooks is crucial because roles are built on top of this foundation, and they depend on your ability to write tasks and organize them effectively.
-
-
-### 2 . **Ansible Installed** 
-
-**What it is:** Ensure Ansible is installed on your machine. You can install it using a package manager like `apt`, `yum`, `brew`, or via `pip` for Python.
-
-**Why it matters:** Ansible needs to be available for running your playbooks and roles. You can verify Ansible installation by running:
-
-```bash
-ansible --version
-```
-
-### 3 . **Directory Structure Knowledge** 
-  
-**What it is:** Roles have a specific directory structure that needs to be followed to function properly. This includes directories for tasks, variables, templates, files, handlers, and more.
-
-**Why it matters:** Understanding the structure of a role helps you organize your tasks and files correctly, ensuring that Ansible can locate and apply them in the right order.
-
-**Example Role Directory Structure:**
-
-```plaintext
-my_role/
-├── defaults/
-│   └── main.yml      # Default variables for the role
-├── files/
-│   └── my_config.conf # Files to be copied to the target system
-├── handlers/
-│   └── main.yml      # Handlers for the role (e.g., service restart)
-├── meta/
-│   └── main.yml      # Role dependencies and metadata
-├── tasks/
-│   └── main.yml      # Main tasks of the role
-├── templates/
-│   └── config.j2     # Jinja2 templates
-├── vars/
-│   └── main.yml      # Role-specific variables
-
-```
-
-### 4 . **A Working Inventory** 
-  
-**What it is:** You must have an inventory of hosts that your playbooks will target. This can be a simple file listing IP addresses or hostnames of the machines you want to configure.
-
-**Why it matters:** The inventory defines the group of machines that will be configured by the playbooks and roles. Without a valid inventory, Ansible won’t know where to apply the automation.
-
-**Example Inventory File (inventory.ini):**
-
-```ini
-[web_servers]
-web1.example.com
-web2.example.com
-
-[db_servers]
-db1.example.com
-db2.example.com
-
-```
+ For Ansible directory structure refer this link 
+ 
+[Ansible Directory Structure](https://github.com/Cloud-NInja-snaatak/Documentation/blob/rajeev_scrum45/commonstack/ansible/role/directory_structure.md)
 
 # Features of Ansible Roles
 
