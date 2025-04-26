@@ -17,17 +17,15 @@
 # Table of Contents
 
 1. [Introduction](#introduction)
-2. [What is Ansible?](#what-is-ansible)
-3. [What are Ansible Roles?](#what-are-ansible-roles)
-4. [Why use Ansible?](#why-use-ansible)
-5. [Why Use Ansible Roles?](#why-use-ansible-roles)
-6. [Purpose of Ansible Roles](#purpose-of-ansible-roles)
-7. [Directory Structure](#directory-structure)
-8. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
-9. [Features of Ansible Roles](#features-of-ansible-roles)
-10. [Conclusion](#conclusion)
-11. [Contact Information](#contact-information)
-12. [Reference](#reference)
+2. [What are Ansible Roles?](#what-are-ansible-roles)
+3. [Why Use Ansible Roles?](#why-use-ansible-roles)
+4. [Purpose of Ansible Roles](#purpose-of-ansible-roles)
+5. [Directory Structure](#directory-structure)
+6. [Key Components of an Ansible Role](#key-components-of-an-ansible-role)
+7. [Features of Ansible Roles](#features-of-ansible-roles)
+8. [Conclusion](#conclusion)
+9. [Contact Information](#contact-information)
+10. [Reference](#reference)
 
 
 
