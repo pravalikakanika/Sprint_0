@@ -96,7 +96,7 @@ The `pom.xml` file is the cornerstone of Maven’s configuration and project str
     
 # POM.XML 
 
-for more about the POM.XML refer this link
+For More About the POM.XML refer this link
 
 [POM.XML](https://github.com/Cloud-NInja-snaatak/Documentation/blob/shrey_scrum28/commonstack/applications/java/pom/documentation.md)
 
