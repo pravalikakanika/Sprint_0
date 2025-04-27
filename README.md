@@ -26,7 +26,8 @@
 
 - [ Key Features of Poetry](#key-features-of-poetry)
 
-    
+- [Installation of Poetry](#installation-of-poetry)
+   
 - [ Comparison: Poetry vs pip + venv](#comparison-poetry-vs-pip--venv)
 
 - [Conclusion](#Conclusion).
@@ -134,9 +135,13 @@ Poetry is a powerful and modern tool for Python dependency management and packag
 |  **Intuitive CLI**              | Clean, user-friendly command-line interface for common tasks.               |
 
 
-## For Installation Of The oetry follow this link
+##  Installation of Poetry 
 
-https://github.com/Cloud-NInja-snaatak/Documentation/blob/rajeev_scrum18/commonstack/applications/python/poetry/sop.md
+For Installation Of The Poetry Follow this Link
+
+
+[Poetry Installation](https://github.com/Cloud-NInja-snaatak/Documentation/blob/rajeev_scrum18/commonstack/applications/python/poetry/sop.md)
+
 
 # Comparison: Poetry vs pip & venv
 
