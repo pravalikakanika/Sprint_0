@@ -129,7 +129,6 @@ Maven simplifies dependency management by automating the downloading, versioning
 
     -  Maven retrieves these dependencies from remote repositories like Maven Central or custom repositories you define.
 
-    -  It resolves conflicts between different versions of the same dependency using a strategy called "nearest definition" or "first declaration wins."
 
 
 
