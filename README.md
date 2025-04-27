@@ -111,33 +111,12 @@ The `pom.xml` file is the cornerstone of Maven’s configuration and project str
        - **`dependencies`**: List of all external libraries your project depends on.
 
        - **`build`**: Defines build configurations such as plugins, resources, and directories.
-**Example:**
+    
+# POM.XML 
 
-```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+for more about the POM.XML refer this link
 
-    <groupId>com.example</groupId>
-    <artifactId>my-project</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>5.2.9.RELEASE</version>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <!-- Plugins go here -->
-        </plugins>
-    </build>
-</project>
- ```
+[POM.XML](https://github.com/Cloud-NInja-snaatak/Documentation/blob/shrey_scrum28/commonstack/applications/java/pom/documentation.md)
 
 
 ## **2. Dependency Management**
@@ -152,157 +131,30 @@ Maven simplifies dependency management by automating the downloading, versioning
 
     -  It resolves conflicts between different versions of the same dependency using a strategy called "nearest definition" or "first declaration wins."
 
-**Example:**
-```xml
-<dependencies>
-    <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>3.11</version>
-    </dependency>
-</dependencies>
-```
+
 
 - **Version Ranges:** Maven supports version ranges to specify flexible versions for dependencies.
-```xml
-<dependency>
-    <groupId>org.apache.commons</groupId>
-    <artifactId>commons-lang3</artifactId>
-    <version>[3.0, 3.1]</version> <!-- Will match any version between 3.0 and 3.1 -->
-</dependency>
-```
 
 ## **3.Introduction to the Build Lifecycle**
 
-## Build Lifecycle Basics
 
 Maven is based around the central concept of a build lifecycle. What this means is that the process for building and distributing a particular artifact (project) is clearly defined.
 
 For the person building a project, this means that it is only necessary to learn a small set of commands to build any Maven project, and the POM will ensure they get the results they desired.
 
-There are three built-in build lifecycles: default, clean and site. The default lifecycle handles your project deployment, the clean lifecycle handles project cleaning, while the site lifecycle handles the creation of your project's web site.
 
 ## A Build Lifecycle is Made Up of Phases
 
-![image](https://github.com/user-attachments/assets/49591568-c9cf-411a-8eed-fcbd178c209e)
+![image](https://github.com/user-attachments/assets/82e2691c-5832-46c1-811b-e123ddb707b0)
 
-
-
-
-
-
-Each of these build lifecycles is defined by a different list of build phases, wherein a build phase represents a stage in the lifecycle.
-
-For example, the default lifecycle comprises of the following phases (for a complete list of the lifecycle phases, refer to the Lifecycle Reference):
-
-**Validate Phase**
-
-Ensures that the project is correctly configured and all necessary information is available.
-
-```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-enforcer-plugin</artifactId>
-    <version>3.0.0</version>
-    <executions>
-        <execution>
-            <id>enforce</id>
-            <phase>validate</phase>
-            <goals>
-                <goal>enforce</goal>
-            </goals>
-            <configuration>
-                <rules>
-                    <requireMavenVersion>
-                        <version>[3.6,)</version>
-                    </requireMavenVersion>
-                </rules>
-            </configuration>
-        </execution>
-    </executions>
-</plugin>
-```
-
-**Compile Phase**
-
-Compiles the Java source code. It also compiles TypeScript/ES6 to JavaScript or other build processes.
-```xml
-
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.10.1</version>
-    <configuration>
-        <source>11</source>
-        <target>11</target>
-    </configuration>
-</plugin>
-```
-
-**Test Phase**
-
-Runs unit tests using frameworks like JUnit or Mockito.
-```xml
-
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.0.0-M7</version>
-</plugin>
-```
-
-**Package Phase**
-
-Packages the compiled code into a deployable format, such as a .jar or .zip. Example: For AEM, this is typically a .zip package containing the content and configuration.
-```xml
-
-<plugin>
-    <groupId>com.day.jcr.vault</groupId>
-    <artifactId>content-package-maven-plugin</artifactId>
-    <version>1.0.2</version>
-    <executions>
-        <execution>
-            <id>package</id>
-            <goals>
-                <goal>install</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
-```
-
-**Install Phase**
-
-Installs the package into the local Maven repository, making it available to other projects.
-```xml
-mvn install
-```
-
-**Deploy Phase**
-
-Deploys the package to a specified environment, typically using the content-package-maven-plugin for AEM.
-```xml
-
-<plugin>
-    <groupId>com.day.jcr.vault</groupId>
-    <artifactId>content-package-maven-plugin</artifactId>
-    <version>1.0.2</version>
-    <executions>
-        <execution>
-            <id>deploy</id>
-            <phase>deploy</phase>
-            <goals>
-                <goal>install</goal>
-            </goals>
-            <configuration>
-                <vaultCliPath>${vault.cli.path}</vaultCliPath>
-                <vaultCliUser>${vault.cli.user}</vaultCliUser>
-                <vaultCliPassword>${vault.cli.password}</vaultCliPassword>
-            </configuration>
-        </execution>
-    </executions>
-</plugin>
-```
+ - **Validate:** This step validates if the project structure is correct. For example – It checks if all the dependencies have been downloaded and are available in the local repository.
+- **Compile:** It compiles the source code, converts the .java files to .class, and stores the classes in the target/classes folder.
+- **Test:** It runs unit tests for the project.
+- **Package:** This step packages the compiled code in a distributable format like JAR or WAR.
+- **Integration test:** It runs the integration tests for the project.
+- **Verify:** This step runs checks to verify that the project is valid and meets the quality standards.
+- **Install:** This step installs the packaged code to the local Maven repository.
+- **Deploy:** It copies the packaged code to the remote repository for sharing it with other developers.
 
 ## **4. Standard Directory Structure**
 
@@ -335,35 +187,7 @@ Maven supports plugins to extend its functionality, such as compiling source cod
 - **Maven Surefire Plugin**: Runs unit tests.
 - **Maven Jar Plugin**: Packages your project into a JAR file.
 
-### Example Plugin Configuration in `pom.xml`
 
-```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
-        </plugin>
-
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.22.2</version>
-        </plugin>
-
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.2.0</version>
-        </plugin>
-    </plugins>
-</build>
-```
 
 
 #   Repositories in Maven
@@ -386,30 +210,10 @@ Repositories are locations where Maven stores and retrieves project dependencies
 
 A local repository is a cache of downloaded dependencies stored on your machine. It helps avoid downloading the same dependency repeatedly, improving efficiency during builds.
 
-### Default Location
 
-- **Unix/macOS**: `~/.m2/repository`
-- **Windows**: `C:\Users\<user>\.m2\repository`
-
-- **Example Structure:**
- ```bash
-~/.m2/repository/
-    org/
-        apache/
-            commons/
-                commons-lang3/
-                    3.11/
-                        commons-lang3-3.11.jar
-                        commons-lang3-3.11.pom
- ```
 - **How Maven Uses the Local Repository:** When you build a project and request a dependency (e.g., commons-lang3), Maven first checks the local repository. If the artifact is already there (i.e., cached), it will be used directly. If not, Maven will download it from the remote repositories (such as Maven Central) and store it in the local repository for future use.
 
-- **Customizing Local Repository Location:** You can change the location of the local repository by specifying the <localRepository> tag in the settings.xml file located in the ~/.m2 folder:
-```xml
-<settings>
-    <localRepository>/path/to/custom/repository</localRepository>
-</settings>
-```
+
 
 ##  Central Repository
 
@@ -417,23 +221,13 @@ A local repository is a cache of downloaded dependencies stored on your machine.
 
 The central repository (also known as Maven Central) is the default remote repository that Maven uses to retrieve dependencies and plugins. It is hosted by the Apache Maven community and contains millions of widely-used Java libraries and frameworks.
 
-- **URL of Maven Central Repository:**
-```bash
-https://repo.maven.apache.org/maven2
-```
 
 - **Why is it Important?**
 
 Maven Central is the default source for resolving dependencies, and it contains most of the popular open-source libraries in Java. You don’t need to configure it explicitly in your pom.xml because Maven automatically tries to download dependencies from it if they are not available in the local repository.
 
-- **Example of a Dependency Using Maven Central:**
-```xml
-<dependency>
-    <groupId>org.apache.commons</groupId>
-    <artifactId>commons-lang3</artifactId>
-    <version>3.11</version>
-</dependency>
-```
+
+
 - **Dependency Resolution Flow:**
 
 Maven looks for dependencies in the local repository.
@@ -457,23 +251,13 @@ A remote repository is any repository that is not on your local machine but can 
 - **Multiple Remote Repositories:**
  You can configure multiple remote repositories in your pom.xml file. Maven will look for dependencies in the order they are listed in the repositories section.
 
-**Example with multiple repositories**:
-```xml
-<repositories>
-    <repository>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-    </repository>
-    <repository>
-        <id>internal-repo</id>
-        <url>https://internal.repo.com/maven</url>
-    </repository>
-</repositories>
-```
 
 #  How Maven Works 
 
 You run a command: mvn clean install
+
+![image](https://github.com/user-attachments/assets/7008cc31-a518-401f-8fda-d6c4d4f8c110)
+
 
 Maven reads the pom.xml
 
@@ -503,4 +287,4 @@ Maven is not just a build tool — it’s a project management framework that em
 
 | **Link**                                                                 | **Description**                              |
 |--------------------------------------------------------------------------|----------------------------------------------|
-| [https://maven.apache.org/install.html](https://maven.apache.org/install.html) | Documentation followed for Maven installation |
+| [Maven Build Life Cycle](https://maven.apache.org/install.html) | Documentation followed for Maven Build Life Cycle |
