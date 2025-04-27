@@ -92,25 +92,7 @@ This project is built using Maven, and the configuration is centralized in the `
 ## **1. Centralized `pom.xml` File**
 The `pom.xml` file is the cornerstone of Maven’s configuration and project structure. It defines the entire configuration of a Maven project, including dependencies, build settings, plugin definitions, project versioning, and more.
 
--  Basic Structure of `pom.xml`
 
-   - The root element is `<project>`, which contains all the project configurations.
-
-   - Inside the `<project>` element, you'll define:
-
-       - **`modelVersion`**: Specifies the version of the POM model.
-
-       - **`groupId`**: Defines the unique group or organization the project belongs to.
-
-       - **`artifactId`**: The unique identifier for the project within the group.
-
-       - **`version`**: The version of the project.
-
-       - **`packaging`**: Defines the artifact type (e.g., `jar`, `war`).
-
-       - **`dependencies`**: List of all external libraries your project depends on.
-
-       - **`build`**: Defines build configurations such as plugins, resources, and directories.
     
 # POM.XML 
 
