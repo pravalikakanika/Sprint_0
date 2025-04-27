@@ -70,7 +70,7 @@ This document serves as a comprehensive guide to understanding, installing, and 
 
 # Why Use Poetry?
 
-###  Simplifies Dependency & Project Management
+##  Simplifies Dependency & Project Management
 
 Poetry replaces manual files like requirements.txt and setup.py with a single pyproject.toml.
 Just run poetry add <package> to manage dependencies—Poetry updates the files for you and creates a poetry.lock for consistent installs.
